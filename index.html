@@ -10,6 +10,11 @@
   header h1 { margin: 0 0 6px 0; font-size: 1.5em; }
   main { max-width: 900px; margin: 0 auto; padding: 16px; }
   .notice { background: #fff8e1; border-left: 4px solid #f2b705; padding: 12px; margin-bottom: 16px; font-size: 0.95em; }
+  .explainer { background: white; border-radius: 8px; padding: 12px 14px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.12); }
+  .explainer summary { cursor: pointer; font-weight: bold; color: #1f4e79; font-size: 1.05em; }
+  .explainer h4 { margin: 14px 0 4px 0; }
+  .explainer p, .explainer li { font-size: 0.95em; line-height: 1.45; }
+  .explainer ul { margin: 4px 0 8px 0; padding-left: 20px; }
   input, select { padding: 10px; font-size: 1em; margin: 0 8px 8px 0; border: 1px solid #b0b8c1; border-radius: 6px; }
   input { width: 60%; max-width: 360px; }
   .card { background: white; border-radius: 8px; padding: 14px; margin-bottom: 10px; box-shadow: 0 1px 3px rgba(0,0,0,0.12); }
@@ -24,9 +29,9 @@
   .flag { background: #c62828; }
   .tags { margin-top: 8px; }
   .tag { display: inline-block; background: #e3edf7; color: #1f4e79; padding: 2px 8px; border-radius: 10px; font-size: 0.8em; margin: 0 4px 4px 0; }
-  details { margin-top: 8px; font-size: 0.9em; color: #52606d; }
-  details summary { cursor: pointer; }
-  details ul { margin: 6px 0 0 0; padding-left: 20px; }
+  details.nr { margin-top: 8px; font-size: 0.9em; color: #52606d; }
+  details.nr summary { cursor: pointer; }
+  details.nr ul { margin: 6px 0 0 0; padding-left: 20px; }
   footer { font-size: 0.85em; color: #52606d; padding: 16px; text-align: center; }
 </style>
 </head>
@@ -37,8 +42,55 @@
 </header>
 <main>
   <div class="notice">
-    <strong>How to read this:</strong> Right now each placement has a <strong>safety score only</strong>, based on state inspection findings. It runs from 0 to 100 and compares each open general residential operation with the others in Texas. A higher score means fewer weighted findings per inspection. It does not say whether a facility is safe in an absolute sense, and it is <strong>not an overall rating</strong>. Many things families care about are not published anywhere yet, and each card lists them as Not reported instead of guessing. Facilities with few inspections have low confidence. A red flag means the state has recorded a corrective or adverse action. No information about individual children is collected or shown.
+    <strong>How to read this:</strong> Right now each placement has a <strong>safety score only</strong>, based on state inspection findings. It is <strong>not an overall rating</strong>. Many things families care about are not published anywhere yet, and each card lists them as Not reported instead of guessing. A red flag means the state has recorded a corrective or adverse action. No information about individual children is collected or shown.
   </div>
+
+  <details class="explainer">
+    <summary>How to read these scores (tap to open)</summary>
+
+    <h4>The short version</h4>
+    <p>Every placement shows two separate things: a <strong>safety score</strong> and a <strong>confidence label</strong>. They measure different things, so they do not always move together.</p>
+
+    <h4>The safety score</h4>
+    <p>The safety score runs from 0 to 100. It compares each open general residential operation in Texas with the others, using state inspection findings.</p>
+    <ul>
+      <li>Each inspection finding is weighted by how serious the state rated it. The most serious findings count five points, and the least serious count one.</li>
+      <li>The weighted total is divided by the number of inspections the facility has had. This keeps a facility from looking worse just because it is inspected more often.</li>
+      <li>All facilities are then ranked from most to fewest weighted findings per inspection. A higher score means fewer findings per inspection compared with other Texas facilities.</li>
+    </ul>
+    <p>The score is <strong>relative</strong>. It shows how a facility compares with others, not whether it is safe in an absolute sense. It is also a <strong>safety score only</strong>, not an overall rating.</p>
+
+    <h4>The confidence label</h4>
+    <p>The confidence label shows how much inspection history the score rests on. It counts inspections and nothing else.</p>
+    <ul>
+      <li><strong>Low confidence:</strong> fewer than 5 inspections. The site shows "Not enough inspections yet" instead of a score.</li>
+      <li><strong>Medium confidence:</strong> 5 to 14 inspections.</li>
+      <li><strong>High confidence:</strong> 15 or more inspections.</li>
+    </ul>
+
+    <h4>Why a score and its confidence label can look mismatched</h4>
+    <p>A facility can have a high score with medium confidence. That means few findings so far, but on a shorter record, so the score could change as more inspections are added.</p>
+    <p>Another facility can have a lower score with high confidence. That means a long record of inspections, and the score reflects that record well. In general, a score with high confidence is the more dependable one, whichever direction it points.</p>
+
+    <h4>Red flags</h4>
+    <p>A red "State action on record" label means the state has recorded a corrective action or an adverse action against the facility. These are rare and serious, so they are shown separately instead of being folded into the score.</p>
+
+    <h4>What is not in the score</h4>
+    <p>Many things families care about are not published anywhere, so they are listed as <strong>Not reported</strong> and do not affect the score: staff-to-child ratio, staff turnover, discipline and restraint practices, dietary information, education program quality, therapy actually provided, extracurricular activities, community involvement, and building and environment safety.</p>
+    <p>The "Licensed services" and "Licensed to treat" tags show what a facility is approved to offer. They do not show how well it does it, and they are not part of the score.</p>
+
+    <h4>Limits to keep in mind</h4>
+    <ul>
+      <li>The state's inspection counts cover an unknown time period, so facilities that have been open longer may have more findings on record.</li>
+      <li>The state's online compliance history leaves out violations until a facility has had due process, so recent problems may be missing.</li>
+      <li>The state says its violation weights are not intended to be used as a ranking or score. This dashboard is an independent analysis and is not endorsed by the State of Texas.</li>
+      <li>Scores are refreshed weekly from the state's open data and may shift slightly.</li>
+      <li>No information about individual children is collected or shown.</li>
+    </ul>
+
+    <h4>Corrections</h4>
+    <p>Facilities that believe their information is wrong or incomplete can contact the dashboard to request a correction.</p>
+  </details>
 
   <input id="search" type="text" placeholder="Search by name, city, or county">
   <select id="conf">
@@ -136,7 +188,7 @@ function render() {
       '<span class="score">' + scoreText + '</span>' +
       '<span class="badge ' + escapeHTML(r.confidence) + '">' + escapeHTML(r.confidence) + ' confidence</span>' +
       '<div class="tags">' + tagHTML + '</div>' +
-      '<details><summary>Not reported (' + NOT_REPORTED.length + ' items)</summary><ul>' +
+      '<details class="nr"><summary>Not reported (' + NOT_REPORTED.length + ' items)</summary><ul>' +
       NOT_REPORTED.map(n => '<li>' + escapeHTML(n) + ': Not reported</li>').join("") +
       '</ul></details>' +
       '</div>';
