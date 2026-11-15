@@ -1,0 +1,45 @@
+import pandas as pd
+
+URL = "https://data.texas.gov/api/views/bc5r-88dy/rows.csv?accessType=DOWNLOAD"
+
+df = pd.read_csv(URL, low_memory=False)
+
+required = [
+    "OPERATION_ID", "OPERATION_NUMBER", "OPERATION_TYPE", "OPERATION_NAME", "CITY", "COUNTY",
+    "TOTAL_CAPACITY", "TOTAL_INSPECTIONS", "OPERATION_STATUS",
+    "CORRECTIVE_ACTION", "ADVERSE_ACTION",
+    "PROGRAMMATIC_SERVICES", "TREATMENT_SERVICES",
+    "DEFICIENCY_HIGH", "DEFICIENCY_MEDIUM_HIGH", "DEFICIENCY_MEDIUM",
+    "DEFICIENCY_MEDIUM_LOW", "DEFICIENCY_LOW",
+]
+missing = [c for c in required if c not in df.columns]
+if missing:
+    raise SystemExit("Missing expected columns, stopping so the site is not broken: " + str(missing))
+
+gro = df[(df["OPERATION_TYPE"] == "General Residential Operation") & (df["OPERATION_STATUS"] == "Y")].copy()
+
+if len(gro) < 200:
+    raise SystemExit("Only " + str(len(gro)) + " open residential operations found, which looks wrong. Stopping so the site is not broken.")
+
+w = {"DEFICIENCY_HIGH": 5, "DEFICIENCY_MEDIUM_HIGH": 4, "DEFICIENCY_MEDIUM": 3, "DEFICIENCY_MEDIUM_LOW": 2, "DEFICIENCY_LOW": 1}
+gro["weighted"] = sum(gro[c] * v for c, v in w.items())
+gro = gro[gro["TOTAL_INSPECTIONS"] > 0].copy()
+gro["rate"] = gro["weighted"] / gro["TOTAL_INSPECTIONS"]
+gro["safety_score"] = (100 * (1 - gro["rate"].rank(pct=True))).round(0)
+gro["confidence"] = pd.cut(gro["TOTAL_INSPECTIONS"], [0, 4, 14, 10000], labels=["Low", "Medium", "High"])
+gro["flag"] = (gro["CORRECTIVE_ACTION"] == "YES") | (gro["ADVERSE_ACTION"] == "YES")
+gro["rate"] = gro["rate"].round(2)
+
+keep = [
+    "OPERATION_ID", "OPERATION_NUMBER", "OPERATION_NAME", "CITY", "COUNTY",
+    "TOTAL_CAPACITY", "TOTAL_INSPECTIONS", "safety_score", "confidence", "flag",
+    "PROGRAMMATIC_SERVICES", "TREATMENT_SERVICES",
+    "DEFICIENCY_HIGH", "DEFICIENCY_MEDIUM_HIGH", "DEFICIENCY_MEDIUM",
+    "DEFICIENCY_MEDIUM_LOW", "DEFICIENCY_LOW", "rate",
+    "CORRECTIVE_ACTION", "ADVERSE_ACTION",
+]
+out = gro[keep].copy()
+out["TREATMENT_SERVICES"] = out["TREATMENT_SERVICES"].fillna("").str.replace("Mental Retardation", "Intellectual Disability")
+out["PROGRAMMATIC_SERVICES"] = out["PROGRAMMATIC_SERVICES"].fillna("")
+out.to_csv("scored_placements.csv", index=False)
+print("Wrote", len(out), "placements")
