@@ -32,6 +32,8 @@
   details.nr { margin-top: 8px; font-size: 0.9em; color: #52606d; }
   details.nr summary { cursor: pointer; }
   details.nr ul { margin: 6px 0 0 0; padding-left: 20px; }
+  table.sev { border-collapse: collapse; margin: 8px 0; font-size: 0.95em; }
+  table.sev td, table.sev th { padding: 4px 12px 4px 0; text-align: left; }
   footer { font-size: 0.85em; color: #52606d; padding: 16px; text-align: center; }
 </style>
 </head>
@@ -59,6 +61,9 @@
       <li>All facilities are then ranked from most to fewest weighted findings per inspection. A higher score means fewer findings per inspection compared with other Texas facilities.</li>
     </ul>
     <p>The score is <strong>relative</strong>. It shows how a facility compares with others, not whether it is safe in an absolute sense. It is also a <strong>safety score only</strong>, not an overall rating.</p>
+
+    <h4>What affected this score</h4>
+    <p>Each card has a "What affected this score" section. It shows how many findings the state recorded at each severity level, the point weight each level carries, the number of inspections, and any state corrective or adverse action. It shows counts only. It does not describe what happened in any individual finding. Those details are in the state's own inspection records on Search Texas Child Care, and each card shows the operation number to search for.</p>
 
     <h4>The confidence label</h4>
     <p>The confidence label shows how much inspection history the score rests on. It counts inspections and nothing else.</p>
@@ -126,6 +131,14 @@ const NOT_REPORTED = [
   "Building and environment safety"
 ];
 
+const SEVERITY = [
+  ["High", "DEFICIENCY_HIGH", 5],
+  ["Medium-high", "DEFICIENCY_MEDIUM_HIGH", 4],
+  ["Medium", "DEFICIENCY_MEDIUM", 3],
+  ["Medium-low", "DEFICIENCY_MEDIUM_LOW", 2],
+  ["Low", "DEFICIENCY_LOW", 1]
+];
+
 function parseCSV(text) {
   const out = [];
   let row = [], field = "", inQuotes = false;
@@ -152,6 +165,24 @@ function escapeHTML(s) {
 
 function tagsFor(value) {
   return (value || "").split(",").map(s => s.trim()).filter(Boolean);
+}
+
+function yesNo(v) {
+  return v === "YES" ? "Yes" : (v === "NO" ? "No" : "Not available");
+}
+
+function detailsFor(r) {
+  const sevRows = SEVERITY.map(s =>
+    '<tr><td>' + s[0] + '</td><td>' + escapeHTML(r[s[1]]) + ' findings</td><td>' + s[2] + ' points each</td></tr>'
+  ).join("");
+  return '<details class="nr"><summary>What affected this score</summary>' +
+    '<table class="sev"><tr><th>Severity</th><th>Count</th><th>Weight</th></tr>' + sevRows + '</table>' +
+    '<div>Inspections: ' + escapeHTML(r.TOTAL_INSPECTIONS) + '</div>' +
+    '<div>Weighted findings per inspection: ' + escapeHTML(r.rate) + '</div>' +
+    '<div>State corrective action on record: ' + yesNo(r.CORRECTIVE_ACTION) + '</div>' +
+    '<div>State adverse action on record: ' + yesNo(r.ADVERSE_ACTION) + '</div>' +
+    '<div style="margin-top:6px">These are counts only. To read the state\'s own inspection records, search for operation number ' + escapeHTML(r.OPERATION_NUMBER) + ' on <a href="https://childcare.hhs.texas.gov" target="_blank" rel="noopener">Search Texas Child Care</a>.</div>' +
+    '</details>';
 }
 
 function render() {
@@ -187,6 +218,7 @@ function render() {
       '<span class="label">Safety score</span><br>' +
       '<span class="score">' + scoreText + '</span>' +
       '<span class="badge ' + escapeHTML(r.confidence) + '">' + escapeHTML(r.confidence) + ' confidence</span>' +
+      detailsFor(r) +
       '<div class="tags">' + tagHTML + '</div>' +
       '<details class="nr"><summary>Not reported (' + NOT_REPORTED.length + ' items)</summary><ul>' +
       NOT_REPORTED.map(n => '<li>' + escapeHTML(n) + ': Not reported</li>').join("") +
