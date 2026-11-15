@@ -1,0 +1,417 @@
+OPERATION_ID,OPERATION_NAME,CITY,COUNTY,TOTAL_CAPACITY,TOTAL_INSPECTIONS,safety_score,confidence,flag
+1503729,Peniel RTC Inc.,ROSENBERG,FORT BEND,7.0,8,54.0,Medium,False
+1500332,Transformation Residential LLC,HOUSTON,HARRIS,7.0,7,7.0,Medium,False
+1529839,Alora's Refuge LLC,MAGNOLIA,MONTGOMERY,7.0,2,93.0,Low,False
+1377821,Creighton Oaks Residential Treatment Center,CONROE,MONTGOMERY,71.0,146,53.0,High,False
+1411457,Westlake House LLC,WEST COLUMBIA,BRAZORIA,15.0,34,61.0,High,False
+207132,St Peter - St Joseph Childrens Home Emergency Shelter,,,52.0,149,71.0,High,False
+1507004,"Helping Hands Houston, TX LLC",HOUSTON,HARRIS,10.0,10,44.0,Medium,False
+198385,Hill Country Youth Ranch,,,80.0,117,46.0,High,False
+1469729,TRELS Home LLC,CONROE,MONTGOMERY,15.0,69,81.0,High,False
+1492211,"The Ark Residential Treatment Center, LLC",KATY,FORT BEND,9.0,16,74.0,High,False
+1528606,Alpha Family Care LLC,,,8.0,1,93.0,Low,False
+1528624,"Sky Society Youth Services, Inc.",,,7.0,2,93.0,Low,False
+1295312,"Valley Haven, Inc.",,,36.0,35,74.0,High,False
+1511040,"Gercy, LLC",SPRING,HARRIS,7.0,4,39.0,Low,False
+133848,Unity Children's Home - Boys,,,16.0,15,67.0,High,False
+94378,Concho Valley Home For Girls,,,23.0,16,19.0,High,False
+1530484,"VisionQuest National, Ltd.",,,32.0,1,93.0,Low,False
+1136134,Texas Girls and  Boys Ranch Children's Shelter,,,16.0,15,93.0,High,False
+1492161,The Origin Home for Children LLC,HOUSTON,HARRIS,10.0,13,18.0,Medium,False
+1522541,Grace Harbor Homes LLC,FARMERSVILLE,COLLIN,24.0,10,3.0,Medium,False
+1497839,Evolution Homes for Children and Youth,BEASLEY,FORT BEND,9.0,4,57.0,Low,False
+94174,Christs Haven For Children,FORT WORTH,TARRANT,77.0,18,17.0,High,False
+253192,Resolution Ranch,CAMERON,MILAM,50.0,21,29.0,High,False
+1483900,"New Future Residential Treatment Center, LLC",,,7.0,26,14.0,High,False
+1366227,Haven of Rest Care Home,FORT WORTH,TARRANT,10.0,33,29.0,High,False
+1505587,Vida RTC,ROSENBERG,FORT BEND,13.0,9,76.0,Medium,False
+1494094,Glory Home RTC,MISSOURI CITY,FORT BEND,18.0,26,17.0,High,False
+99728,"SJRC Texas, Inc.",,,45.0,148,67.0,High,False
+1468800,Greener Pastures RTC,HUMBLE,HARRIS,9.0,51,19.0,High,False
+1527460,Restored Light Children's Home RTC,HOUSTON,HARRIS,8.0,6,24.0,Medium,False
+1146657,Miracal's Place,HOUSTON,HARRIS,14.0,74,50.0,High,False
+1469249,BRIGHTER TRANSITIONS LLC,,,9.0,28,57.0,High,False
+1461240,"Blessed Kidz Residential Treatment Center, LLC",,,7.0,63,54.0,High,False
+95730,Letot Center,,,40.0,21,62.0,High,False
+483290,New Horizons Audrey Grace House RTC,,,40.0,114,57.0,High,False
+295996,Guardian Angels I Residential Treatment Center,HOUSTON,HARRIS,24.0,189,54.0,High,False
+1440736,Boys to Men RTC,HOUSTON,HARRIS,14.0,45,11.0,High,False
+94132,Medina Childrens Home,MEDINA,BANDERA,132.0,10,78.0,Medium,False
+1510778,Blooming Bridge,MESQUITE,DALLAS,11.0,15,13.0,High,False
+1501240,"Safe Haven, RTC LLC",HOUSTON,HARRIS,14.0,19,44.0,High,False
+1492661,Keagan?s Residential Care Homes LLC.,HOUSTON,HARRIS,9.0,40,72.0,High,False
+1533628,Golden Touch Children's Center,RICHMOND,FORT BEND,8.0,1,93.0,Low,False
+1470972,"JM Home Care Services, LLC",KATY,HARRIS,7.0,21,9.0,High,False
+1458782,Brotherhood Academy,SALADO,BELL,19.0,36,65.0,High,False
+95818,Option House Es,,,15.0,24,37.0,High,False
+1539118,Open Arms Children's Home,NAPLES,CASS,32.0,1,93.0,Low,False
+1479514,Make A Way RTC LLC 2.0,ALVIN,BRAZORIA,12.0,13,41.0,Medium,False
+1367747,Garden of Hope of Central Texas Killeen,,,8.0,33,24.0,High,False
+1366177,2nd Chance Treatment Center,DALLAS,DALLAS,10.0,39,29.0,High,False
+1512143,Peaceful Meadows DBA,CONROE,MONTGOMERY,10.0,19,4.0,High,False
+659668,"New Beginnings Children's Home at Canaan Land Ranch, Inc",SAN ANTONIO,MEDINA,16.0,35,35.0,High,False
+1494079,SOLACE Residential Treatment Center LLC,,,12.0,27,68.0,High,False
+1490693,HIS Love Foster Care Solutions,HOUSTON,HARRIS,8.0,20,72.0,High,False
+1441873,Houston's House of Hope,BAYTOWN,HARRIS,16.0,20,85.0,High,False
+94940,Meridell Achievement Center,LIBERTY HILL,WILLIAMSON,134.0,155,22.0,High,False
+1517299,The Sunshine Place LLC,HOUSTON,HARRIS,7.0,6,80.0,Medium,False
+94120,West Texas Boys Ranch,SAN ANGELO,TOM GREEN,78.0,36,28.0,High,False
+1400769,STARR Resiliency Agency,,,12.0,59,27.0,High,True
+1353062,"Dream Residential Treatment Center, Inc.",HOUSTON,HARRIS,18.0,103,58.0,High,False
+94172,Methodist Children's Home BCC,WACO,MCLENNAN,88.0,89,74.0,High,False
+1445339,St. Georgia's,,,16.0,81,51.0,High,False
+1520382,Divine Hands Residential Treatment Center LLC,ROSENBERG,FORT BEND,7.0,5,10.0,Medium,False
+146266,Serving Children and Adults,,,16.0,25,22.0,High,False
+94107,Sunny Glen Childrens Home,,,20.0,48,75.0,High,False
+1332186,Clementine The Woodlands,CONROE,MONTGOMERY,12.0,11,28.0,Medium,False
+103605,East Texas Open Door Inc,MARSHALL,HARRISON,44.0,124,49.0,High,False
+94195,Boles Childrens Home Inc,QUINLAN,HUNT,24.0,9,73.0,Medium,False
+1519882,"A Safe Haven Residential Treatment Center, LLC",HOUSTON,HARRIS,8.0,6,80.0,Medium,False
+1396262,Kensley Care LLC dba Kensley Care South,HOUSTON,HARRIS,16.0,126,64.0,High,False
+1509255,CEDAA HOUSE GRO/RTC,HOUSTON,HARRIS,15.0,7,15.0,Medium,False
+1527424,"Loving Hands Residential Treatment Center For Youth, LLC",HOUSTON,HARRIS,18.0,2,93.0,Low,False
+1517982,Saving Grace Children Place GRO,HOUSTON,HARRIS,16.0,4,50.0,Low,False
+1522662,Blessed Haven Homes LLC,ARLINGTON,TARRANT,12.0,9,34.0,Medium,False
+1426376,"Clear Vision Youth Center, LLC",ALVIN,BRAZORIA,14.0,43,31.0,High,False
+1509138,Positive Serenity Life Support,CYPRESS,HARRIS,18.0,6,2.0,Medium,False
+1479581,Jamsteld West Community Living - Ellie's House,,,12.0,43,68.0,High,False
+1502862,Hold my Hand General Residential Operation,,,12.0,10,84.0,Medium,False
+1490489,Prestige Homecare,,,11.0,30,57.0,High,False
+1294867,Journey to Dream - Kyle's Place,LEWISVILLE,DENTON,19.0,35,44.0,High,False
+1330508,Moving Forward,GRAND PRAIRIE,DALLAS,9.0,44,43.0,High,False
+1479575,A Positive Change RTC LLC,ROSENBERG,FORT BEND,7.0,14,62.0,Medium,False
+1312395,"Renewed Strength, Inc. East",HOUSTON,HARRIS,14.0,111,55.0,High,False
+608709,Hearts with Hope Foundation-GRO,SPRING,HARRIS,29.0,135,69.0,High,False
+1521360,Our Place Called Home,,,7.0,7,93.0,Medium,False
+1486499,Amir's House,,,10.0,22,66.0,High,False
+94715,New Horizons Ranch Residential Treatment Center,GOLDTHWAITE,MILLS,68.0,98,36.0,High,False
+142144,Thompson Emergency Shelter,,,32.0,52,53.0,High,False
+1089418,The Gladney Center,FORT WORTH,TARRANT,30.0,56,57.0,High,False
+1499883,Youthful Haven,KATY,FORT BEND,14.0,14,3.0,Medium,False
+1175822,Stadium  Shelter,,,16.0,24,42.0,High,False
+1510861,Hope Springs Home for Children,LANCASTER,DALLAS,8.0,15,27.0,High,False
+1356520,Road To Wisdom LLC,HOUSTON,HARRIS,15.0,118,80.0,High,False
+1519902,Brightway Love&Care,HOUSTON,HARRIS,8.0,4,2.0,Low,False
+1500669,Serenity Hope Home LLC,HOUSTON,HARRIS,12.0,36,63.0,High,False
+1496834,NEW LIFE RESIDENTIAL TREATMENT CENTER,FULSHEAR,FORT BEND,11.0,39,67.0,High,False
+1527090,Adullam Homes LLC,RICHMOND,FORT BEND,10.0,11,77.0,Medium,False
+1529965,Endeavor Place,,,16.0,3,69.0,Low,False
+1501347,"New Hope RTC, LLC.",HEMPSTEAD,WALLER,9.0,4,0.0,Low,False
+1432580,Angelic House of Hope,,,9.0,56,10.0,High,False
+99330,Roy Maas Youth Alternatives Meadows,BOERNE,KENDALL,48.0,126,67.0,High,False
+110531,L'Amor Village Emergency Shelter,,,8.0,22,9.0,High,False
+95784,Miracle Farm Inc,BRENHAM,WASHINGTON,26.0,13,79.0,Medium,False
+1511531,Lumen House Residential Treatment Center LLC,HOUSTON,HARRIS,11.0,8,28.0,Medium,False
+1533620,Alas RTC LLC,SPRING,MONTGOMERY,10.0,1,93.0,Low,False
+94233,Sacred Heart Childrens Home,LAREDO,WEBB,80.0,20,24.0,High,False
+1382231,Amor Purus LLC,KATY,HARRIS,7.0,50,23.0,High,False
+1432776,In His Hands Children Home,TRINIDAD,HENDERSON,20.0,15,1.0,High,False
+1522712,Prosper Shelter RTC,RICHMOND,FORT BEND,7.0,3,1.0,Low,False
+1448888,TRELS Home For Children,MAGNOLIA,MONTGOMERY,10.0,53,54.0,High,False
+98456,Bridge Emergency Shelter,,,16.0,76,77.0,High,False
+1405337,The Ambience Residential Treatment Center,SUGAR LAND,FORT BEND,12.0,80,14.0,High,False
+1496948,Devine Care Home RTC,RICHMOND,FORT BEND,9.0,16,50.0,High,False
+1453320,ACH Child and Family Services,,,16.0,30,31.0,High,False
+1527474,Nurturing Haven LLC.,ROSHARON,BRAZORIA,11.0,2,93.0,Low,False
+1298150,Nothing Just Happens Inc.,,,7.0,30,85.0,High,False
+106940,Independence Farm,CORSICANA,NAVARRO,13.0,19,8.0,High,False
+110840,Child Crisis Center of El Paso,,,39.0,44,34.0,High,False
+1520267,"Rebirth Haven, LLC",HOUSTON,HARRIS,8.0,4,0.0,Low,False
+247988,Shamar Hope Haven Residential Treatment Center,HOUSTON,HARRIS,13.0,172,59.0,High,False
+1516985,Sanaa Horizons LLC,HOUSTON,HARRIS,8.0,2,93.0,Low,False
+1398837,Latrell's Landing,CYPRESS,HARRIS,12.0,39,19.0,High,False
+1410927,Wholeness Haven Inc.,,,20.0,65,26.0,High,False
+1131580,Youth Reach,HOUSTON,HARRIS,18.0,14,4.0,Medium,False
+1381138,Tree of Life RTC,HOCKLEY,HARRIS,8.0,88,9.0,High,False
+1370907,Bridge the Gap Foundation Safe Place LLC,,,11.0,34,37.0,High,False
+1520024,Taylored 4 Kidz Residential Treatment Center LLC,ARCOLA,FORT BEND,9.0,5,82.0,Medium,False
+107290,Heartlight Ministries,HALLSVILLE,HARRISON,68.0,46,8.0,High,False
+98878,Boysville Inc,CONVERSE,BEXAR,64.0,171,60.0,High,False
+1446124,DePelchin Children's Center Campus at Today's Harbor,LA PORTE,HARRIS,30.0,33,25.0,High,False
+1487817,Forever Home Foundation LLC,HOUSTON,HARRIS,7.0,16,36.0,High,False
+1506602,Dream Builder 21,CROWLEY,TARRANT,12.0,8,83.0,Medium,False
+1523428,"Adolbi Care, Inc.",,,10.0,3,93.0,Low,False
+1494934,"Residential Care at the Summit, LLC",FORT WORTH,TARRANT,30.0,36,77.0,High,False
+1509804,Healthcare Solutions Unlimited,,,10.0,8,12.0,Medium,False
+103088,Greater San Marcos Youth Council,,,16.0,28,73.0,High,False
+1361586,Abundance of Joy Home Shelter,HOUSTON,HARRIS,11.0,68,14.0,High,False
+1336441,South Texas Adolescent Rehabilitation & Education - STARE,HOUSTON,HARRIS,15.0,29,8.0,High,False
+94367,The Settlement Club Home GRO,AUSTIN,TRAVIS,50.0,363,72.0,High,False
+1375279,The Residence By Infinity Elite II,,,10.0,99,21.0,High,True
+1522474,New Beginnings Services,HOUSTON,HARRIS,12.0,16,27.0,High,False
+1506546,iRise LLC,HOUSTON,HARRIS,12.0,6,66.0,Medium,False
+1526157,Essence RTC LLC,SUGAR LAND,FORT BEND,11.0,2,93.0,Low,False
+1478448,Caring Companions LLC,HUMBLE,HARRIS,11.0,25,15.0,High,False
+1507918,"HJ Magnolia Homes, LLC",CYPRESS,HARRIS,16.0,5,3.0,Medium,False
+1516339,Abol Cottage Care LLC,ROSENBERG,FORT BEND,10.0,14,41.0,Medium,False
+779929,Embracing Destiny Foundation GRO,,,13.0,19,24.0,High,False
+1376148,Hope for Tomorrow DBA Bridge to Hope,,,17.0,63,44.0,High,False
+1529678,Kindrel Care LLC,RICHMOND,FORT BEND,9.0,2,93.0,Low,False
+1517679,Bethesda Center Inc.,,,50.0,12,46.0,Medium,False
+94575,Sherwood-Myrtie Foster Home FO,STEPHENVILLE,ERATH,96.0,35,20.0,High,False
+1502987,"DIVINE ARMS OF LOVE GRO, LLC",HOUSTON,HARRIS,9.0,11,38.0,Medium,False
+1527080,Rich Haven Care LLC,KATY,HARRIS,10.0,2,93.0,Low,False
+1505543,Guiding Light Haven LLC,HOUSTON,HARRIS,15.0,14,49.0,Medium,False
+1489154,Clairefontaine Care Center LLC,FRESNO,FORT BEND,10.0,51,38.0,High,False
+1532005,Good Samaritan Foster Care LLC,CELINA,COLLIN,7.0,2,93.0,Low,False
+1512582,Lafaye Boys Home,HOUSTON,HARRIS,10.0,13,31.0,Medium,False
+1493549,Gentle Mental Treatment Center LLC,PRINCETON,COLLIN,14.0,14,33.0,Medium,False
+1424634,"Graceful New Beginnings, LLC",HOUSTON,HARRIS,7.0,42,13.0,High,False
+1510550,Our Houze Residential Treatment Center,BROOKSHIRE,FORT BEND,9.0,7,28.0,Medium,False
+1435958,"Eden's Place, Inc.",,,17.0,48,40.0,High,False
+94134,Lee and Beulah Moor Children's Home,EL PASO,EL PASO,70.0,18,43.0,High,False
+1333314,Safe Haven Youth Ranch,HEMPSTEAD,WALLER,32.0,117,26.0,High,False
+1377816,Redicare,RICHMOND,FORT BEND,12.0,102,15.0,High,True
+1530254,Aspire Haven LLC,ROSHARON,FORT BEND,12.0,2,33.0,Low,False
+1526015,Elijah's Safe Care Residential Treatment Center Inc,,,8.0,1,93.0,Low,False
+1420705,Kismet Residential Treatment Center,TOMBALL,HARRIS,16.0,69,60.0,High,False
+1533614,Indelible Mission LLC,MANSFIELD,TARRANT,7.0,2,93.0,Low,False
+1490219,HAID LLC,RICHMOND,FORT BEND,30.0,39,69.0,High,False
+1530667,Our Angel's House of Faith,,,15.0,1,93.0,Low,False
+1487446,Belle Place Limited Liability Company,KENDLETON,FORT BEND,20.0,32,45.0,High,False
+94099,Hendrick Home for Children,ABILENE,TAYLOR,52.0,16,49.0,High,False
+1316871,Sanctuary of Hope,BULVERDE,COMAL,48.0,17,32.0,High,False
+521988,"Annunciation Maternity Home, Inc.",GEORGETOWN,WILLIAMSON,22.0,10,29.0,Medium,False
+1517333,Adexx Care Services Inc.,SUGAR LAND,FORT BEND,11.0,8,10.0,Medium,False
+1508351,The Children's Shelter,,,32.0,53,82.0,High,False
+1522265,"Bay Harmony Home, LLC",BAYTOWN,CHAMBERS,8.0,4,5.0,Low,False
+1511085,Kid Net Foundation dba Jonathan's Place,DALLAS,DALLAS,14.0,7,81.0,Medium,False
+94251,Central Texas Children's Home,BUDA,TRAVIS,20.0,19,44.0,High,False
+1505536,The Averie Foundation,HOUSTON,HARRIS,8.0,11,6.0,Medium,False
+1517279,Manda Kidz LLC,HOUSTON,HARRIS,11.0,12,48.0,Medium,False
+196519,EVERYDAY LIFE INC,BRYAN,BRAZOS,44.0,74,84.0,High,False
+1458319,Nexus Neurorecovery Center - San Antonio,SAN ANTONIO,BEXAR,24.0,83,48.0,High,False
+1523017,The Tree    House Residential Treatment Home LLC,HOUSTON,HARRIS,13.0,3,93.0,Low,False
+1499778,Our Home House LLC,,,15.0,48,81.0,High,False
+1532017,Chalan's House of Hope,RICHMOND,FORT BEND,7.0,2,57.0,Low,False
+1401538,Ayanti Residential Treatment Center Inc,,,11.0,36,47.0,High,False
+94104,Texas Pythian Home Inc,WEATHERFORD,PARKER,20.0,13,76.0,Medium,False
+1494156,Grace Alpha Focused Care LLC,SPRING,MONTGOMERY,8.0,31,47.0,High,False
+245312,"Harmony Family Services, Inc.",ABILENE,TAYLOR,13.0,23,72.0,High,False
+94636,Texas Girls and Boys Ranch,,,45.0,23,44.0,High,False
+1519175,Beloved Ones,PRINCETON,COLLIN,8.0,7,23.0,Medium,False
+1390366,"Kinship Konnection, LLC",FRESNO,FORT BEND,14.0,94,14.0,High,True
+1101615,Fred and Mabel Parks Youth Ranch,,,30.0,132,71.0,High,False
+271039,The Jim H. Green Kidz Harbor dba Kidz Harbor,,,63.0,23,53.0,High,False
+1526971,Laurel Ridge Treatment Center,SAN ANTONIO,BEXAR,40.0,3,93.0,Low,False
+1432591,Royal Oaks Residential Treatment Center LLC,HOUSTON,HARRIS,8.0,25,40.0,High,False
+1344047,Amazing Grace Child and Family Services,,,16.0,15,84.0,High,False
+1480414,"DeFlourish Home, LLC",ODESSA,ECTOR,12.0,17,40.0,High,False
+1407943,Hands of Faith GRO,,,7.0,19,55.0,High,False
+1352732,TRELS Home for Children,,,11.0,104,72.0,High,False
+1529964,Amor Purus II,,,7.0,1,93.0,Low,False
+1506708,"Williams Haven, LLC",HOUSTON,HARRIS,7.0,4,93.0,Low,False
+1531998,"Tranquility Haven Residential Group, LLC",RICHMOND,FORT BEND,8.0,1,93.0,Low,False
+1329193,Legacy Youth,RICHMOND,FORT BEND,30.0,56,66.0,High,False
+285236,Harris County Youth Shelter,,,24.0,21,29.0,High,False
+1474216,Amazing Touch Care Home,ROSENBERG,FORT BEND,17.0,37,36.0,High,False
+1332255,ACH Child and Family Services,,,16.0,109,52.0,High,False
+1462263,Home of Joseph Foundation,VICTORIA,VICTORIA,7.0,16,36.0,High,False
+1476995,"Blessed Kidz Residential Treatment Center, LLC",,,12.0,55,42.0,High,False
+94124,Cherokee Home For Children,CHEROKEE,SAN SABA,60.0,11,19.0,Medium,False
+1505134,J's House,KINGWOOD,HARRIS,8.0,15,70.0,High,False
+1473501,Emerging Grace Ministries,,,8.0,32,24.0,High,False
+1529719,Amor Purus LLC,,,7.0,2,18.0,Low,False
+1420265,Paradigm Treatment Texas,AUSTIN,TRAVIS,40.0,63,34.0,High,False
+1465403,Southall Heritage Youth Home,PEARLAND,BRAZORIA,16.0,36,52.0,High,False
+1498043,Sunshine Youth Haven LLC,,,20.0,32,83.0,High,False
+94163,The Childrens Home Emergency Shelter,,,39.0,30,70.0,High,False
+1434736,Hidden Cove Residential Treatment Center,FORT WORTH,TARRANT,10.0,21,93.0,High,False
+1465373,Unique Teen,,,12.0,20,65.0,High,False
+1412361,TLW Transformation Center,,,88.0,98,43.0,High,False
+1404534,Divine Children's Care Home,WALLER,HARRIS,8.0,17,7.0,High,False
+269667,High Sky Children's Ranch,,,40.0,31,48.0,High,False
+266025,"HMIH CEDAR CREST, LLC",BELTON,BELL,90.0,244,37.0,High,False
+1506995,Making Strides GRO,HOUSTON,HARRIS,8.0,23,70.0,High,False
+1344209,"Texas Tranquility Estates, Inc.",TOMBALL,HARRIS,13.0,13,20.0,Medium,False
+1397838,Harmony Therapy and Treatment Center LLC,SPRING,MONTGOMERY,16.0,69,12.0,High,False
+1234328,Kirby's Place,HOUSTON,HARRIS,8.0,9,32.0,Medium,False
+1334412,Rising Star GRO,HOUSTON,HARRIS,14.0,17,61.0,High,False
+1366694,Unique Avenue,HOUSTON,HARRIS,10.0,30,75.0,High,False
+1515902,Divine Dwelling Children's Care Home,,,8.0,6,62.0,Medium,False
+1472934,Alafia Haven,ODESSA,ECTOR,13.0,20,48.0,High,False
+1526478,The Serenity House - Houston,,,10.0,2,93.0,Low,False
+94170,Texas NeuroRehab Center,AUSTIN,TRAVIS,36.0,77,21.0,High,False
+1510765,Waymaker LLC,ALVIN,BRAZORIA,7.0,5,6.0,Medium,False
+1524666,Sugarland RTC,,,8.0,3,69.0,Low,False
+1430168,Trinity Guidance Residential Treatment Center,ROSENBERG,FORT BEND,11.0,64,32.0,High,False
+1501932,"Great Day, INC",SPRING,HARRIS,15.0,6,75.0,Medium,False
+1536044,"Keystone Youth Center, LLC",HOUSTON,HARRIS,9.0,1,93.0,Low,False
+460099,My Friend's House,,,24.0,17,39.0,High,False
+1446565,Victorious Residential Care LLC,HOUSTON,HARRIS,9.0,32,46.0,High,False
+100777,Kaufman County Children's Emergency Shelter,,,20.0,20,7.0,High,False
+1530872,"Compassion Cove Serenity House, LLC",HOUSTON,HARRIS,9.0,2,0.0,Low,False
+295515,ACH Child and Family Services Emergency Shelter,,,20.0,68,51.0,High,False
+1286408,"City of Hope Missions, DBA, Hearts-Way Youth Shelter",,,12.0,88,34.0,High,False
+94151,Ben Richey Boys Ranch,ABILENE,TAYLOR,34.0,12,23.0,Medium,False
+1524445,SBJ El-Morijah LLC,RICHMOND,FORT BEND,10.0,3,69.0,Low,False
+1370089,Pinecrest Emergency Care Services,,,16.0,54,46.0,High,False
+1522716,Grounded By Faith LLC,ATLANTA,CASS,20.0,2,93.0,Low,False
+1530995,"Promise RTC, Inc",,,9.0,1,93.0,Low,False
+95695,Helping Hand Home for Children,AUSTIN,TRAVIS,41.0,140,56.0,High,False
+1531058,Omega Group IV LLC,RICHMOND,FORT BEND,10.0,1,93.0,Low,False
+206448,"Autistic Treatment Center, Inc.",DALLAS,DALLAS,31.0,107,19.0,High,False
+1350460,Aspire 2 Dream,BEAUMONT,JEFFERSON,8.0,26,18.0,High,False
+1439293,Ray's of Life,,,8.0,29,4.0,High,False
+1408212,Rejo Helping Hands Inc.,WILLIS,MONTGOMERY,48.0,74,12.0,High,False
+1501487,Canyon Creek Behavioral Heath,TEMPLE,BELL,22.0,7,93.0,Medium,False
+110799,K Star Emergency Shelter,,,20.0,41,16.0,High,False
+261771,"Pegasus Schools, Inc.",LOCKHART,CALDWELL,200.0,172,58.0,High,False
+1500038,"Peaceful Pathways Residential Treatment Center, LLC",,,8.0,15,81.0,High,False
+1535275,Crossroads to Change Residential Treatment Center,TOMBALL,HARRIS,7.0,1,93.0,Low,False
+1353683,Adore Living Child Services Inc.,,,14.0,33,66.0,High,False
+1522040,Legacy Foundations Residential Campus,TYLER,SMITH,10.0,6,10.0,Medium,False
+1535602,TAV Center LLC,HOUSTON,HARRIS,9.0,1,93.0,Low,False
+110750,The Childrens Home of Lubbock ES and AC,,,18.0,25,56.0,High,False
+1521041,Devereux Texas,LEAGUE CITY,GALVESTON,66.0,7,93.0,Medium,False
+1290944,El Paso Center for Children Emergency Shelter,,,5.0,36,45.0,High,False
+1530462,"VisionQuest National, Ltd.",,,16.0,1,93.0,Low,False
+1515801,Perfect Care GRO,RICHMOND,FORT BEND,9.0,5,22.0,Medium,False
+1349913,"La Maison, LLC",ANNA,COLLIN,14.0,43,16.0,High,False
+1519375,"Wayne Capital Mgt, DBA, Pleasant Falls GRO",RICHMOND,FORT BEND,13.0,4,5.0,Low,False
+558469,Azleway Valley View,TYLER,SMITH,68.0,104,31.0,High,False
+1520809,New Hope GRO,SPRING,HARRIS,15.0,5,93.0,Medium,False
+1520028,Divine Youth Services LLC,SAN ANTONIO,BEXAR,8.0,15,55.0,High,False
+1524842,Comfort Cove Youth Services LLC,,,10.0,4,93.0,Low,False
+111415,Autistic Treatment Center,SAN ANTONIO,BEXAR,7.0,64,25.0,High,False
+1104342,"Family Link Treatment Services, Inc.",,,105.0,123,59.0,High,False
+1466273,Finally at Home LLC,,,12.0,33,79.0,High,False
+1481871,House of Hope Residential Treatment Center LLC,MISSOURI CITY,FORT BEND,9.0,29,84.0,High,False
+1519079,Ridge Hollow LLC,,,7.0,4,93.0,Low,False
+97680,"Children's Village and Family Service Agency, Inc.",TYLER,SMITH,32.0,19,6.0,High,False
+1527188,Bridge Of Abilities Foundation,,,7.0,1,93.0,Low,False
+1291334,Hope Haven of East Texas,LINDALE,SMITH,16.0,127,42.0,High,False
+557709,Turning Point Children's Social Service,SPRING,HARRIS,16.0,73,38.0,High,True
+344357,LifeWorks Emergency Shelter,,,20.0,139,63.0,High,False
+1529838,KingsBridge RTC LLC,HOUSTON,HARRIS,8.0,1,93.0,Low,False
+1514143,TRUECARE HOME RTC,RICHMOND,FORT BEND,9.0,7,75.0,Medium,False
+142844,Shiloh Treatment Center,MANVEL,BRAZORIA,60.0,47,11.0,High,False
+1530469,"VisionQuest National, Ltd.",,,32.0,1,93.0,Low,False
+94764,Methodist Childrens Home Boys Ranch,WACO,MCLENNAN,21.0,35,81.0,High,False
+1505797,HopeBridge LLC,RICHMOND,FORT BEND,12.0,11,15.0,Medium,False
+132987,New Life Childrens Treatment Center,CANYON LAKE,COMAL,60.0,308,74.0,High,False
+1497556,Radiant Springs Residential Treatment Center LLC,,,14.0,41,52.0,High,False
+783491,Texas Hill Country School,MAXWELL,HAYS,26.0,68,56.0,High,False
+1382726,Make A Way Residential Treatment Center,ALVIN,BRAZORIA,16.0,41,53.0,High,False
+1499485,Tomorrow's Promise Youth Home LLC,,,9.0,24,62.0,High,False
+1485304,TRELS Home For Children,HONDO,MEDINA,10.0,41,79.0,High,False
+1505747,Exceptional Abilities LLC,KATY,FORT BEND,22.0,11,16.0,Medium,False
+1325459,Unity Childrens Home,,,7.0,7,44.0,Medium,False
+1315855,"Bluebonnet Haven, LLC",,,64.0,153,63.0,High,False
+1532034,Her Tomorrow House,AUBREY,DENTON,9.0,2,93.0,Low,False
+1461406,Dawn Rise RTC,FRESNO,FORT BEND,10.0,13,3.0,Medium,False
+1517214,Grace Devine LLC,,,7.0,15,2.0,High,False
+1345224,"Open Arms Open Hearts Foundation, LLC",DAYTON,LIBERTY,14.0,22,17.0,High,False
+1416720,Inspirational Hope House,CONROE,MONTGOMERY,27.0,64,22.0,High,False
+1527094,Nelz Care LLC,,,7.0,2,93.0,Low,False
+1528596,Chime Children & Community Services LLC,,,10.0,2,93.0,Low,False
+1487427,A Journey of Hope,,,12.0,50,47.0,High,False
+1345642,The Hemple Shelter LLC,ROSENBERG,FORT BEND,13.0,40,41.0,High,False
+1510038,Harmony Residential GRO,CYPRESS,HARRIS,7.0,7,12.0,Medium,False
+1529972,Alijah House Children's Services Inc,,,14.0,5,69.0,Medium,False
+277917,Bridgeway Home-Montgomery County Youth Services,,,30.0,116,75.0,High,False
+151863,Davidson Respite House,,,42.0,72,30.0,High,False
+1508276,Lonnie Care RTC,FORNEY,KAUFMAN,8.0,6,62.0,Medium,False
+1428705,Phoenix Residential Investment Group LLC,,,15.0,18,82.0,High,False
+1520670,FutureCare Home LLC,,,10.0,10,44.0,Medium,False
+1171982,Central Texas Table of Grace,,,13.0,46,78.0,High,False
+100759,Seton Home,,,69.0,67,76.0,High,False
+273088,"The Jim H. Green Kidz Harbor, Inc. dba Kidz Harbor Home",LIVERPOOL,BRAZORIA,28.0,23,55.0,High,False
+1367614,The One Discovery RTC,HOUSTON,HARRIS,8.0,78,31.0,High,False
+1501618,Hearthstone Support LLC,SUGAR LAND,FORT BEND,20.0,28,35.0,High,False
+101870,Hill Country Youth Ranch Residential Treatment Center,,,50.0,113,42.0,High,False
+453833,"Connections Individual and Family Services, Inc.",,,36.0,80,79.0,High,False
+1420250,A Better Choice ABC LLC,CARROLLTON,DALLAS,9.0,53,6.0,High,True
+94186,Brownson Home,VICTORIA,VICTORIA,17.0,13,25.0,Medium,False
+349689,A New Day Foundation,SPRING,HARRIS,13.0,83,51.0,High,False
+1441258,Special Parent Advocacy Group A NJ Nonprofit Corporation,SANGER,DENTON,13.0,42,13.0,High,True
+1434730,Horizon Project,SPRING,HARRIS,24.0,155,77.0,High,False
+1537856,Youth Health Associates Glenn Heights Academy,GLENN HEIGHTS,DALLAS,28.0,1,93.0,Low,False
+1393584,Divine Integrity Group Home,,,16.0,32,34.0,High,False
+1515231,A NEW BEGINNING RESIDENTIAL TREATMENT CENTER LLC,ROSHARON,BRAZORIA,10.0,2,93.0,Low,False
+1501481,"Gold Society, INC",,,34.0,15,62.0,High,False
+1516400,Reviving Passage LLC,ANGLETON,BRAZORIA,23.0,9,47.0,Medium,False
+291464,"Pathways Youth & Family Services,Inc. dba Habilitative Homes",SAN ANTONIO,BEXAR,32.0,131,69.0,High,False
+1504116,"Optimum Leap, LLC",HOUSTON,HARRIS,8.0,13,13.0,Medium,False
+1509134,Iphie Residential Treatment Center,RICHMOND,FORT BEND,11.0,9,58.0,Medium,False
+1475705,Beacon Of Light Residential Treatment Center LLC,HOUSTON,HARRIS,11.0,14,39.0,Medium,False
+322127,The Burke Foundation-Pathfinders RTC,DRIFTWOOD,HAYS,34.0,235,59.0,High,False
+94152,The Children's Home,AMARILLO,RANDALL,72.0,77,52.0,High,False
+1422826,A Promising Journey Inc.,HOUSTON,HARRIS,18.0,54,65.0,High,False
+1321294,Castillo Childrens Center,WOODVILLE,TYLER,18.0,125,17.0,High,False
+1517077,Platform Pathways LLC,SPRING,HARRIS,8.0,6,10.0,Medium,False
+1519953,"Daylight Behavioral Health, Inc.",HOUSTON,HARRIS,8.0,3,93.0,Low,False
+1523554,Victoria David's Place LLC,RICHMOND,FORT BEND,9.0,3,93.0,Low,False
+1515916,Anchor of Hope Residential Treatment Center LLC,ROSENBERG,FORT BEND,10.0,11,26.0,Medium,False
+94164,The Childrens Home of Lubbock,LUBBOCK,LUBBOCK,90.0,63,41.0,High,False
+94167,STCH Ministries,PETTUS,BEE,130.0,22,30.0,High,False
+1523813,"Cal Harbor Residential Services, LLC",,,16.0,5,93.0,Medium,False
+158507,The Ark Assessment Ctr & Emergency Shelter,,,61.0,33,60.0,High,False
+1522737,"Care Option Residential Treatment Center, LLC",HOUSTON,HARRIS,8.0,4,93.0,Low,False
+94125,ACH Child and Family Services,,,45.0,55,71.0,High,False
+1526702,Victorious House LLC,HOUSTON,HARRIS,7.0,1,93.0,Low,False
+1492196,Horizon Heights Children's Home LLC,,,8.0,19,26.0,High,False
+1345074,Hidden Cove Residential Treatment Center,ARLINGTON,TARRANT,14.0,18,85.0,High,False
+1210694,Unity Children's Home - Girls,,,32.0,198,64.0,High,False
+1524034,Straight Path RTC LLC,HOUSTON,FORT BEND,8.0,6,27.0,Medium,False
+95069,Casa Esperanza Inc DBA Hope House,,,16.0,25,22.0,High,False
+1321091,Caring Heart Residential Care Services LLC,RICHMOND,FORT BEND,15.0,81,23.0,High,False
+1284397,"Promise Rose Residential Care Home, Inc.",HOUSTON,HARRIS,16.0,48,40.0,High,False
+1512150,"The Umbrella of Family Services, Incorporated",,,8.0,6,20.0,Medium,False
+1503867,Zaso Home,,,15.0,6,75.0,Medium,False
+1461828,"Tshepang Center Residential Treatment Center, LLC",FRESNO,FORT BEND,10.0,50,32.0,High,False
+1334612,Sophies House for Children,,,8.0,28,28.0,High,False
+1528638,Circle of Compassion,TOMBALL,HARRIS,9.0,1,93.0,Low,False
+1419602,Aim to Achieve Ranch,,,21.0,29,12.0,High,False
+1510029,"Discovery Practice Management, Inc.",IRVING,DALLAS,52.0,14,36.0,Medium,False
+1498537,Jayce's Place Inc.,GRAND PRAIRIE,TARRANT,13.0,11,83.0,Medium,False
+1513523,The RO Center for Child Development,WALLER,HARRIS,7.0,4,50.0,Low,False
+1524444,Splendid Care Placement LLC,HOUSTON,HARRIS,8.0,1,93.0,Low,False
+292740,Renewed Strength Inc,HOUSTON,HARRIS,13.0,42,78.0,High,False
+1501222,Alijah House Children's Services #2,HOUSTON,HARRIS,17.0,10,80.0,Medium,False
+1530752,Eagle Light Inc.,HOUSTON,HARRIS,11.0,2,93.0,Low,False
+1519664,Guided Path DFW,ARLINGTON,TARRANT,8.0,10,51.0,Medium,False
+1487815,Hidden Cove Residential Treatment Center Inc,KENNEDALE,TARRANT,7.0,13,93.0,Medium,False
+1503079,Perfect Start Homes INC,MISSOURI CITY,FORT BEND,7.0,13,1.0,Medium,False
+156789,Jonathan's Place GRO,,,45.0,55,39.0,High,False
+1441264,Armanis House Inc. Residential Care,HOUSTON,HARRIS,7.0,40,7.0,High,False
+111968,Bayes Achievement Center,HUNTSVILLE,WALKER,62.0,63,20.0,High,False
+95099,Gulf Coast Trades Center,NEW WAVERLY,WALKER,196.0,67,8.0,High,True
+1533325,Compass Youth LLC,RICHMOND,FORT BEND,9.0,1,93.0,Low,False
+1516434,Monez RTC,ROSENBERG,FORT BEND,8.0,7,5.0,Medium,False
+1185862,Discovery Practice Management,PLANO,COLLIN,8.0,19,5.0,High,False
+94127,Cal Farley's Boys Ranch,BOYS RANCH,OLDHAM,437.0,101,38.0,High,False
+1334408,Fort Behavioral Health,FORT WORTH,TARRANT,128.0,94,4.0,High,True
+224905,San Marcos Treatment Center,SAN MARCOS,HAYS,265.0,112,66.0,High,False
+1489780,"Royal Heritage RTC, LLC",RICHMOND,FORT BEND,9.0,33,21.0,High,False
+94276,High Plains Children's Home,,,56.0,86,64.0,High,False
+1316505,Have Haven Inc.,,,16.0,47,50.0,High,False
+94433,Boys & Girls Country Of Houston,HOCKLEY,HARRIS,88.0,29,25.0,High,False
+1459014,Moving Forward Treatment Center,DALLAS,DALLAS,8.0,23,6.0,High,False
+1531431,Pinnacle Residential Treatment Center LLC,,,11.0,1,93.0,Low,False
+109532,Roy Maas Youth Alternative - Girlsville/Junction,BOERNE,KENDALL,16.0,127,71.0,High,False
+1479560,Sarah's Landing LLC,,,8.0,43,78.0,High,False
+1370039,"Fostering Life Youth Ranch, LLC",LEVELLAND,HOCKLEY,15.0,163,62.0,High,False
+1512300,Dunamis Place Inc.,ROSHARON,FORT BEND,19.0,4,2.0,Low,False
+1501218,Helping Each Other LLC,HOUSTON,HARRIS,8.0,17,11.0,High,False
+1433314,The Pride Lands Center of Hope,HOUSTON,HARRIS,10.0,48,18.0,High,False
+141349,L'Amor Village RTC,HOUSTON,HARRIS,42.0,63,35.0,High,False
+1510249,Epiphany Soul,,,24.0,7,38.0,Medium,False
+280910,Embracing Destiny Foundation RTC,SPRING,HARRIS,13.0,55,33.0,High,False
+169498,Girls Haven,BEAUMONT,JEFFERSON,16.0,169,63.0,High,False
+1432355,"Fostering Life Youth Ranch, LLC Meraki",LEVELLAND,HOCKLEY,25.0,130,83.0,High,False
+1492235,"Hunting For More Love, RTC",KATY,HARRIS,7.0,38,64.0,High,False
+1379903,Prime Residential Care,RICHMOND,FORT BEND,12.0,124,35.0,High,False
+1493879,Youth Health Associates Glenn Heights Academy,GLENN HEIGHTS,DALLAS,28.0,60,16.0,High,False
+279284,Sweeten Home for Children Inc.,BROWNWOOD,BROWN,21.0,76,73.0,High,False
+1532393,"Blessed Kidz Residential Treatment Center, LLC",,,8.0,1,93.0,Low,False
+1461709,right at home care 2 Inc.,,,11.0,37,60.0,High,False
+1502994,Legacy Home for Boys,HOUSTON,HARRIS,21.0,4,9.0,Low,False
+111207,New Encounters Residential Treatment,CORSICANA,NAVARRO,14.0,23,59.0,High,False
+1526910,"Brighter Days Center, LLC",,,7.0,2,93.0,Low,False
+1385406,Seeds of Royalty,RICHMOND,FORT BEND,9.0,30,49.0,High,False
+1438831,"AT LAST!, Inc.",DALLAS,DALLAS,16.0,13,1.0,Medium,False
+1492237,Renew Group LLC,HOUSTON,HARRIS,8.0,14,56.0,Medium,False
+1527686,Tomorrows Future Incorporated LLC,HOUSTON,HARRIS,25.0,4,93.0,Low,False
+1491323,APC House LLC,HUMBLE,HARRIS,11.0,14,70.0,Medium,False
+94150,Pleasant Hills Children's Home,FAIRFIELD,FREESTONE,48.0,21,83.0,High,False
