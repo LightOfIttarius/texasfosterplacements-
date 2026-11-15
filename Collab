@@ -1,0 +1,434 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyObWqluOl57ujVPL3TgOXR/",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/LightOfIttarius/texasfosterplacements-/blob/main/Collab\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 4,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "collapsed": true,
+        "id": "l7EMNKqe9Yz7",
+        "outputId": "73220099-9dc8-4d17-9427-c8d9a9c5ef94"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Rows and columns: (14964, 44)\n",
+            "\n",
+            "Column names:\n",
+            "- OPERATION_ID\n",
+            "- OPERATION_TYPE\n",
+            "- OPERATION_NUMBER\n",
+            "- OPERATION_NAME\n",
+            "- PROGRAMS_PROVIDED\n",
+            "- LOCATION_ADDRESS\n",
+            "- MAILING_ADDRESS\n",
+            "- PHONE_NUMBER\n",
+            "- COUNTY\n",
+            "- WEBSITE_ADDRESS\n",
+            "- ADMINISTRATOR_DIRECTOR_NAME\n",
+            "- TYPE_OF_ISSUANCE\n",
+            "- ISSUANCE_DATE\n",
+            "- CONDITIONS_ON_PERMIT\n",
+            "- ACCEPTS_CHILD_CARE_SUBSIDIES\n",
+            "- HOURS_OF_OPERATION\n",
+            "- DAYS_OF_OPERATION\n",
+            "- OTHER_SCHEDULE_INFORMATION\n",
+            "- TOTAL_CAPACITY\n",
+            "- OPEN_FOSTER_HOMES\n",
+            "- OPEN_BRANCH_OFFICES\n",
+            "- LICENSED_TO_SERVE_AGES\n",
+            "- CORRECTIVE_ACTION\n",
+            "- ADVERSE_ACTION\n",
+            "- TEMPORARILY_CLOSED\n",
+            "- PROGRAMMATIC_SERVICES\n",
+            "- TREATMENT_SERVICES\n",
+            "- DEFICIENCY_HIGH\n",
+            "- DEFICIENCY_MEDIUM_HIGH\n",
+            "- DEFICIENCY_MEDIUM\n",
+            "- DEFICIENCY_MEDIUM_LOW\n",
+            "- DEFICIENCY_LOW\n",
+            "- TOTAL_INSPECTIONS\n",
+            "- TOTAL_ASSESSMENTS\n",
+            "- TOTAL_REPORTS\n",
+            "- TOTAL_SELF_REPORTS\n",
+            "- Location_address_geo\n",
+            "- email_address\n",
+            "- CARE_TYPE\n",
+            "- OPERATION_STATUS\n",
+            "- ADDRESS_LINE\n",
+            "- CITY\n",
+            "- STATE\n",
+            "- ZIPCODE\n"
+          ]
+        }
+      ],
+      "source": [
+        "import pandas as pd\n",
+        "\n",
+        "url = \"https://raw.githubusercontent.com/LightOfIttarius/texasfosterplacements-/refs/heads/main/HHSC_CCL_Daycare_and_Residential_Operations_Data_20261115.csv\"\n",
+        "\n",
+        "df = pd.read_csv(url, low_memory=False)\n",
+        "\n",
+        "print(\"Rows and columns:\", df.shape)\n",
+        "print()\n",
+        "print(\"Column names:\")\n",
+        "for c in df.columns:\n",
+        "    print(\"-\", c)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(df[\"OPERATION_TYPE\"].value_counts())\n",
+        "print()\n",
+        "print(df[\"CARE_TYPE\"].value_counts())"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "collapsed": true,
+        "id": "0XaCjyDT_X0R",
+        "outputId": "f55a561a-7e66-484d-ffb0-195ce55a6d4c"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "OPERATION_TYPE\n",
+            "Licensed Center                  9602\n",
+            "Registered Child-Care Home       1734\n",
+            "Licensed Child-Care Home         1597\n",
+            "Listed Family Home               1357\n",
+            "General Residential Operation     435\n",
+            "Child Placing Agency              239\n",
+            "Name: count, dtype: int64\n",
+            "\n",
+            "CARE_TYPE\n",
+            "Child Care Program              8011\n",
+            "Before/After School Program      960\n",
+            "School Age Program               631\n",
+            "Residential Treatment Center     230\n",
+            "Multiple Services                171\n",
+            "Child Care Services Only          26\n",
+            "Emergency Care Services Only       8\n",
+            "Name: count, dtype: int64\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "res = df[df[\"OPERATION_TYPE\"].isin([\"General Residential Operation\", \"Child Placing Agency\"])]\n",
+        "print(res.shape)\n",
+        "print(res[\"OPERATION_STATUS\"].value_counts())\n",
+        "print(res[\"CARE_TYPE\"].value_counts())\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "collapsed": true,
+        "id": "Q6nh-Jr9_7SR",
+        "outputId": "61331b68-f444-4023-f303-3f2c89aed664"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "(674, 44)\n",
+            "OPERATION_STATUS\n",
+            "Y    641\n",
+            "N     33\n",
+            "Name: count, dtype: int64\n",
+            "CARE_TYPE\n",
+            "Residential Treatment Center    230\n",
+            "Multiple Services               171\n",
+            "Child Care Services Only         26\n",
+            "Emergency Care Services Only      8\n",
+            "Name: count, dtype: int64\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "open_res = res[res[\"OPERATION_STATUS\"] == \"Y\"]\n",
+        "gro = open_res[open_res[\"OPERATION_TYPE\"] == \"General Residential Operation\"]\n",
+        "print(\"Open GROs:\", len(gro))\n",
+        "cols = [\"DEFICIENCY_HIGH\", \"DEFICIENCY_MEDIUM_HIGH\", \"DEFICIENCY_MEDIUM\", \"DEFICIENCY_MEDIUM_LOW\", \"DEFICIENCY_LOW\", \"TOTAL_INSPECTIONS\", \"TOTAL_CAPACITY\"]\n",
+        "print(gro[cols].describe().round(1))\n",
+        "print(gro[\"CORRECTIVE_ACTION\"].value_counts().head())\n",
+        "print(gro[\"ADVERSE_ACTION\"].value_counts().head())\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "collapsed": true,
+        "id": "6TW1X6lgANYJ",
+        "outputId": "e92c0723-f98b-4cc0-a46c-ed3982df421f"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Open GROs: 416\n",
+            "       DEFICIENCY_HIGH  DEFICIENCY_MEDIUM_HIGH  DEFICIENCY_MEDIUM  \\\n",
+            "count            416.0                   416.0              416.0   \n",
+            "mean               4.1                     8.2                7.4   \n",
+            "std                5.9                    10.4                9.1   \n",
+            "min                0.0                     0.0                0.0   \n",
+            "25%                0.0                     1.0                1.0   \n",
+            "50%                2.0                     4.0                4.0   \n",
+            "75%                6.0                    11.0               10.0   \n",
+            "max               44.0                    70.0               58.0   \n",
+            "\n",
+            "       DEFICIENCY_MEDIUM_LOW  DEFICIENCY_LOW  TOTAL_INSPECTIONS  \\\n",
+            "count                  416.0           416.0              416.0   \n",
+            "mean                     1.8             0.8               39.1   \n",
+            "std                      2.8             1.4               47.3   \n",
+            "min                      0.0             0.0                1.0   \n",
+            "25%                      0.0             0.0                7.0   \n",
+            "50%                      1.0             0.0               21.5   \n",
+            "75%                      3.0             1.0               51.2   \n",
+            "max                     23.0            11.0              363.0   \n",
+            "\n",
+            "       TOTAL_CAPACITY  \n",
+            "count           416.0  \n",
+            "mean             23.5  \n",
+            "std              33.8  \n",
+            "min               5.0  \n",
+            "25%               9.0  \n",
+            "50%              13.0  \n",
+            "75%              23.0  \n",
+            "max             437.0  \n",
+            "CORRECTIVE_ACTION\n",
+            "NO     410\n",
+            "YES      6\n",
+            "Name: count, dtype: int64\n",
+            "ADVERSE_ACTION\n",
+            "NO     412\n",
+            "YES      4\n",
+            "Name: count, dtype: int64\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "w = {\"DEFICIENCY_HIGH\": 5, \"DEFICIENCY_MEDIUM_HIGH\": 4, \"DEFICIENCY_MEDIUM\": 3, \"DEFICIENCY_MEDIUM_LOW\": 2, \"DEFICIENCY_LOW\": 1}\n",
+        "gro = gro.copy()\n",
+        "gro[\"weighted\"] = sum(gro[c] * v for c, v in w.items())\n",
+        "gro[\"rate\"] = gro[\"weighted\"] / gro[\"TOTAL_INSPECTIONS\"]\n",
+        "print(gro[\"rate\"].describe().round(2))\n",
+        "print(gro[[\"OPERATION_NAME\", \"CITY\", \"rate\", \"TOTAL_INSPECTIONS\"]].sort_values(\"rate\").tail(5))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "collapsed": true,
+        "id": "ZWD2FGEAAxYz",
+        "outputId": "7d543944-2498-4869-b847-e39fe4002c4f"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "count    416.00\n",
+            "mean       2.22\n",
+            "std        2.31\n",
+            "min        0.00\n",
+            "25%        0.85\n",
+            "50%        1.76\n",
+            "75%        2.95\n",
+            "max       18.00\n",
+            "Name: rate, dtype: float64\n",
+            "                           OPERATION_NAME       CITY       rate  \\\n",
+            "2797                  Prosper Shelter RTC   RICHMOND  11.666667   \n",
+            "2788           In His Hands Children Home   TRINIDAD  12.933333   \n",
+            "7086  Compassion Cove Serenity House, LLC    HOUSTON  17.500000   \n",
+            "2455                   New Hope RTC, LLC.  HEMPSTEAD  17.500000   \n",
+            "3053                   Rebirth Haven, LLC    HOUSTON  18.000000   \n",
+            "\n",
+            "      TOTAL_INSPECTIONS  \n",
+            "2797                  3  \n",
+            "2788                 15  \n",
+            "7086                  2  \n",
+            "2455                  4  \n",
+            "3053                  4  \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "gro[\"safety_score\"] = (100 * (1 - gro[\"rate\"].rank(pct=True))).round(0)\n",
+        "gro[\"confidence\"] = pd.cut(gro[\"TOTAL_INSPECTIONS\"], [0, 4, 14, 10000], labels=[\"Low\", \"Medium\", \"High\"])\n",
+        "gro[\"flag\"] = (gro[\"CORRECTIVE_ACTION\"] == \"YES\") | (gro[\"ADVERSE_ACTION\"] == \"YES\")\n",
+        "print(gro[\"confidence\"].value_counts())\n",
+        "print(\"Flagged:\", gro[\"flag\"].sum())\n",
+        "print(gro[\"safety_score\"].describe().round(0))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "collapsed": true,
+        "id": "hne_MtRjBH3Q",
+        "outputId": "b5735ad1-2a21-461d-8226-4f5eef55ec9d"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "confidence\n",
+            "High      257\n",
+            "Medium     87\n",
+            "Low        72\n",
+            "Name: count, dtype: int64\n",
+            "Flagged: 9\n",
+            "count    416.0\n",
+            "mean      50.0\n",
+            "std       29.0\n",
+            "min        0.0\n",
+            "25%       25.0\n",
+            "50%       50.0\n",
+            "75%       75.0\n",
+            "max       93.0\n",
+            "Name: safety_score, dtype: float64\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "out = gro[[\"OPERATION_ID\", \"OPERATION_NAME\", \"CITY\", \"COUNTY\", \"TOTAL_CAPACITY\", \"TOTAL_INSPECTIONS\", \"safety_score\", \"confidence\", \"flag\"]]\n",
+        "out.to_csv(\"scored_placements.csv\", index=False)\n",
+        "from google.colab import files\n",
+        "files.download(\"scored_placements.csv\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 17
+        },
+        "id": "NdEhu8HSBXs7",
+        "outputId": "6da0520e-3420-46b6-f23e-fadaaed52a60"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.Javascript object>"
+            ],
+            "application/javascript": [
+              "\n",
+              "    async function download(id, filename, size) {\n",
+              "      if (!google.colab.kernel.accessAllowed) {\n",
+              "        return;\n",
+              "      }\n",
+              "      const div = document.createElement('div');\n",
+              "      const label = document.createElement('label');\n",
+              "      label.textContent = `Downloading \"${filename}\": `;\n",
+              "      div.appendChild(label);\n",
+              "      const progress = document.createElement('progress');\n",
+              "      progress.max = size;\n",
+              "      div.appendChild(progress);\n",
+              "      document.body.appendChild(div);\n",
+              "\n",
+              "      const buffers = [];\n",
+              "      let downloaded = 0;\n",
+              "\n",
+              "      const channel = await google.colab.kernel.comms.open(id);\n",
+              "      // Send a message to notify the kernel that we're ready.\n",
+              "      channel.send({})\n",
+              "\n",
+              "      for await (const message of channel.messages) {\n",
+              "        // Send a message to notify the kernel that we're ready.\n",
+              "        channel.send({})\n",
+              "        if (message.buffers) {\n",
+              "          for (const buffer of message.buffers) {\n",
+              "            buffers.push(buffer);\n",
+              "            downloaded += buffer.byteLength;\n",
+              "            progress.value = downloaded;\n",
+              "          }\n",
+              "        }\n",
+              "      }\n",
+              "      const blob = new Blob(buffers, {type: 'application/binary'});\n",
+              "      const a = document.createElement('a');\n",
+              "      a.href = window.URL.createObjectURL(blob);\n",
+              "      a.download = filename;\n",
+              "      div.appendChild(a);\n",
+              "      a.click();\n",
+              "      div.remove();\n",
+              "    }\n",
+              "  "
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.Javascript object>"
+            ],
+            "application/javascript": [
+              "download(\"download_13f028c2-7322-429e-9fc0-7aa845ccfb82\", \"scored_placements.csv\", 29897)"
+            ]
+          },
+          "metadata": {}
+        }
+      ]
+    }
+  ]
+}
