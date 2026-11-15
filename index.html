@@ -22,11 +22,17 @@
   .meta { color: #52606d; font-size: 0.9em; margin-bottom: 8px; }
   .label { font-size: 0.8em; color: #52606d; text-transform: uppercase; letter-spacing: 0.04em; }
   .score { font-size: 1.4em; font-weight: bold; }
+  .noscore { font-size: 1.05em; font-weight: bold; color: #52606d; }
+  .basis { color: #52606d; font-size: 0.9em; margin-left: 6px; }
+  .early { margin-top: 6px; font-size: 0.95em; }
+  .prelim { color: #8a5a00; font-size: 0.85em; }
+  .ratingline { margin-top: 8px; }
+  .rnote { color: #52606d; font-size: 0.85em; margin-top: 2px; }
   .badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 0.8em; margin-left: 6px; color: white; }
-  .High { background: #2e7d32; }
-  .Medium { background: #ed8b00; }
-  .Low { background: #8a8f98; }
-  .flag { background: #c62828; }
+  .Good { background: #2e7d32; }
+  .Average { background: #ed8b00; }
+  .Poor { background: #c62828; }
+  .flag { background: #6a1b1b; }
   .tags { margin-top: 8px; }
   .tag { display: inline-block; background: #e3edf7; color: #1f4e79; padding: 2px 8px; border-radius: 10px; font-size: 0.8em; margin: 0 4px 4px 0; }
   details.nr { margin-top: 8px; font-size: 0.9em; color: #52606d; }
@@ -44,14 +50,11 @@
 </header>
 <main>
   <div class="notice">
-    <strong>How to read this:</strong> Right now each placement has a <strong>safety score only</strong>, based on state inspection findings. It is <strong>not an overall rating</strong>. Many things families care about are not published anywhere yet, and each card lists them as Not reported instead of guessing. A red flag means the state has recorded a corrective or adverse action. No information about individual children is collected or shown.
+    <strong>How to read this:</strong> Right now each placement is described by its <strong>state inspection record only</strong>. It is <strong>not a rating of the quality of care or of daily life for children</strong>, because things like staffing, discipline, food, education, and activities are not published anywhere yet. Each card lists them as Not reported instead of guessing. Facilities with fewer than 5 inspections do not get a rating yet. No information about individual children is collected or shown.
   </div>
 
   <details class="explainer">
     <summary>How to read these scores (tap to open)</summary>
-
-    <h4>The short version</h4>
-    <p>Every placement shows two separate things: a <strong>safety score</strong> and a <strong>confidence label</strong>. They measure different things, so they do not always move together.</p>
 
     <h4>The safety score</h4>
     <p>The safety score runs from 0 to 100. It compares each open general residential operation in Texas with the others, using state inspection findings.</p>
@@ -60,36 +63,39 @@
       <li>The weighted total is divided by the number of inspections the facility has had. This keeps a facility from looking worse just because it is inspected more often.</li>
       <li>All facilities are then ranked from most to fewest weighted findings per inspection. A higher score means fewer findings per inspection compared with other Texas facilities.</li>
     </ul>
-    <p>The score is <strong>relative</strong>. It shows how a facility compares with others, not whether it is safe in an absolute sense. It is also a <strong>safety score only</strong>, not an overall rating.</p>
+    <p>The score is <strong>relative</strong>. It shows how a facility compares with others, not whether it is safe in an absolute sense.</p>
+
+    <h4>The Inspection record rating</h4>
+    <p>Facilities with a score also get a plain Inspection record rating of Good, Average, or Poor. Unlike the score, the rating uses fixed standards and does not depend on how other facilities are doing:</p>
+    <ul>
+      <li><strong>Good:</strong> 1.5 or fewer weighted findings per inspection, and no state corrective or adverse action.</li>
+      <li><strong>Average:</strong> between those standards.</li>
+      <li><strong>Poor:</strong> more than 3.5 weighted findings per inspection, or a state corrective or adverse action together with more than 2.5.</li>
+    </ul>
+    <p>A facility with a state corrective or adverse action on record can never be rated Good. <strong>The rating is based on state inspection findings only.</strong> It does not describe quality of care, staffing, or daily life for children, because that information is not published. As more information becomes available, it can be added.</p>
+
+    <h4>Who gets a rating</h4>
+    <p>Only facilities with <strong>5 or more inspections</strong> get a score and a rating. Each card shows how many inspections they are based on.</p>
+
+    <h4>Early signs for facilities with fewer than 5 inspections</h4>
+    <p>Facilities with fewer than 5 inspections do not get a score or a rating. Instead, the card shows a preliminary <strong>Early signs</strong> note: whether the findings per inspection so far are fewer than most, about average, or more than most compared with facilities that do have scores. This is based on very little information, new facilities often receive several findings at their first inspections, and it can change quickly. It is not a score and should not be treated as one.</p>
 
     <h4>What affected this score</h4>
     <p>Each card has a "What affected this score" section. It shows how many findings the state recorded at each severity level, the point weight each level carries, the number of inspections, and any state corrective or adverse action. It shows counts only. It does not describe what happened in any individual finding. Those details are in the state's own inspection records on Search Texas Child Care, and each card shows the operation number to search for.</p>
 
-    <h4>The confidence label</h4>
-    <p>The confidence label shows how much inspection history the score rests on. It counts inspections and nothing else.</p>
-    <ul>
-      <li><strong>Low confidence:</strong> fewer than 5 inspections. The site shows "Not enough inspections yet" instead of a score.</li>
-      <li><strong>Medium confidence:</strong> 5 to 14 inspections.</li>
-      <li><strong>High confidence:</strong> 15 or more inspections.</li>
-    </ul>
+    <h4>State action on record</h4>
+    <p>A dark "State action on record" label means the state has recorded a corrective action or an adverse action against the facility. These are rare and serious, so they are shown separately and they limit the rating.</p>
 
-    <h4>Why a score and its confidence label can look mismatched</h4>
-    <p>A facility can have a high score with medium confidence. That means few findings so far, but on a shorter record, so the score could change as more inspections are added.</p>
-    <p>Another facility can have a lower score with high confidence. That means a long record of inspections, and the score reflects that record well. In general, a score with high confidence is the more dependable one, whichever direction it points.</p>
-
-    <h4>Red flags</h4>
-    <p>A red "State action on record" label means the state has recorded a corrective action or an adverse action against the facility. These are rare and serious, so they are shown separately instead of being folded into the score.</p>
-
-    <h4>What is not in the score</h4>
-    <p>Many things families care about are not published anywhere, so they are listed as <strong>Not reported</strong> and do not affect the score: staff-to-child ratio, staff turnover, discipline and restraint practices, dietary information, education program quality, therapy actually provided, extracurricular activities, community involvement, and building and environment safety.</p>
-    <p>The "Licensed services" and "Licensed to treat" tags show what a facility is approved to offer. They do not show how well it does it, and they are not part of the score.</p>
+    <h4>What is not in the rating</h4>
+    <p>Many things that matter to children are not published anywhere, so they are listed as <strong>Not reported</strong> and do not affect the score or rating: staff-to-child ratio, staff turnover, discipline and restraint practices, dietary information, education program quality, therapy actually provided, extracurricular activities, community involvement, and building and environment safety.</p>
+    <p>The "Licensed services" and "Licensed to treat" tags show what a facility is approved to offer. They do not show how well it does it, and they are not part of the score or rating.</p>
 
     <h4>Limits to keep in mind</h4>
     <ul>
       <li>The state's inspection counts cover an unknown time period, so facilities that have been open longer may have more findings on record.</li>
       <li>The state's online compliance history leaves out violations until a facility has had due process, so recent problems may be missing.</li>
       <li>The state says its violation weights are not intended to be used as a ranking or score. This dashboard is an independent analysis and is not endorsed by the State of Texas.</li>
-      <li>Scores are refreshed weekly from the state's open data and may shift slightly.</li>
+      <li>Scores and ratings are refreshed weekly from the state's open data and may shift slightly.</li>
       <li>No information about individual children is collected or shown.</li>
     </ul>
 
@@ -98,22 +104,23 @@
   </details>
 
   <input id="search" type="text" placeholder="Search by name, city, or county">
-  <select id="conf">
-    <option value="">All confidence levels</option>
-    <option value="High">High confidence</option>
-    <option value="Medium">Medium confidence</option>
-    <option value="Low">Low confidence</option>
+  <select id="show">
+    <option value="">All facilities</option>
+    <option value="Good">Inspection record: Good</option>
+    <option value="Average">Inspection record: Average</option>
+    <option value="Poor">Inspection record: Poor</option>
+    <option value="early">Early signs only (fewer than 5 inspections)</option>
   </select>
   <select id="flagonly">
-    <option value="">All facilities</option>
-    <option value="1">Flagged only</option>
+    <option value="">Flagged or not</option>
+    <option value="1">State action on record only</option>
   </select>
 
   <p id="count"></p>
   <div id="list">Loading...</div>
 </main>
 <footer>
-  Source: Texas HHSC Child Care Licensing open data. The safety score is calculated from weighted inspection findings per inspection. Service tags show what a facility is licensed to offer, not how well it does it.
+  Source: Texas HHSC Child Care Licensing open data. The safety score and inspection record rating are calculated from weighted inspection findings per inspection. Service tags show what a facility is licensed to offer, not how well it does it.
 </footer>
 
 <script>
@@ -187,19 +194,19 @@ function detailsFor(r) {
 
 function render() {
   const q = document.getElementById("search").value.toLowerCase();
-  const conf = document.getElementById("conf").value;
+  const show = document.getElementById("show").value;
   const flagOnly = document.getElementById("flagonly").value;
   const shown = rows.filter(r => {
     const text = (r.OPERATION_NAME + " " + r.CITY + " " + r.COUNTY).toLowerCase();
     if (q && !text.includes(q)) return false;
-    if (conf && r.confidence !== conf) return false;
+    if (show === "early" && r.has_score === "True") return false;
+    if ((show === "Good" || show === "Average" || show === "Poor") && r.rating !== show) return false;
     if (flagOnly && r.flag !== "True") return false;
     return true;
   });
   document.getElementById("count").textContent = shown.length + " placements shown";
   document.getElementById("list").innerHTML = shown.map(r => {
-    const low = r.confidence === "Low";
-    const scoreText = low ? "Not enough inspections yet" : r.safety_score + " / 100";
+    const hasScore = r.has_score === "True";
     const programs = tagsFor(r.PROGRAMMATIC_SERVICES);
     const treatment = tagsFor(r.TREATMENT_SERVICES);
     let tagHTML = "";
@@ -211,13 +218,25 @@ function render() {
     } else {
       tagHTML += '<div><span class="label">Licensed to treat</span><br>Not reported</div>';
     }
+    let scoreHTML;
+    if (hasScore) {
+      scoreHTML = '<span class="label">Safety score</span><br>' +
+        '<span class="score">' + escapeHTML(r.safety_score) + ' / 100</span>' +
+        '<span class="basis">based on ' + escapeHTML(r.TOTAL_INSPECTIONS) + ' inspections</span>' +
+        '<div class="ratingline"><span class="label">Inspection record</span> <span class="badge ' + escapeHTML(r.rating) + '">' + escapeHTML(r.rating) + '</span>' +
+        '<div class="rnote">Based on state inspection findings only. Quality of care, staffing, and daily life are not reported.</div></div>';
+    } else {
+      scoreHTML = '<span class="label">Safety score</span><br>' +
+        '<span class="noscore">Not enough inspections yet for a score</span>' +
+        '<span class="basis">(' + escapeHTML(r.TOTAL_INSPECTIONS) + ' so far)</span>' +
+        '<div class="early"><strong>Early signs:</strong> ' + escapeHTML(r.early_signs) +
+        '<br><span class="prelim">Preliminary, based on very few inspections. Not a score or a rating.</span></div>';
+    }
     return '<div class="card">' +
       '<h3>' + escapeHTML(r.OPERATION_NAME) +
       (r.flag === "True" ? '<span class="badge flag">State action on record</span>' : '') + '</h3>' +
-      '<div class="meta">' + escapeHTML(r.CITY) + ', ' + escapeHTML(r.COUNTY) + ' County &middot; Capacity ' + escapeHTML(r.TOTAL_CAPACITY) + ' &middot; ' + escapeHTML(r.TOTAL_INSPECTIONS) + ' inspections</div>' +
-      '<span class="label">Safety score</span><br>' +
-      '<span class="score">' + scoreText + '</span>' +
-      '<span class="badge ' + escapeHTML(r.confidence) + '">' + escapeHTML(r.confidence) + ' confidence</span>' +
+      '<div class="meta">' + escapeHTML(r.CITY) + ', ' + escapeHTML(r.COUNTY) + ' County &middot; Capacity ' + escapeHTML(r.TOTAL_CAPACITY) + '</div>' +
+      scoreHTML +
       detailsFor(r) +
       '<div class="tags">' + tagHTML + '</div>' +
       '<details class="nr"><summary>Not reported (' + NOT_REPORTED.length + ' items)</summary><ul>' +
@@ -245,7 +264,7 @@ fetch("scored_placements.csv")
   });
 
 document.getElementById("search").addEventListener("input", render);
-document.getElementById("conf").addEventListener("change", render);
+document.getElementById("show").addEventListener("change", render);
 document.getElementById("flagonly").addEventListener("change", render);
 </script>
 </body>
