@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Texas Foster Placements Transparency Dashboard</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 0; background: #f4f6f8; color: #1f2933; }
+  header { background: #1f4e79; color: white; padding: 20px; }
+  header h1 { margin: 0 0 6px 0; font-size: 1.5em; }
+  main { max-width: 900px; margin: 0 auto; padding: 16px; }
+  .notice { background: #fff8e1; border-left: 4px solid #f2b705; padding: 12px; margin-bottom: 16px; font-size: 0.95em; }
+  input, select { padding: 10px; font-size: 1em; margin: 0 8px 8px 0; border: 1px solid #b0b8c1; border-radius: 6px; }
+  input { width: 60%; max-width: 360px; }
+  .card { background: white; border-radius: 8px; padding: 14px; margin-bottom: 10px; box-shadow: 0 1px 3px rgba(0,0,0,0.12); }
+  .card h3 { margin: 0 0 4px 0; }
+  .meta { color: #52606d; font-size: 0.9em; margin-bottom: 8px; }
+  .score { font-size: 1.4em; font-weight: bold; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 0.8em; margin-left: 6px; color: white; }
+  .High { background: #2e7d32; }
+  .Medium { background: #ed8b00; }
+  .Low { background: #8a8f98; }
+  .flag { background: #c62828; }
+  footer { font-size: 0.85em; color: #52606d; padding: 16px; text-align: center; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Texas Foster Placements Transparency Dashboard</h1>
+  <div>An independent analysis of publicly available data. Not a state rating.</div>
+</header>
+<main>
+  <div class="notice">
+    <strong>How to read this:</strong> The safety score runs from 0 to 100 and compares each open general residential operation with the others in Texas. A higher score means fewer weighted inspection findings per inspection. It does not say whether a facility is safe in an absolute sense. Facilities with few inspections have low confidence and their scores can change a lot. A red flag means the state has recorded a corrective or adverse action. No information about individual children is collected or shown.
+  </div>
+
+  <input id="search" type="text" placeholder="Search by name, city, or county">
+  <select id="conf">
+    <option value="">All confidence levels</option>
+    <option value="High">High confidence</option>
+    <option value="Medium">Medium confidence</option>
+    <option value="Low">Low confidence</option>
+  </select>
+  <select id="flagonly">
+    <option value="">All facilities</option>
+    <option value="1">Flagged only</option>
+  </select>
+
+  <p id="count"></p>
+  <div id="list">Loading...</div>
+</main>
+<footer>
+  Source: Texas HHSC Child Care Licensing open data. Scores are calculated from inspection findings per inspection. Not reported categories, such as staffing ratios and discipline practices, are not included in the score yet.
+</footer>
+
+<script>
+let rows = [];
+
+function parseCSV(text) {
+  const out = [];
+  let row = [], field = "", inQuotes = false;
+  for (let i = 0; i < text.length; i++) {
+    const ch = text[i];
+    if (inQuotes) {
+      if (ch === '"' && text[i + 1] === '"') { field += '"'; i++; }
+      else if (ch === '"') { inQuotes = false; }
+      else { field += ch; }
+    } else {
+      if (ch === '"') { inQuotes = true; }
+      else if (ch === ',') { row.push(field); field = ""; }
+      else if (ch === '\n') { row.push(field); out.push(row); row = []; field = ""; }
+      else if (ch !== '\r') { field += ch; }
+    }
+  }
+  if (field !== "" || row.length) { row.push(field); out.push(row); }
+  return out;
+}
+
+function escapeHTML(s) {
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function render() {
+  const q = document.getElementById("search").value.toLowerCase();
+  const conf = document.getElementById("conf").value;
+  const flagOnly = document.getElementById("flagonly").value;
+  const shown = rows.filter(r => {
+    const text = (r.OPERATION_NAME + " " + r.CITY + " " + r.COUNTY).toLowerCase();
+    if (q && !text.includes(q)) return false;
+    if (conf && r.confidence !== conf) return false;
+    if (flagOnly && r.flag !== "True") return false;
+    return true;
+  });
+  document.getElementById("count").textContent = shown.length + " placements shown";
+  document.getElementById("list").innerHTML = shown.map(r => {
+    const low = r.confidence === "Low";
+    const scoreText = low ? "Not enough inspections yet" : r.safety_score + " / 100";
+    return '<div class="card">' +
+      '<h3>' + escapeHTML(r.OPERATION_NAME) +
+      (r.flag === "True" ? '<span class="badge flag">State action on record</span>' : '') + '</h3>' +
+      '<div class="meta">' + escapeHTML(r.CITY) + ', ' + escapeHTML(r.COUNTY) + ' County &middot; Capacity ' + escapeHTML(r.TOTAL_CAPACITY) + ' &middot; ' + escapeHTML(r.TOTAL_INSPECTIONS) + ' inspections</div>' +
+      '<span class="score">' + scoreText + '</span>' +
+      '<span class="badge ' + escapeHTML(r.confidence) + '">' + escapeHTML(r.confidence) + ' confidence</span>' +
+      '</div>';
+  }).join("");
+}
+
+fetch("scored_placements.csv")
+  .then(r => r.text())
+  .then(text => {
+    const table = parseCSV(text);
+    const head = table[0];
+    rows = table.slice(1).filter(r => r.length === head.length).map(r => {
+      const o = {};
+      head.forEach((h, i) => o[h] = r[i]);
+      return o;
+    });
+    rows.sort((a, b) => a.OPERATION_NAME.localeCompare(b.OPERATION_NAME));
+    render();
+  })
+  .catch(() => {
+    document.getElementById("list").textContent = "Could not load the data file.";
+  });
+
+document.getElementById("search").addEventListener("input", render);
+document.getElementById("conf").addEventListener("change", render);
+document.getElementById("flagonly").addEventListener("change", render);
+</script>
+</body>
+</html>
