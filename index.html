@@ -57,19 +57,41 @@
 </header>
 <main>
   <div class="notice">
-    <strong>How to read this:</strong> Right now each placement is described by its <strong>state inspection record only</strong>. It is <strong>not a rating of the quality of care or of daily life for children</strong>. Facilities with fewer than 5 inspections do not get a rating yet. No information about individual children is collected or shown.
+    <strong>How to read this:</strong> Right now each placement is described by its <strong>state inspection record only</strong>. It is <strong>not a rating of the quality of care or of daily life for children</strong>, because things like staffing, discipline, food, education, and activities are not published anywhere yet. Each card lists them as Not reported instead of guessing. Facilities with fewer than 5 inspections do not get a rating yet. External findings from public reports are shown separately and are not part of any score or rating. No information about individual children is collected or shown.
   </div>
 
   <details class="explainer">
     <summary>How to read these scores (tap to open)</summary>
+
     <h4>The safety score</h4>
-    <p>The safety score runs from 0 to 100 and is based on weighted state inspection findings per inspection.</p>
-    <h4>Inspection record rating</h4>
-    <p>Good / Average / Poor based on fixed thresholds. A facility with a state corrective or adverse action cannot be rated Good.</p>
+    <p>The safety score runs from 0 to 100. It compares each open general residential operation in Texas with the others, using state inspection findings. Each finding is weighted by how serious the state rated it, the weighted total is divided by the number of inspections, and facilities are ranked. A higher score means fewer weighted findings per inspection compared with other Texas facilities. The score is <strong>relative</strong>: it shows how a facility compares with others, not whether it is safe in an absolute sense.</p>
+
+    <h4>The Inspection record rating</h4>
+    <p>Facilities with a score also get a plain rating of Good, Average, or Poor based on fixed standards. A facility with a state corrective or adverse action on record can never be rated Good. <strong>The rating is based on state inspection findings only.</strong> It does not describe quality of care, staffing, or daily life for children, because that information is not published.</p>
+
+    <h4>Who gets a rating</h4>
+    <p>Only facilities with <strong>5 or more inspections</strong> get a score and a rating. Facilities with fewer show a preliminary <strong>Early signs</strong> note instead. It is based on very little information, new facilities often receive several findings at their first inspections, and it can change quickly. It is not a score and should not be treated as one.</p>
+
+    <h4>What affected this score</h4>
+    <p>Each card shows how many findings the state recorded at each severity level, the point weight each level carries, the number of inspections, and any state corrective or adverse action. These are counts only. The state's own inspection records can be searched by operation number on Search Texas Child Care.</p>
+
     <h4>External findings</h4>
-    <p>These come from public court monitor reports, state actions, and news. They are separate from the inspection score.</p>
-    <h4>Street View</h4>
-    <p>Where a street address is available, a Google Street View image is shown. Coverage is not guaranteed for every location.</p>
+    <p>Some cards list findings from public sources such as court monitor reports, state actions, and news reporting. Each one shows its category, a summary, its source, and its date. These are <strong>separate from the inspection score and rating</strong>. They are matched to facilities by name or operation number, so a match could be wrong, and a finding may be out of date. Please check the linked source, and tell us about any error so it can be corrected.</p>
+
+    <h4>What is not in the score or rating</h4>
+    <p>Many things that matter to children are not published anywhere, so they are listed as <strong>Not reported</strong>: staff-to-child ratio, staff turnover, discipline and restraint practices, dietary information, education program quality, therapy actually provided, extracurricular activities, community involvement, and building and environment safety. The "Licensed services" and "Licensed to treat" tags show what a facility is approved to offer, not how well it does it.</p>
+
+    <h4>Limits to keep in mind</h4>
+    <ul>
+      <li>The state's inspection counts cover an unknown time period, so facilities that have been open longer may have more findings on record.</li>
+      <li>The state's online compliance history leaves out violations until a facility has had due process, so recent problems may be missing.</li>
+      <li>The state says its violation weights are not intended to be used as a ranking or score. This dashboard is an independent analysis and is not endorsed by the State of Texas.</li>
+      <li>Scores and ratings are refreshed weekly from the state's open data and may shift slightly.</li>
+      <li>No information about individual children is collected or shown.</li>
+    </ul>
+
+    <h4>Corrections</h4>
+    <p>Facilities and families who believe any information here is wrong, out of date, or matched to the wrong facility can contact the dashboard to request a correction.</p>
   </details>
 
   <input id="search" type="text" placeholder="Search by name, city, or county">
@@ -89,17 +111,21 @@
   <div id="list">Loading...</div>
 </main>
 <footer>
-  Source: Texas HHSC Child Care Licensing open data + public court monitor reports. Street View images via Google Maps Platform.
+  Source: Texas HHSC Child Care Licensing open data and public reports. Independent analysis, not endorsed by the State of Texas.
 </footer>
 
 <script>
 // ========== CONFIG ==========
-const GOOGLE_API_KEY = "AIzaSyBj9LrMfWHAeNVc_2DN5k8UWm1d8Xvz01Y";
+// Street View is OFF. It shows photos of places where children live, so keep it off
+// until a social work or legal reviewer has weighed in. To turn it on later, set
+// SHOW_STREET_VIEW to true and paste a NEW key that is restricted to this site.
+const SHOW_STREET_VIEW = false;
+const GOOGLE_API_KEY = "";
 // ===========================
 
 let rows = [];
 let findings = [];
-let addresses = {};   // OPERATION_ID → address info
+let addresses = {};
 
 const NOT_REPORTED = [
   "Staff-to-child ratio", "Staff turnover", "Discipline and restraint practices",
@@ -147,15 +173,23 @@ function yesNo(v) {
   return v === "YES" ? "Yes" : (v === "NO" ? "No" : "Not available");
 }
 
+function safeURL(u) {
+  return /^https?:\/\//i.test(u || "") ? u : "";
+}
+
 function normalizeName(name) {
   return (name || "").toLowerCase().replace(/[^a-z0-9\s]/g, " ").replace(/\s+/g, " ").trim();
 }
 
-function findingsFor(facilityName) {
-  const norm = normalizeName(facilityName);
+// Exact matching only. A finding attaches to a facility when the operation ID matches,
+// or when the normalized names are identical. Blank names never match.
+function findingsFor(r) {
+  const norm = normalizeName(r.OPERATION_NAME);
+  if (!norm) return [];
   return findings.filter(f => {
+    if (f.OPERATION_ID && r.OPERATION_ID && f.OPERATION_ID === r.OPERATION_ID) return true;
     const fNorm = normalizeName(f.facility_name);
-    return fNorm.includes(norm) || norm.includes(fNorm) || fNorm.replace(/\s+/g,"") === norm.replace(/\s+/g,"");
+    return fNorm !== "" && fNorm === norm;
   });
 }
 
@@ -164,19 +198,17 @@ function getAddress(opId) {
 }
 
 function streetViewURL(addr) {
-  if (!addr || !addr.ADDRESS_LINE) return null;
+  if (!addr || !addr.ADDRESS_LINE || !GOOGLE_API_KEY) return null;
   const location = encodeURIComponent(
     (addr.ADDRESS_LINE + ", " + addr.CITY + ", " + (addr.STATE || "TX") + " " + (addr.ZIPCODE || "")).trim()
   );
-  return `https://maps.googleapis.com/maps/api/streetview?size=600x300&location=${location}&key=${GOOGLE_API_KEY}`;
+  return "https://maps.googleapis.com/maps/api/streetview?size=600x300&location=" + location + "&key=" + GOOGLE_API_KEY;
 }
 
 function mapsLink(addr) {
   if (!addr || !addr.ADDRESS_LINE) return null;
-  const q = encodeURIComponent(
-    (addr.ADDRESS_LINE + ", " + addr.CITY + ", " + (addr.STATE || "TX")).trim()
-  );
-  return `https://www.google.com/maps/search/?api=1&query=${q}`;
+  const q = encodeURIComponent((addr.ADDRESS_LINE + ", " + addr.CITY + ", " + (addr.STATE || "TX")).trim());
+  return "https://www.google.com/maps/search/?api=1&query=" + q;
 }
 
 function detailsFor(r) {
@@ -189,22 +221,25 @@ function detailsFor(r) {
     '<div>Weighted findings per inspection: ' + escapeHTML(r.rate) + '</div>' +
     '<div>State corrective action on record: ' + yesNo(r.CORRECTIVE_ACTION) + '</div>' +
     '<div>State adverse action on record: ' + yesNo(r.ADVERSE_ACTION) + '</div>' +
-    '<div style="margin-top:6px">Search operation number ' + escapeHTML(r.OPERATION_NUMBER) + ' on <a href="https://childcare.hhs.texas.gov" target="_blank" rel="noopener">Search Texas Child Care</a>.</div>' +
+    '<div style="margin-top:6px">These are counts only. For the full inspection records, search operation number ' + escapeHTML(r.OPERATION_NUMBER) + ' on <a href="https://childcare.hhs.texas.gov" target="_blank" rel="noopener">Search Texas Child Care</a>.</div>' +
     '</details>';
 }
 
-function findingsHTML(facilityName) {
-  const matches = findingsFor(facilityName);
+function findingsHTML(r) {
+  const matches = findingsFor(r);
   if (!matches.length) return "";
-  const items = matches.map(f =>
-    '<li><strong>' + escapeHTML(f.category) + '</strong><br>' +
-    escapeHTML(f.finding_summary) + '<br>' +
-    '<a href="' + escapeHTML(f.source_url) + '" target="_blank" rel="noopener">Source (' + escapeHTML(f.source_type) + ')</a>' +
-    (f.date ? ' · ' + escapeHTML(f.date) : '') + '</li>'
-  ).join("");
-  return '<details class="nr" open><summary><strong>External findings & reviews (' + matches.length + ')</strong></summary>' +
+  const items = matches.map(f => {
+    const url = safeURL(f.source_url);
+    const src = url
+      ? '<a href="' + escapeHTML(url) + '" target="_blank" rel="noopener">Source (' + escapeHTML(f.source_type) + ')</a>'
+      : 'Source: ' + escapeHTML(f.source_type) + ' (no link)';
+    return '<li><strong>' + escapeHTML(f.category) + '</strong><br>' +
+      escapeHTML(f.finding_summary) + '<br>' + src +
+      (f.date ? ' &middot; ' + escapeHTML(f.date) : '') + '</li>';
+  }).join("");
+  return '<details class="nr" open><summary><strong>External findings from public reports (' + matches.length + ')</strong></summary>' +
     '<ul class="findings-list">' + items + '</ul>' +
-    '<div class="findings-note">From public court monitor reports, state actions, and news. Separate from the inspection score.</div></details>';
+    '<div class="findings-note">From public court monitor reports, state actions, and news. Separate from the inspection score and rating. Matched by facility name or operation number, so please check the source, since a match could be wrong or out of date.</div></details>';
 }
 
 function render() {
@@ -235,25 +270,26 @@ function render() {
       scoreHTML = '<span class="label">Safety score</span><br><span class="score">' + escapeHTML(r.safety_score) + ' / 100</span>' +
         '<span class="basis">based on ' + escapeHTML(r.TOTAL_INSPECTIONS) + ' inspections</span>' +
         '<div class="ratingline"><span class="label">Inspection record</span> <span class="badge ' + escapeHTML(r.rating) + '">' + escapeHTML(r.rating) + '</span>' +
-        '<div class="rnote">Based on state inspection findings only.</div></div>';
+        '<div class="rnote">Based on state inspection findings only. Quality of care, staffing, and daily life are not reported.</div></div>';
     } else {
       scoreHTML = '<span class="label">Safety score</span><br><span class="noscore">Not enough inspections yet for a score</span>' +
         '<span class="basis">(' + escapeHTML(r.TOTAL_INSPECTIONS) + ' so far)</span>' +
         '<div class="early"><strong>Early signs:</strong> ' + escapeHTML(r.early_signs) +
-        '<br><span class="prelim">Preliminary only.</span></div>';
+        '<br><span class="prelim">Preliminary, based on very few inspections. Not a score or a rating.</span></div>';
     }
 
-    // Street View
-    const addr = getAddress(r.OPERATION_ID);
     let photoHTML = "";
-    if (addr && addr.ADDRESS_LINE) {
+    if (SHOW_STREET_VIEW) {
+      const addr = getAddress(r.OPERATION_ID);
       const svUrl = streetViewURL(addr);
-      const mapUrl = mapsLink(addr);
-      photoHTML = '<div class="photo-wrap">' +
-        '<img src="' + svUrl + '" alt="Street View of ' + escapeHTML(r.OPERATION_NAME) + '" loading="lazy" onerror="this.style.display=\'none\'">' +
-        '<div class="photo-credit">Google Street View</div>' +
-        (mapUrl ? '<div class="streetview-link"><a href="' + mapUrl + '" target="_blank" rel="noopener">Open in Google Maps</a></div>' : '') +
-        '</div>';
+      if (svUrl) {
+        const mapUrl = mapsLink(addr);
+        photoHTML = '<div class="photo-wrap">' +
+          '<img src="' + escapeHTML(svUrl) + '" alt="Street View of ' + escapeHTML(r.OPERATION_NAME) + '" loading="lazy" onerror="this.parentNode.style.display=\'none\'">' +
+          '<div class="photo-credit">Google Street View</div>' +
+          (mapUrl ? '<div class="streetview-link"><a href="' + escapeHTML(mapUrl) + '" target="_blank" rel="noopener">Open in Google Maps</a></div>' : '') +
+          '</div>';
+      }
     }
 
     return '<div class="card">' +
@@ -263,7 +299,7 @@ function render() {
       photoHTML +
       scoreHTML +
       detailsFor(r) +
-      findingsHTML(r.OPERATION_NAME) +
+      findingsHTML(r) +
       '<div class="tags">' + tagHTML + '</div>' +
       '<details class="nr"><summary>Not reported (' + NOT_REPORTED.length + ' items)</summary><ul>' +
       NOT_REPORTED.map(n => '<li>' + escapeHTML(n) + ': Not reported</li>').join("") +
@@ -271,13 +307,13 @@ function render() {
   }).join("");
 }
 
-// Load data
-Promise.all([
+const loads = [
   fetch("scored_placements.csv").then(r => r.text()),
   fetch("mapped_findings.csv").then(r => r.text()).catch(() => ""),
-  fetch("facility_addresses.csv").then(r => r.text()).catch(() => "")
-]).then(([scoresText, findingsText, addrText]) => {
-  // Scores
+  SHOW_STREET_VIEW ? fetch("facility_addresses.csv").then(r => r.text()).catch(() => "") : Promise.resolve("")
+];
+
+Promise.all(loads).then(([scoresText, findingsText, addrText]) => {
   const table = parseCSV(scoresText);
   const head = table[0];
   rows = table.slice(1).filter(r => r.length === head.length).map(r => {
@@ -285,7 +321,6 @@ Promise.all([
   });
   rows.sort((a, b) => a.OPERATION_NAME.localeCompare(b.OPERATION_NAME));
 
-  // Findings
   if (findingsText) {
     const fTable = parseCSV(findingsText);
     const fHead = fTable[0];
@@ -294,7 +329,6 @@ Promise.all([
     });
   }
 
-  // Addresses
   if (addrText) {
     const aTable = parseCSV(addrText);
     const aHead = aTable[0];
