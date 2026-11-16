@@ -41,6 +41,9 @@
   table.sev { border-collapse: collapse; margin: 8px 0; font-size: 0.95em; }
   table.sev td, table.sev th { padding: 4px 12px 4px 0; text-align: left; }
   footer { font-size: 0.85em; color: #52606d; padding: 16px; text-align: center; }
+  .findings-list { margin: 8px 0 0 0; padding-left: 18px; }
+  .findings-list li { margin-bottom: 10px; }
+  .findings-note { font-size: 0.85em; color: #52606d; margin-top: 6px; }
 </style>
 </head>
 <body>
@@ -120,11 +123,12 @@
   <div id="list">Loading...</div>
 </main>
 <footer>
-  Source: Texas HHSC Child Care Licensing open data. The safety score and inspection record rating are calculated from weighted inspection findings per inspection. Service tags show what a facility is licensed to offer, not how well it does it.
+  Source: Texas HHSC Child Care Licensing open data. The safety score and inspection record rating are calculated from weighted inspection findings per inspection. Service tags show what a facility is licensed to offer, not how well it does it. External findings come from public court monitor reports, state actions, and news sources.
 </footer>
 
 <script>
 let rows = [];
+let findings = [];
 
 const NOT_REPORTED = [
   "Staff-to-child ratio",
@@ -178,6 +182,22 @@ function yesNo(v) {
   return v === "YES" ? "Yes" : (v === "NO" ? "No" : "Not available");
 }
 
+function normalizeName(name) {
+  return (name || "").toLowerCase()
+    .replace(/[^a-z0-9\s]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function findingsFor(facilityName) {
+  const norm = normalizeName(facilityName);
+  return findings.filter(f => {
+    const fNorm = normalizeName(f.facility_name);
+    return fNorm.includes(norm) || norm.includes(fNorm) ||
+           fNorm.replace(/\s+/g, "") === norm.replace(/\s+/g, "");
+  });
+}
+
 function detailsFor(r) {
   const sevRows = SEVERITY.map(s =>
     '<tr><td>' + s[0] + '</td><td>' + escapeHTML(r[s[1]]) + ' findings</td><td>' + s[2] + ' points each</td></tr>'
@@ -189,6 +209,26 @@ function detailsFor(r) {
     '<div>State corrective action on record: ' + yesNo(r.CORRECTIVE_ACTION) + '</div>' +
     '<div>State adverse action on record: ' + yesNo(r.ADVERSE_ACTION) + '</div>' +
     '<div style="margin-top:6px">These are counts only. To read the state\'s own inspection records, search for operation number ' + escapeHTML(r.OPERATION_NUMBER) + ' on <a href="https://childcare.hhs.texas.gov" target="_blank" rel="noopener">Search Texas Child Care</a>.</div>' +
+    '</details>';
+}
+
+function findingsHTML(facilityName) {
+  const matches = findingsFor(facilityName);
+  if (!matches.length) return "";
+
+  const items = matches.map(f => {
+    return '<li>' +
+      '<strong>' + escapeHTML(f.category) + '</strong><br>' +
+      escapeHTML(f.finding_summary) + '<br>' +
+      '<a href="' + escapeHTML(f.source_url) + '" target="_blank" rel="noopener">Source (' + escapeHTML(f.source_type) + ')</a>' +
+      (f.date ? ' · ' + escapeHTML(f.date) : '') +
+      '</li>';
+  }).join("");
+
+  return '<details class="nr" open>' +
+    '<summary><strong>External findings & reviews (' + matches.length + ')</strong></summary>' +
+    '<ul class="findings-list">' + items + '</ul>' +
+    '<div class="findings-note">These come from public court monitor reports, state actions, and news sources. They are separate from the state inspection score above.</div>' +
     '</details>';
 }
 
@@ -238,6 +278,7 @@ function render() {
       '<div class="meta">' + escapeHTML(r.CITY) + ', ' + escapeHTML(r.COUNTY) + ' County &middot; Capacity ' + escapeHTML(r.TOTAL_CAPACITY) + '</div>' +
       scoreHTML +
       detailsFor(r) +
+      findingsHTML(r.OPERATION_NAME) +
       '<div class="tags">' + tagHTML + '</div>' +
       '<details class="nr"><summary>Not reported (' + NOT_REPORTED.length + ' items)</summary><ul>' +
       NOT_REPORTED.map(n => '<li>' + escapeHTML(n) + ': Not reported</li>').join("") +
@@ -246,22 +287,36 @@ function render() {
   }).join("");
 }
 
-fetch("scored_placements.csv")
-  .then(r => r.text())
-  .then(text => {
-    const table = parseCSV(text);
-    const head = table[0];
-    rows = table.slice(1).filter(r => r.length === head.length).map(r => {
+// Load both data files
+Promise.all([
+  fetch("scored_placements.csv").then(r => r.text()),
+  fetch("mapped_findings.csv").then(r => r.text()).catch(() => "")
+]).then(([scoresText, findingsText]) => {
+  // Parse safety scores
+  const table = parseCSV(scoresText);
+  const head = table[0];
+  rows = table.slice(1).filter(r => r.length === head.length).map(r => {
+    const o = {};
+    head.forEach((h, i) => o[h] = r[i]);
+    return o;
+  });
+  rows.sort((a, b) => a.OPERATION_NAME.localeCompare(b.OPERATION_NAME));
+
+  // Parse external findings (if the file exists)
+  if (findingsText) {
+    const fTable = parseCSV(findingsText);
+    const fHead = fTable[0];
+    findings = fTable.slice(1).filter(r => r.length === fHead.length).map(r => {
       const o = {};
-      head.forEach((h, i) => o[h] = r[i]);
+      fHead.forEach((h, i) => o[h] = r[i]);
       return o;
     });
-    rows.sort((a, b) => a.OPERATION_NAME.localeCompare(b.OPERATION_NAME));
-    render();
-  })
-  .catch(() => {
-    document.getElementById("list").textContent = "Could not load the data file.";
-  });
+  }
+
+  render();
+}).catch(() => {
+  document.getElementById("list").textContent = "Could not load the data file.";
+});
 
 document.getElementById("search").addEventListener("input", render);
 document.getElementById("show").addEventListener("change", render);
