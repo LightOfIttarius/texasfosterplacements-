@@ -45,8 +45,9 @@
   .findings-list li { margin-bottom: 10px; }
   .findings-note { font-size: 0.85em; color: #52606d; margin-top: 6px; }
   .photo-wrap { margin: 10px 0; }
-  .photo-wrap img { max-width: 100%; max-height: 180px; border-radius: 6px; object-fit: cover; }
+  .photo-wrap img { max-width: 100%; max-height: 220px; border-radius: 6px; object-fit: cover; width: 100%; }
   .photo-credit { font-size: 0.75em; color: #52606d; margin-top: 3px; }
+  .streetview-link { font-size: 0.85em; margin-top: 4px; }
 </style>
 </head>
 <body>
@@ -56,46 +57,19 @@
 </header>
 <main>
   <div class="notice">
-    <strong>How to read this:</strong> Right now each placement is described by its <strong>state inspection record only</strong>. It is <strong>not a rating of the quality of care or of daily life for children</strong>, because things like staffing, discipline, food, education, and activities are not published anywhere yet. Each card lists them as Not reported instead of guessing. Facilities with fewer than 5 inspections do not get a rating yet. No information about individual children is collected or shown.
+    <strong>How to read this:</strong> Right now each placement is described by its <strong>state inspection record only</strong>. It is <strong>not a rating of the quality of care or of daily life for children</strong>. Facilities with fewer than 5 inspections do not get a rating yet. No information about individual children is collected or shown.
   </div>
 
   <details class="explainer">
     <summary>How to read these scores (tap to open)</summary>
     <h4>The safety score</h4>
-    <p>The safety score runs from 0 to 100. It compares each open general residential operation in Texas with the others, using state inspection findings.</p>
-    <ul>
-      <li>Each inspection finding is weighted by how serious the state rated it. The most serious findings count five points, and the least serious count one.</li>
-      <li>The weighted total is divided by the number of inspections the facility has had. This keeps a facility from looking worse just because it is inspected more often.</li>
-      <li>All facilities are then ranked from most to fewest weighted findings per inspection. A higher score means fewer findings per inspection compared with other Texas facilities.</li>
-    </ul>
-    <p>The score is <strong>relative</strong>. It shows how a facility compares with others, not whether it is safe in an absolute sense.</p>
-    <h4>The Inspection record rating</h4>
-    <p>Facilities with a score also get a plain Inspection record rating of Good, Average, or Poor. Unlike the score, the rating uses fixed standards and does not depend on how other facilities are doing:</p>
-    <ul>
-      <li><strong>Good:</strong> 1.5 or fewer weighted findings per inspection, and no state corrective or adverse action.</li>
-      <li><strong>Average:</strong> between those standards.</li>
-      <li><strong>Poor:</strong> more than 3.5 weighted findings per inspection, or a state corrective or adverse action together with more than 2.5.</li>
-    </ul>
-    <p>A facility with a state corrective or adverse action on record can never be rated Good. <strong>The rating is based on state inspection findings only.</strong></p>
-    <h4>Who gets a rating</h4>
-    <p>Only facilities with <strong>5 or more inspections</strong> get a score and a rating.</p>
-    <h4>Early signs for facilities with fewer than 5 inspections</h4>
-    <p>Facilities with fewer than 5 inspections do not get a score or a rating. Instead, the card shows a preliminary <strong>Early signs</strong> note.</p>
-    <h4>What affected this score</h4>
-    <p>Each card has a "What affected this score" section showing counts of findings by severity.</p>
-    <h4>State action on record</h4>
-    <p>A dark "State action on record" label means the state has recorded a corrective or adverse action against the facility.</p>
-    <h4>What is not in the rating</h4>
-    <p>Many things that matter to children are not published, so they are listed as <strong>Not reported</strong>.</p>
-    <h4>Limits to keep in mind</h4>
-    <ul>
-      <li>The state's inspection counts cover an unknown time period.</li>
-      <li>Recent problems may be missing until due process is complete.</li>
-      <li>This dashboard is an independent analysis and is not endorsed by the State of Texas.</li>
-      <li>No information about individual children is collected or shown.</li>
-    </ul>
-    <h4>Corrections</h4>
-    <p>Facilities that believe their information is wrong or incomplete can contact the dashboard to request a correction.</p>
+    <p>The safety score runs from 0 to 100 and is based on weighted state inspection findings per inspection.</p>
+    <h4>Inspection record rating</h4>
+    <p>Good / Average / Poor based on fixed thresholds. A facility with a state corrective or adverse action cannot be rated Good.</p>
+    <h4>External findings</h4>
+    <p>These come from public court monitor reports, state actions, and news. They are separate from the inspection score.</p>
+    <h4>Street View</h4>
+    <p>Where a street address is available, a Google Street View image is shown. Coverage is not guaranteed for every location.</p>
   </details>
 
   <input id="search" type="text" placeholder="Search by name, city, or county">
@@ -115,24 +89,22 @@
   <div id="list">Loading...</div>
 </main>
 <footer>
-  Source: Texas HHSC Child Care Licensing open data. External findings come from public court monitor reports, state actions, and news. Photos are included only when a public image is available.
+  Source: Texas HHSC Child Care Licensing open data + public court monitor reports. Street View images via Google Maps Platform.
 </footer>
 
 <script>
+// ========== CONFIG ==========
+const GOOGLE_API_KEY = "AIzaSyBj9LrMfWHAeNVc_2DN5k8UWm1d8Xvz01Y";
+// ===========================
+
 let rows = [];
 let findings = [];
-let photos = {};
+let addresses = {};   // OPERATION_ID → address info
 
 const NOT_REPORTED = [
-  "Staff-to-child ratio",
-  "Staff turnover",
-  "Discipline and restraint practices",
-  "Dietary information",
-  "Education program quality",
-  "Therapy actually provided",
-  "Extracurricular activities",
-  "Community involvement",
-  "Building and environment safety"
+  "Staff-to-child ratio", "Staff turnover", "Discipline and restraint practices",
+  "Dietary information", "Education program quality", "Therapy actually provided",
+  "Extracurricular activities", "Community involvement", "Building and environment safety"
 ];
 
 const SEVERITY = [
@@ -176,29 +148,35 @@ function yesNo(v) {
 }
 
 function normalizeName(name) {
-  return (name || "").toLowerCase()
-    .replace(/[^a-z0-9\s]/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
+  return (name || "").toLowerCase().replace(/[^a-z0-9\s]/g, " ").replace(/\s+/g, " ").trim();
 }
 
 function findingsFor(facilityName) {
   const norm = normalizeName(facilityName);
   return findings.filter(f => {
     const fNorm = normalizeName(f.facility_name);
-    return fNorm.includes(norm) || norm.includes(fNorm) ||
-           fNorm.replace(/\s+/g, "") === norm.replace(/\s+/g, "");
+    return fNorm.includes(norm) || norm.includes(fNorm) || fNorm.replace(/\s+/g,"") === norm.replace(/\s+/g,"");
   });
 }
 
-function getPhoto(facilityName) {
-  const norm = normalizeName(facilityName);
-  for (const key in photos) {
-    if (normalizeName(key).includes(norm) || norm.includes(normalizeName(key))) {
-      return photos[key];
-    }
-  }
-  return null;
+function getAddress(opId) {
+  return addresses[opId] || null;
+}
+
+function streetViewURL(addr) {
+  if (!addr || !addr.ADDRESS_LINE) return null;
+  const location = encodeURIComponent(
+    (addr.ADDRESS_LINE + ", " + addr.CITY + ", " + (addr.STATE || "TX") + " " + (addr.ZIPCODE || "")).trim()
+  );
+  return `https://maps.googleapis.com/maps/api/streetview?size=600x300&location=${location}&key=${GOOGLE_API_KEY}`;
+}
+
+function mapsLink(addr) {
+  if (!addr || !addr.ADDRESS_LINE) return null;
+  const q = encodeURIComponent(
+    (addr.ADDRESS_LINE + ", " + addr.CITY + ", " + (addr.STATE || "TX")).trim()
+  );
+  return `https://www.google.com/maps/search/?api=1&query=${q}`;
 }
 
 function detailsFor(r) {
@@ -211,26 +189,22 @@ function detailsFor(r) {
     '<div>Weighted findings per inspection: ' + escapeHTML(r.rate) + '</div>' +
     '<div>State corrective action on record: ' + yesNo(r.CORRECTIVE_ACTION) + '</div>' +
     '<div>State adverse action on record: ' + yesNo(r.ADVERSE_ACTION) + '</div>' +
-    '<div style="margin-top:6px">These are counts only. To read the state\'s own inspection records, search for operation number ' + escapeHTML(r.OPERATION_NUMBER) + ' on <a href="https://childcare.hhs.texas.gov" target="_blank" rel="noopener">Search Texas Child Care</a>.</div>' +
+    '<div style="margin-top:6px">Search operation number ' + escapeHTML(r.OPERATION_NUMBER) + ' on <a href="https://childcare.hhs.texas.gov" target="_blank" rel="noopener">Search Texas Child Care</a>.</div>' +
     '</details>';
 }
 
 function findingsHTML(facilityName) {
   const matches = findingsFor(facilityName);
   if (!matches.length) return "";
-  const items = matches.map(f => {
-    return '<li>' +
-      '<strong>' + escapeHTML(f.category) + '</strong><br>' +
-      escapeHTML(f.finding_summary) + '<br>' +
-      '<a href="' + escapeHTML(f.source_url) + '" target="_blank" rel="noopener">Source (' + escapeHTML(f.source_type) + ')</a>' +
-      (f.date ? ' · ' + escapeHTML(f.date) : '') +
-      '</li>';
-  }).join("");
-  return '<details class="nr" open>' +
-    '<summary><strong>External findings & reviews (' + matches.length + ')</strong></summary>' +
+  const items = matches.map(f =>
+    '<li><strong>' + escapeHTML(f.category) + '</strong><br>' +
+    escapeHTML(f.finding_summary) + '<br>' +
+    '<a href="' + escapeHTML(f.source_url) + '" target="_blank" rel="noopener">Source (' + escapeHTML(f.source_type) + ')</a>' +
+    (f.date ? ' · ' + escapeHTML(f.date) : '') + '</li>'
+  ).join("");
+  return '<details class="nr" open><summary><strong>External findings & reviews (' + matches.length + ')</strong></summary>' +
     '<ul class="findings-list">' + items + '</ul>' +
-    '<div class="findings-note">These come from public court monitor reports, state actions, and news sources. They are separate from the state inspection score above.</div>' +
-    '</details>';
+    '<div class="findings-note">From public court monitor reports, state actions, and news. Separate from the inspection score.</div></details>';
 }
 
 function render() {
@@ -246,39 +220,39 @@ function render() {
     return true;
   });
   document.getElementById("count").textContent = shown.length + " placements shown";
+
   document.getElementById("list").innerHTML = shown.map(r => {
     const hasScore = r.has_score === "True";
     const programs = tagsFor(r.PROGRAMMATIC_SERVICES);
     const treatment = tagsFor(r.TREATMENT_SERVICES);
     let tagHTML = "";
-    if (programs.length) {
-      tagHTML += '<div><span class="label">Licensed services</span><br>' + programs.map(t => '<span class="tag">' + escapeHTML(t) + '</span>').join("") + '</div>';
-    }
-    if (treatment.length) {
-      tagHTML += '<div><span class="label">Licensed to treat</span><br>' + treatment.map(t => '<span class="tag">' + escapeHTML(t) + '</span>').join("") + '</div>';
-    } else {
-      tagHTML += '<div><span class="label">Licensed to treat</span><br>Not reported</div>';
-    }
+    if (programs.length) tagHTML += '<div><span class="label">Licensed services</span><br>' + programs.map(t => '<span class="tag">' + escapeHTML(t) + '</span>').join("") + '</div>';
+    if (treatment.length) tagHTML += '<div><span class="label">Licensed to treat</span><br>' + treatment.map(t => '<span class="tag">' + escapeHTML(t) + '</span>').join("") + '</div>';
+    else tagHTML += '<div><span class="label">Licensed to treat</span><br>Not reported</div>';
+
     let scoreHTML;
     if (hasScore) {
-      scoreHTML = '<span class="label">Safety score</span><br>' +
-        '<span class="score">' + escapeHTML(r.safety_score) + ' / 100</span>' +
+      scoreHTML = '<span class="label">Safety score</span><br><span class="score">' + escapeHTML(r.safety_score) + ' / 100</span>' +
         '<span class="basis">based on ' + escapeHTML(r.TOTAL_INSPECTIONS) + ' inspections</span>' +
         '<div class="ratingline"><span class="label">Inspection record</span> <span class="badge ' + escapeHTML(r.rating) + '">' + escapeHTML(r.rating) + '</span>' +
-        '<div class="rnote">Based on state inspection findings only. Quality of care, staffing, and daily life are not reported.</div></div>';
+        '<div class="rnote">Based on state inspection findings only.</div></div>';
     } else {
-      scoreHTML = '<span class="label">Safety score</span><br>' +
-        '<span class="noscore">Not enough inspections yet for a score</span>' +
+      scoreHTML = '<span class="label">Safety score</span><br><span class="noscore">Not enough inspections yet for a score</span>' +
         '<span class="basis">(' + escapeHTML(r.TOTAL_INSPECTIONS) + ' so far)</span>' +
         '<div class="early"><strong>Early signs:</strong> ' + escapeHTML(r.early_signs) +
-        '<br><span class="prelim">Preliminary, based on very few inspections. Not a score or a rating.</span></div>';
+        '<br><span class="prelim">Preliminary only.</span></div>';
     }
 
-    const photo = getPhoto(r.OPERATION_NAME);
+    // Street View
+    const addr = getAddress(r.OPERATION_ID);
     let photoHTML = "";
-    if (photo) {
-      photoHTML = '<div class="photo-wrap"><img src="' + escapeHTML(photo.photo_url) + '" alt="Photo related to ' + escapeHTML(r.OPERATION_NAME) + '" loading="lazy">' +
-        (photo.photo_credit ? '<div class="photo-credit">' + escapeHTML(photo.photo_credit) + '</div>' : '') +
+    if (addr && addr.ADDRESS_LINE) {
+      const svUrl = streetViewURL(addr);
+      const mapUrl = mapsLink(addr);
+      photoHTML = '<div class="photo-wrap">' +
+        '<img src="' + svUrl + '" alt="Street View of ' + escapeHTML(r.OPERATION_NAME) + '" loading="lazy" onerror="this.style.display=\'none\'">' +
+        '<div class="photo-credit">Google Street View</div>' +
+        (mapUrl ? '<div class="streetview-link"><a href="' + mapUrl + '" target="_blank" rel="noopener">Open in Google Maps</a></div>' : '') +
         '</div>';
     }
 
@@ -293,50 +267,46 @@ function render() {
       '<div class="tags">' + tagHTML + '</div>' +
       '<details class="nr"><summary>Not reported (' + NOT_REPORTED.length + ' items)</summary><ul>' +
       NOT_REPORTED.map(n => '<li>' + escapeHTML(n) + ': Not reported</li>').join("") +
-      '</ul></details>' +
-      '</div>';
+      '</ul></details></div>';
   }).join("");
 }
 
+// Load data
 Promise.all([
   fetch("scored_placements.csv").then(r => r.text()),
   fetch("mapped_findings.csv").then(r => r.text()).catch(() => ""),
-  fetch("facility_photos.csv").then(r => r.text()).catch(() => "")
-]).then(([scoresText, findingsText, photosText]) => {
+  fetch("facility_addresses.csv").then(r => r.text()).catch(() => "")
+]).then(([scoresText, findingsText, addrText]) => {
+  // Scores
   const table = parseCSV(scoresText);
   const head = table[0];
   rows = table.slice(1).filter(r => r.length === head.length).map(r => {
-    const o = {};
-    head.forEach((h, i) => o[h] = r[i]);
-    return o;
+    const o = {}; head.forEach((h, i) => o[h] = r[i]); return o;
   });
   rows.sort((a, b) => a.OPERATION_NAME.localeCompare(b.OPERATION_NAME));
 
+  // Findings
   if (findingsText) {
     const fTable = parseCSV(findingsText);
     const fHead = fTable[0];
     findings = fTable.slice(1).filter(r => r.length === fHead.length).map(r => {
-      const o = {};
-      fHead.forEach((h, i) => o[h] = r[i]);
-      return o;
+      const o = {}; fHead.forEach((h, i) => o[h] = r[i]); return o;
     });
   }
 
-  if (photosText) {
-    const pTable = parseCSV(photosText);
-    const pHead = pTable[0];
-    pTable.slice(1).filter(r => r.length === pHead.length).forEach(r => {
-      const o = {};
-      pHead.forEach((h, i) => o[h] = r[i]);
-      if (o.facility_name && o.photo_url) {
-        photos[o.facility_name] = o;
-      }
+  // Addresses
+  if (addrText) {
+    const aTable = parseCSV(addrText);
+    const aHead = aTable[0];
+    aTable.slice(1).filter(r => r.length === aHead.length).forEach(r => {
+      const o = {}; aHead.forEach((h, i) => o[h] = r[i]);
+      if (o.OPERATION_ID) addresses[o.OPERATION_ID] = o;
     });
   }
 
   render();
 }).catch(() => {
-  document.getElementById("list").textContent = "Could not load the data file.";
+  document.getElementById("list").textContent = "Could not load data files.";
 });
 
 document.getElementById("search").addEventListener("input", render);
