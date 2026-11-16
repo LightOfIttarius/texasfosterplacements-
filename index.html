@@ -44,6 +44,9 @@
   .findings-list { margin: 8px 0 0 0; padding-left: 18px; }
   .findings-list li { margin-bottom: 10px; }
   .findings-note { font-size: 0.85em; color: #52606d; margin-top: 6px; }
+  .photo-wrap { margin: 10px 0; }
+  .photo-wrap img { max-width: 100%; max-height: 180px; border-radius: 6px; object-fit: cover; }
+  .photo-credit { font-size: 0.75em; color: #52606d; margin-top: 3px; }
 </style>
 </head>
 <body>
@@ -58,7 +61,6 @@
 
   <details class="explainer">
     <summary>How to read these scores (tap to open)</summary>
-
     <h4>The safety score</h4>
     <p>The safety score runs from 0 to 100. It compares each open general residential operation in Texas with the others, using state inspection findings.</p>
     <ul>
@@ -67,7 +69,6 @@
       <li>All facilities are then ranked from most to fewest weighted findings per inspection. A higher score means fewer findings per inspection compared with other Texas facilities.</li>
     </ul>
     <p>The score is <strong>relative</strong>. It shows how a facility compares with others, not whether it is safe in an absolute sense.</p>
-
     <h4>The Inspection record rating</h4>
     <p>Facilities with a score also get a plain Inspection record rating of Good, Average, or Poor. Unlike the score, the rating uses fixed standards and does not depend on how other facilities are doing:</p>
     <ul>
@@ -75,33 +76,24 @@
       <li><strong>Average:</strong> between those standards.</li>
       <li><strong>Poor:</strong> more than 3.5 weighted findings per inspection, or a state corrective or adverse action together with more than 2.5.</li>
     </ul>
-    <p>A facility with a state corrective or adverse action on record can never be rated Good. <strong>The rating is based on state inspection findings only.</strong> It does not describe quality of care, staffing, or daily life for children, because that information is not published. As more information becomes available, it can be added.</p>
-
+    <p>A facility with a state corrective or adverse action on record can never be rated Good. <strong>The rating is based on state inspection findings only.</strong></p>
     <h4>Who gets a rating</h4>
-    <p>Only facilities with <strong>5 or more inspections</strong> get a score and a rating. Each card shows how many inspections they are based on.</p>
-
+    <p>Only facilities with <strong>5 or more inspections</strong> get a score and a rating.</p>
     <h4>Early signs for facilities with fewer than 5 inspections</h4>
-    <p>Facilities with fewer than 5 inspections do not get a score or a rating. Instead, the card shows a preliminary <strong>Early signs</strong> note: whether the findings per inspection so far are fewer than most, about average, or more than most compared with facilities that do have scores. This is based on very little information, new facilities often receive several findings at their first inspections, and it can change quickly. It is not a score and should not be treated as one.</p>
-
+    <p>Facilities with fewer than 5 inspections do not get a score or a rating. Instead, the card shows a preliminary <strong>Early signs</strong> note.</p>
     <h4>What affected this score</h4>
-    <p>Each card has a "What affected this score" section. It shows how many findings the state recorded at each severity level, the point weight each level carries, the number of inspections, and any state corrective or adverse action. It shows counts only. It does not describe what happened in any individual finding. Those details are in the state's own inspection records on Search Texas Child Care, and each card shows the operation number to search for.</p>
-
+    <p>Each card has a "What affected this score" section showing counts of findings by severity.</p>
     <h4>State action on record</h4>
-    <p>A dark "State action on record" label means the state has recorded a corrective action or an adverse action against the facility. These are rare and serious, so they are shown separately and they limit the rating.</p>
-
+    <p>A dark "State action on record" label means the state has recorded a corrective or adverse action against the facility.</p>
     <h4>What is not in the rating</h4>
-    <p>Many things that matter to children are not published anywhere, so they are listed as <strong>Not reported</strong> and do not affect the score or rating: staff-to-child ratio, staff turnover, discipline and restraint practices, dietary information, education program quality, therapy actually provided, extracurricular activities, community involvement, and building and environment safety.</p>
-    <p>The "Licensed services" and "Licensed to treat" tags show what a facility is approved to offer. They do not show how well it does it, and they are not part of the score or rating.</p>
-
+    <p>Many things that matter to children are not published, so they are listed as <strong>Not reported</strong>.</p>
     <h4>Limits to keep in mind</h4>
     <ul>
-      <li>The state's inspection counts cover an unknown time period, so facilities that have been open longer may have more findings on record.</li>
-      <li>The state's online compliance history leaves out violations until a facility has had due process, so recent problems may be missing.</li>
-      <li>The state says its violation weights are not intended to be used as a ranking or score. This dashboard is an independent analysis and is not endorsed by the State of Texas.</li>
-      <li>Scores and ratings are refreshed weekly from the state's open data and may shift slightly.</li>
+      <li>The state's inspection counts cover an unknown time period.</li>
+      <li>Recent problems may be missing until due process is complete.</li>
+      <li>This dashboard is an independent analysis and is not endorsed by the State of Texas.</li>
       <li>No information about individual children is collected or shown.</li>
     </ul>
-
     <h4>Corrections</h4>
     <p>Facilities that believe their information is wrong or incomplete can contact the dashboard to request a correction.</p>
   </details>
@@ -123,12 +115,13 @@
   <div id="list">Loading...</div>
 </main>
 <footer>
-  Source: Texas HHSC Child Care Licensing open data. The safety score and inspection record rating are calculated from weighted inspection findings per inspection. Service tags show what a facility is licensed to offer, not how well it does it. External findings come from public court monitor reports, state actions, and news sources.
+  Source: Texas HHSC Child Care Licensing open data. External findings come from public court monitor reports, state actions, and news. Photos are included only when a public image is available.
 </footer>
 
 <script>
 let rows = [];
 let findings = [];
+let photos = {};
 
 const NOT_REPORTED = [
   "Staff-to-child ratio",
@@ -198,6 +191,16 @@ function findingsFor(facilityName) {
   });
 }
 
+function getPhoto(facilityName) {
+  const norm = normalizeName(facilityName);
+  for (const key in photos) {
+    if (normalizeName(key).includes(norm) || norm.includes(normalizeName(key))) {
+      return photos[key];
+    }
+  }
+  return null;
+}
+
 function detailsFor(r) {
   const sevRows = SEVERITY.map(s =>
     '<tr><td>' + s[0] + '</td><td>' + escapeHTML(r[s[1]]) + ' findings</td><td>' + s[2] + ' points each</td></tr>'
@@ -215,7 +218,6 @@ function detailsFor(r) {
 function findingsHTML(facilityName) {
   const matches = findingsFor(facilityName);
   if (!matches.length) return "";
-
   const items = matches.map(f => {
     return '<li>' +
       '<strong>' + escapeHTML(f.category) + '</strong><br>' +
@@ -224,7 +226,6 @@ function findingsHTML(facilityName) {
       (f.date ? ' · ' + escapeHTML(f.date) : '') +
       '</li>';
   }).join("");
-
   return '<details class="nr" open>' +
     '<summary><strong>External findings & reviews (' + matches.length + ')</strong></summary>' +
     '<ul class="findings-list">' + items + '</ul>' +
@@ -272,10 +273,20 @@ function render() {
         '<div class="early"><strong>Early signs:</strong> ' + escapeHTML(r.early_signs) +
         '<br><span class="prelim">Preliminary, based on very few inspections. Not a score or a rating.</span></div>';
     }
+
+    const photo = getPhoto(r.OPERATION_NAME);
+    let photoHTML = "";
+    if (photo) {
+      photoHTML = '<div class="photo-wrap"><img src="' + escapeHTML(photo.photo_url) + '" alt="Photo related to ' + escapeHTML(r.OPERATION_NAME) + '" loading="lazy">' +
+        (photo.photo_credit ? '<div class="photo-credit">' + escapeHTML(photo.photo_credit) + '</div>' : '') +
+        '</div>';
+    }
+
     return '<div class="card">' +
       '<h3>' + escapeHTML(r.OPERATION_NAME) +
       (r.flag === "True" ? '<span class="badge flag">State action on record</span>' : '') + '</h3>' +
       '<div class="meta">' + escapeHTML(r.CITY) + ', ' + escapeHTML(r.COUNTY) + ' County &middot; Capacity ' + escapeHTML(r.TOTAL_CAPACITY) + '</div>' +
+      photoHTML +
       scoreHTML +
       detailsFor(r) +
       findingsHTML(r.OPERATION_NAME) +
@@ -287,12 +298,11 @@ function render() {
   }).join("");
 }
 
-// Load both data files
 Promise.all([
   fetch("scored_placements.csv").then(r => r.text()),
-  fetch("mapped_findings.csv").then(r => r.text()).catch(() => "")
-]).then(([scoresText, findingsText]) => {
-  // Parse safety scores
+  fetch("mapped_findings.csv").then(r => r.text()).catch(() => ""),
+  fetch("facility_photos.csv").then(r => r.text()).catch(() => "")
+]).then(([scoresText, findingsText, photosText]) => {
   const table = parseCSV(scoresText);
   const head = table[0];
   rows = table.slice(1).filter(r => r.length === head.length).map(r => {
@@ -302,7 +312,6 @@ Promise.all([
   });
   rows.sort((a, b) => a.OPERATION_NAME.localeCompare(b.OPERATION_NAME));
 
-  // Parse external findings (if the file exists)
   if (findingsText) {
     const fTable = parseCSV(findingsText);
     const fHead = fTable[0];
@@ -310,6 +319,18 @@ Promise.all([
       const o = {};
       fHead.forEach((h, i) => o[h] = r[i]);
       return o;
+    });
+  }
+
+  if (photosText) {
+    const pTable = parseCSV(photosText);
+    const pHead = pTable[0];
+    pTable.slice(1).filter(r => r.length === pHead.length).forEach(r => {
+      const o = {};
+      pHead.forEach((h, i) => o[h] = r[i]);
+      if (o.facility_name && o.photo_url) {
+        photos[o.facility_name] = o;
+      }
     });
   }
 
