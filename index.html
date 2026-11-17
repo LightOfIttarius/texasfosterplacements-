@@ -3,380 +3,115 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Texas Foster Placements Transparency</title>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<title>Texas Foster Placements Transparency Dashboard</title>
 <style>
-  :root {
-    --bg: #f8fafc;
-    --card: #ffffff;
-    --text: #0f172a;
-    --muted: #64748b;
-    --primary: #1e40af;
-    --primary-soft: #dbeafe;
-    --border: #e2e8f0;
-    --good: #15803d;
-    --avg: #c2410c;
-    --poor: #b91c1c;
-    --flag: #7f1d1d;
-  }
-
-  * { box-sizing: border-box; }
-  body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    margin: 0;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.5;
-  }
-
-  header {
-    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
-    color: white;
-    padding: 28px 20px 24px;
-  }
-  header h1 {
-    margin: 0 0 6px 0;
-    font-size: 1.55rem;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-  }
-  header p {
-    margin: 0;
-    opacity: 0.9;
-    font-size: 0.95rem;
-  }
-
-  main {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px 16px 40px;
-  }
-
-  /* ===== Charts Section ===== */
-  .charts-section {
-    background: var(--card);
-    border-radius: 16px;
-    padding: 20px;
-    margin-bottom: 24px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-    border: 1px solid var(--border);
-  }
-  .charts-section h2 {
-    margin: 0 0 4px 0;
-    font-size: 1.25rem;
-    font-weight: 700;
-  }
-  .charts-section .subtitle {
-    color: var(--muted);
-    font-size: 0.9rem;
-    margin-bottom: 20px;
-  }
-  .chart-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
-  @media (min-width: 700px) {
-    .chart-grid { grid-template-columns: 1fr 1fr; }
-  }
-  .chart-card {
-    background: #f8fafc;
-    border-radius: 12px;
-    padding: 16px;
-    border: 1px solid var(--border);
-  }
-  .chart-card h3 {
-    margin: 0 0 12px 0;
-    font-size: 0.95rem;
-    font-weight: 600;
-    color: var(--text);
-  }
-  .chart-wrap {
-    position: relative;
-    height: 220px;
-  }
-  .chart-note {
-    font-size: 0.75rem;
-    color: var(--muted);
-    margin-top: 10px;
-    line-height: 1.4;
-  }
-
-  /* ===== Notice & Explainer ===== */
-  .notice {
-    background: #fffbeb;
-    border-left: 4px solid #f59e0b;
-    padding: 14px 16px;
-    margin-bottom: 20px;
-    border-radius: 0 10px 10px 0;
-    font-size: 0.92rem;
-  }
-  .explainer {
-    background: var(--card);
-    border-radius: 12px;
-    padding: 4px 16px 12px;
-    margin-bottom: 20px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-    border: 1px solid var(--border);
-  }
-  .explainer summary {
-    cursor: pointer;
-    font-weight: 600;
-    color: var(--primary);
-    padding: 12px 0;
-    list-style: none;
-  }
-  .explainer summary::-webkit-details-marker { display: none; }
-  .explainer h4 { margin: 16px 0 6px; font-size: 0.95rem; }
-  .explainer p, .explainer li { font-size: 0.9rem; color: #334155; }
-  .explainer ul { padding-left: 18px; margin: 6px 0 10px; }
-
-  /* ===== Controls ===== */
-  .controls {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 12px;
-  }
-  .controls input, .controls select {
-    padding: 11px 14px;
-    font-size: 0.95rem;
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    font-family: inherit;
-    background: white;
-  }
+  body { font-family: Arial, sans-serif; margin: 0; background: #f4f6f8; color: #1f2933; }
+  header { background: #1f4e79; color: white; padding: 20px; }
+  header h1 { margin: 0 0 6px 0; font-size: 1.5em; }
+  main { max-width: 900px; margin: 0 auto; padding: 16px; }
+  .notice { background: #fff8e1; border-left: 4px solid #f2b705; padding: 12px; margin-bottom: 16px; font-size: 0.95em; }
+  .explainer { background: white; border-radius: 8px; padding: 12px 14px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.12); }
+  .explainer summary { cursor: pointer; font-weight: bold; color: #1f4e79; font-size: 1.05em; }
+  .explainer h4 { margin: 14px 0 4px 0; }
+  .explainer p, .explainer li { font-size: 0.95em; line-height: 1.45; }
+  .explainer ul { margin: 4px 0 8px 0; padding-left: 20px; }
+  .controls { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
+  .controls input, .controls select { padding: 10px; font-size: 1em; border: 1px solid #b0b8c1; border-radius: 6px; font-family: inherit; }
   .controls input { flex: 1 1 200px; min-width: 0; }
-  .controls select { min-width: 140px; }
-
-  .chips {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 14px;
-  }
-  .chip {
-    font-family: inherit;
-    font-size: 0.85rem;
-    border: 1px solid var(--border);
-    background: white;
-    color: var(--text);
-    border-radius: 999px;
-    padding: 7px 14px;
-    cursor: pointer;
-    transition: all 0.15s ease;
-  }
-  .chip:hover { border-color: #94a3b8; }
-  .chip .n { font-weight: 700; margin-right: 5px; }
-  .chip.on {
-    background: var(--primary);
-    border-color: var(--primary);
-    color: white;
-  }
-
-  #count {
-    color: var(--muted);
-    font-size: 0.88rem;
-    margin: 4px 0 12px;
-  }
-
-  /* ===== Facility Cards ===== */
-  .card {
-    background: var(--card);
-    border-radius: 12px;
-    margin-bottom: 10px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-    border: 1px solid var(--border);
-    overflow: hidden;
-  }
-  .card > summary {
-    list-style: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    position: relative;
-  }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .chip { font-family: inherit; font-size: 0.9em; border: 1px solid #b0b8c1; background: white; color: #1f2933; border-radius: 20px; padding: 6px 12px; cursor: pointer; }
+  .chip .n { font-weight: bold; margin-right: 6px; }
+  .chip.on { background: #1f4e79; border-color: #1f4e79; color: white; }
+  #count { color: #52606d; font-size: 0.9em; margin: 4px 0 10px 0; }
+  .card { background: white; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.12); }
+  .card > summary { list-style: none; cursor: pointer; padding: 12px 14px; position: relative; }
   .card > summary::-webkit-details-marker { display: none; }
-  .chev {
-    position: absolute;
-    right: 16px;
-    top: 16px;
-    color: var(--muted);
-    font-size: 0.85rem;
-    transition: transform 0.2s;
-  }
+  .chev { position: absolute; right: 14px; top: 14px; color: #52606d; font-size: 0.9em; }
   .card[open] .chev { transform: rotate(180deg); }
-  .row1 {
-    font-weight: 650;
-    font-size: 1.02rem;
-    padding-right: 28px;
-  }
-  .row2 {
-    color: var(--muted);
-    font-size: 0.85rem;
-    margin: 3px 0 6px;
-  }
-  .row3 { font-size: 0.95rem; }
-
-  .body {
-    padding: 0 16px 16px;
-    border-top: 1px solid var(--border);
-    font-size: 0.9rem;
-  }
-  .body > * { margin-top: 12px; }
-  .label {
-    font-size: 0.75rem;
-    color: var(--muted);
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    font-weight: 600;
-  }
-  .score { font-size: 1.3rem; font-weight: 700; }
-  .score small { font-size: 0.7em; font-weight: 500; color: var(--muted); }
-  .noscore { font-weight: 600; color: var(--muted); }
-  .basis { color: var(--muted); font-size: 0.88rem; }
-  .rnote { color: #475569; font-size: 0.9rem; }
-  .prelim { color: #b45309; font-size: 0.88rem; }
-
-  .badge {
-    display: inline-block;
-    padding: 2px 9px;
-    border-radius: 999px;
-    font-size: 0.75rem;
-    font-weight: 600;
-    margin-left: 6px;
-    color: white;
-  }
-  .Good { background: var(--good); }
-  .Average { background: var(--avg); }
-  .Poor { background: var(--poor); }
-  .flag { background: var(--flag); }
-
-  .tag {
-    display: inline-block;
-    background: var(--primary-soft);
-    color: var(--primary);
-    padding: 3px 9px;
-    border-radius: 999px;
-    font-size: 0.8rem;
-    margin: 0 4px 4px 0;
-    font-weight: 500;
-  }
-
-  details.nr { color: var(--muted); }
-  details.nr summary { cursor: pointer; font-weight: 500; }
-  details.nr ul { margin: 6px 0 0; padding-left: 18px; }
-
-  table.sev { border-collapse: collapse; font-size: 0.9rem; width: 100%; }
-  table.sev td, table.sev th { padding: 5px 12px 5px 0; text-align: left; }
-  table.sev th { color: var(--muted); font-weight: 600; font-size: 0.8rem; }
-
-  .findings-list { margin: 8px 0 0; padding-left: 18px; }
+  .row1 { font-weight: bold; font-size: 1.02em; padding-right: 24px; }
+  .row2 { color: #52606d; font-size: 0.88em; margin: 2px 0 6px 0; }
+  .row3 { font-size: 0.95em; }
+  .body { padding: 0 14px 14px 14px; border-top: 1px solid #e4e7eb; font-size: 0.92em; }
+  .body > * { margin-top: 10px; }
+  .label { font-size: 0.8em; color: #52606d; text-transform: uppercase; letter-spacing: 0.04em; }
+  .score { font-size: 1.25em; font-weight: bold; }
+  .score small { font-size: 0.7em; font-weight: normal; color: #52606d; }
+  .noscore { font-weight: bold; color: #52606d; }
+  .basis { color: #52606d; font-size: 0.9em; margin-left: 6px; }
+  .prelim { color: #8a5a00; font-size: 0.9em; }
+  .rnote { color: #52606d; font-size: 0.9em; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 0.8em; margin-left: 6px; color: white; }
+  .Good { background: #2e7d32; }
+  .Average { background: #ed8b00; }
+  .Poor { background: #c62828; }
+  .flag { background: #6a1b1b; }
+  .tag { display: inline-block; background: #e3edf7; color: #1f4e79; padding: 2px 8px; border-radius: 10px; font-size: 0.85em; margin: 0 4px 4px 0; }
+  details.nr { color: #52606d; }
+  details.nr summary { cursor: pointer; }
+  details.nr ul { margin: 6px 0 0 0; padding-left: 20px; }
+  table.sev { border-collapse: collapse; font-size: 0.95em; }
+  table.sev td, table.sev th { padding: 4px 12px 4px 0; text-align: left; }
+  .findings-list { margin: 8px 0 0 0; padding-left: 18px; }
   .findings-list li { margin-bottom: 10px; }
-  .findings-note { font-size: 0.82rem; color: var(--muted); margin-top: 8px; }
-
-  .more {
-    display: block;
-    width: 100%;
-    font-family: inherit;
-    font-size: 0.95rem;
-    padding: 13px;
-    margin: 10px 0 20px;
-    border: 1px solid var(--primary);
-    background: white;
-    color: var(--primary);
-    border-radius: 10px;
-    cursor: pointer;
-    font-weight: 600;
-    transition: background 0.15s;
-  }
-  .more:hover { background: var(--primary-soft); }
-
-  footer {
-    font-size: 0.82rem;
-    color: var(--muted);
-    padding: 24px 16px;
-    text-align: center;
-    border-top: 1px solid var(--border);
-    margin-top: 20px;
-  }
+  .findings-note { font-size: 0.85em; color: #52606d; margin-top: 6px; }
+  .photo-wrap img { max-width: 100%; max-height: 220px; border-radius: 6px; object-fit: cover; width: 100%; }
+  .photo-credit { font-size: 0.75em; color: #52606d; margin-top: 3px; }
+  .more { display: block; width: 100%; font-family: inherit; font-size: 1em; padding: 12px; margin: 8px 0 16px 0; border: 1px solid #1f4e79; background: white; color: #1f4e79; border-radius: 8px; cursor: pointer; }
+  footer { font-size: 0.85em; color: #52606d; padding: 16px; text-align: center; }
 </style>
 </head>
 <body>
 <header>
-  <h1>Texas Foster Placements</h1>
-  <p>Independent transparency dashboard · Public data only · No child info</p>
+  <h1>Texas Foster Placements Transparency Dashboard</h1>
+  <div>An independent analysis of publicly available data. Not a state rating.</div>
 </header>
-
 <main>
-  <!-- ========== INTERACTIVE CHARTS ========== -->
-  <section class="charts-section">
-    <h2>Statewide Context</h2>
-    <p class="subtitle">Texas DFPS reported child abuse & neglect trends (public data). These numbers are statewide — not specific to any facility.</p>
-
-    <div class="chart-grid">
-      <div class="chart-card">
-        <h3>Confirmed Victims Over Time</h3>
-        <div class="chart-wrap">
-          <canvas id="victimsChart"></canvas>
-        </div>
-        <p class="chart-note">Approximate confirmed victims of abuse/neglect in completed investigations. Source: DFPS Data Book trends.</p>
-      </div>
-
-      <div class="chart-card">
-        <h3>Types of Maltreatment</h3>
-        <div class="chart-wrap">
-          <canvas id="typesChart"></canvas>
-        </div>
-        <p class="chart-note">Share of confirmed allegations. Neglect remains by far the largest category in Texas.</p>
-      </div>
-
-      <div class="chart-card">
-        <h3>Victims by Race / Ethnicity</h3>
-        <div class="chart-wrap">
-          <canvas id="raceChart"></canvas>
-        </div>
-        <p class="chart-note">Distribution among confirmed victims (recent statewide data).</p>
-      </div>
-
-      <div class="chart-card">
-        <h3>Abuse/Neglect Related Fatalities</h3>
-        <div class="chart-wrap">
-          <canvas id="fatalityChart"></canvas>
-        </div>
-        <p class="chart-note">Confirmed abuse/neglect related child fatalities investigated by DFPS. Numbers have declined in recent years.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== ORIGINAL NOTICE ========== -->
   <div class="notice">
-    <strong>How to read the facility list:</strong> Each placement is described by its <strong>state inspection record only</strong>. It is <strong>not a rating of the quality of care or of daily life for children</strong>. Facilities with fewer than 5 inspections do not get a rating yet. External findings are shown separately. No information about individual children is collected or shown. <strong>Tap a facility to open its details.</strong>
+    <strong>How to read this:</strong> Each placement is described by its <strong>state inspection record only</strong>. It is <strong>not a rating of the quality of care or of daily life for children</strong>, because things like staffing, discipline, food, education, and activities are not published anywhere yet. Each facility lists them as Not reported instead of guessing. Facilities with fewer than 5 inspections do not get a rating yet. External findings from public reports are shown separately and are not part of any score or rating. No information about individual children is collected or shown. <strong>Tap a facility to open its details.</strong>
   </div>
 
   <details class="explainer">
     <summary>How to read these scores (tap to open)</summary>
+
     <h4>The safety score</h4>
-    <p>The safety score runs from 0 to 100. It compares each open general residential operation in Texas with the others, using state inspection findings. A higher score means fewer weighted findings per inspection compared with other Texas facilities. The score is <strong>relative</strong>.</p>
+    <p>The safety score runs from 0 to 100. It compares each open general residential operation in Texas with the others, using state inspection findings. Each finding is weighted by how serious the state rated it, the weighted total is divided by the number of inspections, and facilities are ranked. A higher score means fewer weighted findings per inspection compared with other Texas facilities. The score is <strong>relative</strong>: it shows how a facility compares with others, not whether it is safe in an absolute sense.</p>
+
     <h4>The Inspection record rating</h4>
-    <p>Facilities with a score also get a plain rating of Good, Average, or Poor. A facility with a state corrective or adverse action on record can never be rated Good. The rating is based on state inspection findings only.</p>
+    <p>Facilities with a score also get a plain rating of Good, Average, or Poor based on fixed standards. A facility with a state corrective or adverse action on record can never be rated Good. <strong>The rating is based on state inspection findings only.</strong> It does not describe quality of care, staffing, or daily life for children, because that information is not published.</p>
+
+    <h4>The filter buttons</h4>
+    <p>The buttons at the top show how many facilities fall in each group and filter the list when tapped. The numbers change as you search or choose a county.</p>
+
     <h4>Who gets a rating</h4>
-    <p>Only facilities with <strong>5 or more inspections</strong> get a score and a rating. Facilities with fewer show a preliminary <strong>Early signs</strong> note instead.</p>
-    <h4>What is not in the score</h4>
-    <p>Staffing ratios, turnover, discipline practices, food quality, education, therapy, and daily life experiences are not published by the state, so they appear as “Not reported.”</p>
-    <h4>Limits</h4>
+    <p>Only facilities with <strong>5 or more inspections</strong> get a score and a rating. Facilities with fewer show a preliminary <strong>Early signs</strong> note instead. It is based on very little information, new facilities often receive several findings at their first inspections, and it can change quickly. It is not a score and should not be treated as one.</p>
+
+    <h4>What affected this score</h4>
+    <p>Opening a facility shows how many findings the state recorded at each severity level, the point weight each level carries, the number of inspections, and any state corrective or adverse action. These are counts only. The state's own inspection records can be searched by operation number on Search Texas Child Care.</p>
+
+    <h4>External findings</h4>
+    <p>Some facilities list findings from public sources such as court monitor reports, state actions, and news reporting. Each one shows its category, a summary, its source, and its date. These are <strong>separate from the inspection score and rating</strong>. They are matched to facilities by name or operation number, so a match could be wrong, and a finding may be out of date. Please check the linked source, and tell us about any error so it can be corrected.</p>
+
+    <h4>What is not in the score or rating</h4>
+    <p>Many things that matter to children are not published anywhere, so they are listed as <strong>Not reported</strong>: staff-to-child ratio, staff turnover, discipline and restraint practices, dietary information, education program quality, therapy actually provided, extracurricular activities, community involvement, and building and environment safety. The "Licensed services" and "Licensed to treat" tags show what a facility is approved to offer, not how well it does it.</p>
+
+    <h4>Limits to keep in mind</h4>
     <ul>
-      <li>Inspection history covers an unknown time period.</li>
-      <li>Recent violations may be missing until due process is complete.</li>
-      <li>This is independent analysis and is not endorsed by the State of Texas.</li>
+      <li>The state's inspection counts cover an unknown time period, so facilities that have been open longer may have more findings on record.</li>
+      <li>The state's online compliance history leaves out violations until a facility has had due process, so recent problems may be missing.</li>
+      <li>The state says its violation weights are not intended to be used as a ranking or score. This dashboard is an independent analysis and is not endorsed by the State of Texas.</li>
+      <li>Scores and ratings are refreshed weekly from the state's open data and may shift slightly.</li>
+      <li>No information about individual children is collected or shown.</li>
     </ul>
+
+    <h4>Corrections</h4>
+    <p>Facilities and families who believe any information here is wrong, out of date, or matched to the wrong facility can contact the dashboard to request a correction.</p>
   </details>
 
-  <!-- ========== CONTROLS ========== -->
   <div class="controls">
     <input id="search" type="text" placeholder="Search by name, city, or county">
     <select id="county"><option value="">All counties</option></select>
     <select id="sort">
-      <option value="name">Sort: Name A–Z</option>
+      <option value="name">Sort: Name A to Z</option>
       <option value="city">Sort: City</option>
       <option value="inspections">Sort: Most inspections</option>
     </select>
@@ -384,17 +119,18 @@
   <div class="chips" id="tiles"></div>
 
   <div id="count"></div>
-  <div id="list">Loading facilities…</div>
+  <div id="list">Loading...</div>
   <div id="morewrap"></div>
 </main>
-
 <footer>
-  Source: Texas HHSC Child Care Licensing open data + DFPS public reports.<br>
-  Independent analysis · Not endorsed by the State of Texas
+  Source: Texas HHSC Child Care Licensing open data and public reports. Independent analysis, not endorsed by the State of Texas.
 </footer>
 
 <script>
 // ========== CONFIG ==========
+// Street View is OFF. It shows photos of places where children live, so keep it off
+// until a social work or legal reviewer has weighed in. To turn it on later, set
+// SHOW_STREET_VIEW to true and paste a NEW key that is restricted to this site.
 const SHOW_STREET_VIEW = false;
 const GOOGLE_API_KEY = "";
 const PAGE = 25;
@@ -425,103 +161,6 @@ const CHIPS = [
   ["early", "Early signs"], ["flag", "State action"]
 ];
 
-// ========== CHARTS (sample data based on public DFPS trends) ==========
-function initCharts() {
-  // Confirmed victims trend (illustrative of recent public numbers)
-  new Chart(document.getElementById('victimsChart'), {
-    type: 'line',
-    data: {
-      labels: ['FY20', 'FY21', 'FY22', 'FY23', 'FY24', 'FY25'],
-      datasets: [{
-        label: 'Confirmed Victims',
-        data: [62000, 58000, 54000, 52000, 50040, 48500],
-        borderColor: '#1e40af',
-        backgroundColor: 'rgba(30, 64, 175, 0.08)',
-        fill: true,
-        tension: 0.3,
-        pointRadius: 4,
-        pointBackgroundColor: '#1e40af'
-      }]
-    },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      plugins: { legend: { display: false } },
-      scales: {
-        y: { beginAtZero: false, grid: { color: '#e2e8f0' } },
-        x: { grid: { display: false } }
-      }
-    }
-  });
-
-  // Maltreatment types
-  new Chart(document.getElementById('typesChart'), {
-    type: 'doughnut',
-    data: {
-      labels: ['Neglect', 'Physical Abuse', 'Sexual Abuse', 'Medical Neglect'],
-      datasets: [{
-        data: [77.6, 11.4, 9.1, 1.4],
-        backgroundColor: ['#1e40af', '#3b82f6', '#60a5fa', '#93c5fd'],
-        borderWidth: 0
-      }]
-    },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      plugins: {
-        legend: { position: 'bottom', labels: { boxWidth: 12, padding: 12, font: { size: 12 } } }
-      }
-    }
-  });
-
-  // Race / Ethnicity
-  new Chart(document.getElementById('raceChart'), {
-    type: 'bar',
-    data: {
-      labels: ['Hispanic', 'White', 'Black', 'Multi-race', 'Other'],
-      datasets: [{
-        label: '% of victims',
-        data: [45.9, 23.3, 22.0, 3.8, 5.0],
-        backgroundColor: '#1e40af',
-        borderRadius: 6
-      }]
-    },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      plugins: { legend: { display: false } },
-      scales: {
-        y: { beginAtZero: true, max: 50, grid: { color: '#e2e8f0' } },
-        x: { grid: { display: false } }
-      }
-    }
-  });
-
-  // Fatalities
-  new Chart(document.getElementById('fatalityChart'), {
-    type: 'bar',
-    data: {
-      labels: ['FY21', 'FY22', 'FY23', 'FY24', 'FY25'],
-      datasets: [{
-        label: 'Confirmed Fatalities',
-        data: [199, 182, 164, 99, 124],
-        backgroundColor: '#b91c1c',
-        borderRadius: 6
-      }]
-    },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      plugins: { legend: { display: false } },
-      scales: {
-        y: { beginAtZero: true, grid: { color: '#e2e8f0' } },
-        x: { grid: { display: false } }
-      }
-    }
-  });
-}
-
-// ========== ORIGINAL HELPERS (kept intact) ==========
 function parseCSV(text) {
   const out = [];
   let row = [], field = "", inQuotes = false;
@@ -562,6 +201,8 @@ function normalizeName(name) {
   return (name || "").toLowerCase().replace(/[^a-z0-9\s]/g, " ").replace(/\s+/g, " ").trim();
 }
 
+// Exact matching only. A finding attaches to a facility when the operation ID matches,
+// or when the normalized names are identical. Blank names never match.
 function findingsFor(r) {
   const norm = normalizeName(r.OPERATION_NAME);
   if (!norm) return [];
@@ -603,20 +244,20 @@ function findingsHTML(r) {
       : 'Source: ' + escapeHTML(f.source_type) + ' (no link)';
     return '<li><strong>' + escapeHTML(f.category) + '</strong><br>' +
       escapeHTML(f.finding_summary) + '<br>' + src +
-      (f.date ? ' · ' + escapeHTML(f.date) : '') + '</li>';
+      (f.date ? ' &middot; ' + escapeHTML(f.date) : '') + '</li>';
   }).join("");
   return '<details class="nr" open><summary><strong>External findings from public reports (' + matches.length + ')</strong></summary>' +
     '<ul class="findings-list">' + items + '</ul>' +
-    '<div class="findings-note">From public court monitor reports, state actions, and news. Separate from the inspection score and rating. Matched by facility name or operation number — please verify the source.</div></details>';
+    '<div class="findings-note">From public court monitor reports, state actions, and news. Separate from the inspection score and rating. Matched by facility name or operation number, so please check the source, since a match could be wrong or out of date.</div></details>';
 }
 
 function bodyHTML(r) {
   const hasScore = r.has_score === "True";
   let top;
   if (hasScore) {
-    top = '<div class="rnote"><strong>Safety score ' + escapeHTML(r.safety_score) + ' / 100</strong>, based on ' + escapeHTML(r.TOTAL_INSPECTIONS) + ' inspections. Inspection record: <strong>' + escapeHTML(r.rating) + '</strong>. Based on state inspection findings only.</div>';
+    top = '<div class="rnote"><strong>Safety score ' + escapeHTML(r.safety_score) + ' / 100</strong>, based on ' + escapeHTML(r.TOTAL_INSPECTIONS) + ' inspections. Inspection record: <strong>' + escapeHTML(r.rating) + '</strong>. Based on state inspection findings only. Quality of care, staffing, and daily life are not reported.</div>';
   } else {
-    top = '<div class="rnote"><strong>Not enough inspections yet for a score</strong> (' + escapeHTML(r.TOTAL_INSPECTIONS) + ' so far).<br>Early signs: ' + escapeHTML(r.early_signs) + '<br><span class="prelim">Preliminary — not a score or rating.</span></div>';
+    top = '<div class="rnote"><strong>Not enough inspections yet for a score</strong> (' + escapeHTML(r.TOTAL_INSPECTIONS) + ' so far).<br>Early signs: ' + escapeHTML(r.early_signs) + '<br><span class="prelim">Preliminary, based on very few inspections. Not a score or a rating.</span></div>';
   }
   const programs = tagsFor(r.PROGRAMMATIC_SERVICES);
   const treatment = tagsFor(r.TREATMENT_SERVICES);
@@ -655,10 +296,10 @@ function cardHTML(r) {
     line = '<span class="noscore">No score yet</span><span class="basis">Early signs: ' + escapeHTML(r.early_signs) + '</span>';
   }
   return '<details class="card"><summary>' +
-    '<span class="chev">▾</span>' +
+    '<span class="chev">&#9662;</span>' +
     '<div class="row1">' + escapeHTML(r.OPERATION_NAME) +
     (r.flag === "True" ? '<span class="badge flag">State action</span>' : '') + '</div>' +
-    '<div class="row2">' + escapeHTML(loc) + ' · ' + escapeHTML(r.TOTAL_INSPECTIONS) + ' inspections</div>' +
+    '<div class="row2">' + escapeHTML(loc) + ' &middot; ' + escapeHTML(r.TOTAL_INSPECTIONS) + ' inspections</div>' +
     '<div class="row3">' + line + '</div></summary>' +
     '<div class="body">' + bodyHTML(r) + '</div></details>';
 }
@@ -714,7 +355,6 @@ function render() {
 
 function resetAndRender() { limit = PAGE; render(); }
 
-// ========== LOAD DATA ==========
 const loads = [
   fetch("scored_placements.csv").then(r => r.text()),
   fetch("mapped_findings.csv").then(r => r.text()).catch(() => ""),
@@ -750,13 +390,10 @@ Promise.all(loads).then(([scoresText, findingsText, addrText]) => {
     counties.map(c => '<option value="' + escapeHTML(c) + '">' + escapeHTML(c) + ' County</option>').join("");
 
   render();
-  initCharts();
 }).catch(() => {
   document.getElementById("list").textContent = "Could not load data files.";
-  initCharts(); // still show the charts even if facility data fails
 });
 
-// Event listeners
 document.getElementById("search").addEventListener("input", resetAndRender);
 document.getElementById("county").addEventListener("change", resetAndRender);
 document.getElementById("sort").addEventListener("change", resetAndRender);
