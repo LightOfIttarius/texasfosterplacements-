@@ -1,417 +1,417 @@
 OPERATION_ID,OPERATION_NUMBER,OPERATION_NAME,CITY,COUNTY,TOTAL_CAPACITY,TOTAL_INSPECTIONS,safety_score,has_score,rating,early_signs,flag,PROGRAMMATIC_SERVICES,TREATMENT_SERVICES,DEFICIENCY_HIGH,DEFICIENCY_MEDIUM_HIGH,DEFICIENCY_MEDIUM,DEFICIENCY_MEDIUM_LOW,DEFICIENCY_LOW,rate,CORRECTIVE_ACTION,ADVERSE_ACTION
-1503729,1815060,Peniel RTC Inc.,ROSENBERG,FORT BEND,7.0,8,62.0,True,Average,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,1,3,0,0,1.62,NO,NO
-1500332,1812365,Transformation Residential LLC,HOUSTON,HARRIS,7.0,7,6.0,True,Poor,,False,Child Care,"Emotional Disorders,Intellectual Disability",3,2,4,1,0,5.29,NO,NO
-1529839,1834598,Alora's Refuge LLC,MAGNOLIA,MONTGOMERY,7.0,2,,False,,Fewer findings than most,False,Child Care,Emotional Disorders,0,0,0,0,0,0.0,NO,NO
-1377821,1721455,Creighton Oaks Residential Treatment Center,CONROE,MONTGOMERY,71.0,146,60.0,True,Average,,False,"Child Care,Transitional Living",Emotional Disorders,11,26,24,4,2,1.65,NO,NO
-1411457,1746293,Westlake House LLC,WEST COLUMBIA,BRAZORIA,15.0,34,69.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,5,2,7,1,1.35,NO,NO
-207132,817874,St Peter - St Joseph Childrens Home Emergency Shelter,,,52.0,149,81.0,True,Good,,False,"Child Care,Emergency Care",,6,21,5,2,4,0.92,NO,NO
-1507004,1817244,"Helping Hands Houston, TX LLC",HOUSTON,HARRIS,10.0,10,50.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,0,5,0,0,2.0,NO,NO
-198385,813238,Hill Country Youth Ranch,,,80.0,117,52.0,True,Average,,False,"Child Care,Emergency Care,Transitional Living",Emotional Disorders,13,27,16,2,0,1.92,NO,NO
-1469729,1791476,TRELS Home LLC,CONROE,MONTGOMERY,15.0,69,93.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,2,3,3,0,0.41,NO,NO
-1492211,1806666,"The Ark Residential Treatment Center, LLC",KATY,FORT BEND,9.0,16,84.0,True,Good,,False,Child Care,Emotional Disorders,0,0,4,1,0,0.88,NO,NO
-1528606,1833612,Alpha Family Care LLC,,,8.0,1,,False,,Fewer findings than most,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
-1528624,1833622,"Sky Society Youth Services, Inc.",,,7.0,2,,False,,Fewer findings than most,False,"Child Care,Assessment,Emergency Care,Respite Child Care","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
-1295312,1666134,"Valley Haven, Inc.",,,36.0,35,84.0,True,Good,,False,"Child Care,Emergency Care,Transitional Living,Respite Child Care","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,3,4,1,0,0.89,NO,NO
-1511040,1819940,"Gercy, LLC",SPRING,HARRIS,7.0,4,,False,,About average,False,Child Care,Emotional Disorders,0,0,2,1,1,2.25,NO,NO
-133848,505173,Unity Children's Home - Boys,,,16.0,15,76.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,2,3,0,0,1.13,NO,NO
-94378,24719,Concho Valley Home For Girls,,,23.0,16,20.0,True,Average,,False,"Child Care,Emergency Care",,0,8,4,3,4,3.38,NO,NO
-1530484,1834994,"VisionQuest National, Ltd.",,,32.0,1,,False,,Fewer findings than most,False,"Child Care,Transitional Living,Respite Child Care","Emotional Disorders,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
-1136134,1533621,Texas Girls and  Boys Ranch Children's Shelter,,,16.0,15,99.0,True,Good,,False,"Child Care,Assessment,Emergency Care,Transitional Living,Respite Child Care",Emotional Disorders,0,0,0,0,0,0.0,NO,NO
-1492161,1806655,The Origin Home for Children LLC,HOUSTON,HARRIS,10.0,13,19.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,3,7,1,0,3.46,NO,NO
-1522541,1829098,Grace Harbor Homes LLC,FARMERSVILLE,COLLIN,24.0,10,2.0,True,Poor,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,7,8,3,1,6.9,NO,NO
-1497839,1810579,Evolution Homes for Children and Youth,BEASLEY,FORT BEND,9.0,4,,False,,About average,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,1,0,1,0,1.5,NO,NO
-94174,6085,Christs Haven For Children,FORT WORTH,TARRANT,77.0,18,17.0,True,Poor,,False,"Child Care,Transitional Living",,4,5,7,2,0,3.61,NO,NO
-253192,840381,Resolution Ranch,CAMERON,MILAM,50.0,21,33.0,True,Average,,False,Child Care,Emotional Disorders,3,6,5,1,0,2.67,NO,NO
-1483900,1800545,"New Future Residential Treatment Center, LLC",,,7.0,26,15.0,True,Poor,,False,"Child Care,Emergency Care","Emotional Disorders,Pervasive Development Disorder",3,11,12,3,1,3.92,NO,NO
-1366227,1714518,Haven of Rest Care Home,FORT WORTH,TARRANT,10.0,33,33.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",4,9,8,4,0,2.67,NO,NO
-1505587,1816189,Vida RTC,ROSENBERG,FORT BEND,13.0,9,86.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,1,1,0,0,0.78,NO,NO
-1494094,1808042,Glory Home RTC,MISSOURI CITY,FORT BEND,18.0,26,18.0,True,Poor,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,15,6,2,0,3.54,NO,NO
-99728,191133,"SJRC Texas, Inc.",,,45.0,148,76.0,True,Good,,False,"Child Care,Assessment,Emergency Care,Transitional Living,Respite Child Care",Emotional Disorders,9,21,11,2,2,1.14,NO,NO
-1468800,1790926,Greener Pastures RTC,HUMBLE,HARRIS,9.0,51,19.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",9,17,16,6,2,3.43,NO,NO
-1527460,1832831,Restored Light Children's Home RTC,HOUSTON,HARRIS,8.0,6,27.0,True,Average,,False,"Child Care,Transitional Living",Emotional Disorders,2,1,1,0,1,3.0,NO,NO
-1146657,1540737,Miracal's Place,HOUSTON,HARRIS,14.0,74,56.0,True,Average,,False,Child Care,Emotional Disorders,4,11,19,5,1,1.78,NO,NO
-1469249,1791182,BRIGHTER TRANSITIONS LLC,,,9.0,28,65.0,True,Good,,False,"Child Care,Emergency Care,Transitional Living,Respite Child Care","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",3,2,5,2,0,1.5,NO,NO
-1461240,1786312,"Blessed Kidz Residential Treatment Center, LLC",,,7.0,63,61.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",9,4,14,0,0,1.63,NO,NO
-95730,66554,Letot Center,,,40.0,21,70.0,True,Good,,False,"Child Care,Emergency Care",,2,3,2,0,0,1.33,NO,NO
-483290,1000050,New Horizons Audrey Grace House RTC,,,40.0,114,65.0,True,Good,,False,"Child Care,Assessment,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",11,23,7,1,1,1.5,NO,NO
-295996,860873,Guardian Angels I Residential Treatment Center,HOUSTON,HARRIS,24.0,189,61.0,True,Average,,False,"Child Care,Transitional Living",Emotional Disorders,22,34,19,1,3,1.63,NO,NO
-1440736,1769316,Boys to Men RTC,HOUSTON,HARRIS,14.0,45,11.0,True,Poor,,False,Child Care,Emotional Disorders,8,18,25,7,0,4.47,NO,NO
-94132,1773,Medina Childrens Home,MEDINA,BANDERA,132.0,10,89.0,True,Good,,False,Child Care,Emotional Disorders,0,0,2,0,0,0.6,NO,NO
-1510778,1819798,Blooming Bridge,MESQUITE,DALLAS,11.0,15,13.0,True,Poor,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",5,2,9,1,0,4.13,NO,NO
-1501240,1813027,"Safe Haven, RTC LLC",HOUSTON,HARRIS,14.0,19,50.0,True,Average,,False,"Child Care,Transitional Living",Emotional Disorders,2,2,5,2,1,2.0,NO,NO
-1492661,1807081,Keagan?s Residential Care Homes LLC.,HOUSTON,HARRIS,9.0,40,82.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,4,5,0,0,0.9,NO,NO
-1533628,1837184,Golden Touch Children's Center,RICHMOND,FORT BEND,8.0,1,,False,,Fewer findings than most,False,Child Care,"Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
-1470972,1792300,"JM Home Care Services, LLC",KATY,HARRIS,7.0,21,8.0,True,Poor,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",4,12,11,0,0,4.81,NO,NO
-1458782,1784559,Brotherhood Academy,SALADO,BELL,19.0,36,74.0,True,Good,,False,"Child Care,Assessment,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",3,4,4,0,0,1.19,NO,NO
-95818,69531,Option House Es,,,15.0,24,42.0,True,Average,,False,"Child Care,Assessment,Emergency Care",,3,8,2,1,0,2.29,NO,NO
-1539118,1841137,Open Arms Children's Home,NAPLES,CASS,32.0,1,,False,,Fewer findings than most,False,"Child Care,Transitional Living",,0,0,0,0,0,0.0,NO,NO
-1479514,1797733,Make A Way RTC LLC 2.0,ALVIN,BRAZORIA,12.0,13,46.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,1,4,1,0,2.15,NO,NO
-1367747,1715496,Garden of Hope of Central Texas Killeen,,,8.0,33,26.0,True,Average,,False,"Child Care,Emergency Care,Transitional Living","Intellectual Disability,Pervasive Development Disorder",10,4,9,3,2,3.06,NO,NO
-1366177,1714475,2nd Chance Treatment Center,DALLAS,DALLAS,10.0,39,33.0,True,Average,,False,"Child Care,Transitional Living",Emotional Disorders,8,8,10,1,0,2.67,NO,NO
-1512143,1820682,Peaceful Meadows DBA,CONROE,MONTGOMERY,10.0,19,3.0,True,Poor,,False,"Child Care,Assessment,Transitional Living","Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",4,7,16,10,3,6.26,NO,NO
-659668,1145426,"New Beginnings Children's Home at Canaan Land Ranch, Inc",SAN ANTONIO,MEDINA,16.0,35,39.0,True,Average,,False,"Child Care,Transitional Living",,3,9,8,3,2,2.37,NO,NO
-1494079,1808031,SOLACE Residential Treatment Center LLC,,,12.0,27,77.0,True,Good,,False,"Child Care,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,3,4,2,0,1.04,NO,NO
-1490693,1805546,HIS Love Foster Care Solutions,HOUSTON,HARRIS,8.0,20,82.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,0,4,0,1,0.9,NO,NO
-1441873,1770328,Houston's House of Hope,BAYTOWN,HARRIS,16.0,20,97.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,1,0,0,0.15,NO,NO
-94940,50218,Meridell Achievement Center,LIBERTY HILL,WILLIAMSON,134.0,155,24.0,True,Average,,False,Child Care,Emotional Disorders,24,64,32,7,2,3.15,NO,NO
-1517299,1824856,The Sunshine Place LLC,HOUSTON,HARRIS,7.0,6,91.0,True,Good,,False,"Child Care,Transitional Living",Emotional Disorders,0,0,1,0,0,0.5,NO,NO
-94120,1165,West Texas Boys Ranch,SAN ANGELO,TOM GREEN,78.0,36,31.0,True,Average,,False,Child Care,,5,10,7,6,0,2.72,NO,NO
-1400769,1738202,STARR Resiliency Agency,,,12.0,59,30.0,True,Poor,,True,"Child Care,Assessment,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",9,9,28,1,2,2.86,YES,NO
-1353062,1706226,"Dream Residential Treatment Center, Inc.",HOUSTON,HARRIS,18.0,103,65.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",10,12,16,2,3,1.49,NO,NO
-94172,6065,Methodist Children's Home BCC,WACO,MCLENNAN,88.0,89,83.0,True,Good,,False,"Child Care,Transitional Living",,3,16,0,0,0,0.89,NO,NO
-1445339,1773300,St. Georgia's,,,16.0,81,57.0,True,Average,,False,"Child Care,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",8,9,20,2,1,1.74,NO,NO
 1520382,1827437,Divine Hands Residential Treatment Center LLC,ROSENBERG,FORT BEND,7.0,5,10.0,True,Poor,,False,"Child Care,Transitional Living",Emotional Disorders,0,5,1,0,0,4.6,NO,NO
-146266,522278,Serving Children and Adults,,,16.0,25,23.0,True,Average,,False,"Child Care,Assessment,Emergency Care,Transitional Living",Emotional Disorders,6,6,8,0,3,3.24,NO,NO
-94107,360,Sunny Glen Childrens Home,,,20.0,48,86.0,True,Good,,False,"Child Care,Transitional Living",Emotional Disorders,2,6,1,1,1,0.83,NO,NO
-1332186,1692025,Clementine The Woodlands,CONROE,MONTGOMERY,12.0,11,31.0,True,Average,,False,Child Care,Emotional Disorders,0,3,4,3,0,2.73,NO,NO
-103605,228620,East Texas Open Door Inc,MARSHALL,HARRISON,44.0,124,56.0,True,Average,,False,"Child Care,Transitional Living",Emotional Disorders,11,26,20,2,0,1.8,NO,NO
-94195,7184,Boles Childrens Home Inc,QUINLAN,HUNT,24.0,9,83.0,True,Good,,False,Child Care,,0,2,0,0,0,0.89,NO,NO
-1519882,1827044,"A Safe Haven Residential Treatment Center, LLC",HOUSTON,HARRIS,8.0,6,91.0,True,Good,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,1,0,0,0.5,NO,NO
-1396262,1734404,Kensley Care LLC dba Kensley Care South,HOUSTON,HARRIS,16.0,126,73.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Pervasive Development Disorder",9,15,13,6,1,1.25,NO,NO
-1509255,1818715,CEDAA HOUSE GRO/RTC,HOUSTON,HARRIS,15.0,7,16.0,True,Poor,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,3,3,0,0,3.71,NO,NO
-1527424,1832819,"Loving Hands Residential Treatment Center For Youth, LLC",HOUSTON,HARRIS,18.0,2,,False,,Fewer findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
-1517982,1825425,Saving Grace Children Place GRO,HOUSTON,HARRIS,16.0,4,,False,,About average,False,Child Care,Emotional Disorders,0,1,1,0,0,1.75,NO,NO
-1522662,1829135,Blessed Haven Homes LLC,ARLINGTON,TARRANT,12.0,9,38.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,4,2,0,0,2.44,NO,NO
-1426376,1757679,"Clear Vision Youth Center, LLC",ALVIN,BRAZORIA,14.0,43,35.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",8,9,8,5,2,2.6,NO,NO
-1509138,1818667,Positive Serenity Life Support,CYPRESS,HARRIS,18.0,6,1.0,True,Poor,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,3,7,4,0,7.67,NO,NO
-1479581,1797726,Jamsteld West Community Living - Ellie's House,,,12.0,43,77.0,True,Good,,False,"Child Care,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability",1,5,6,1,2,1.09,NO,NO
-1502862,1814454,Hold my Hand General Residential Operation,,,12.0,10,96.0,True,Good,,False,"Child Care,Assessment,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,1,0,0,0.3,NO,NO
-1490489,1805359,Prestige Homecare,,,11.0,30,65.0,True,Good,,False,"Child Care,Emergency Care,Transitional Living",Emotional Disorders,2,5,4,1,1,1.5,NO,NO
-1294867,1665832,Journey to Dream - Kyle's Place,LEWISVILLE,DENTON,19.0,35,50.0,True,Average,,False,"Child Care,Transitional Living",Emotional Disorders,2,6,9,4,1,2.0,NO,NO
-1330508,1690684,Moving Forward,GRAND PRAIRIE,DALLAS,9.0,44,49.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Pervasive Development Disorder",4,7,13,0,2,2.02,NO,NO
-1479575,1797723,A Positive Change RTC LLC,ROSENBERG,FORT BEND,7.0,14,71.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,1,3,0,0,1.29,NO,NO
-1312395,1678450,"Renewed Strength, Inc. East",HOUSTON,HARRIS,14.0,111,62.0,True,Average,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",11,18,15,2,0,1.59,NO,NO
-608709,1105326,Hearts with Hope Foundation-GRO,SPRING,HARRIS,29.0,135,78.0,True,Good,,False,"Child Care,Transitional Living",Emotional Disorders,3,14,19,3,1,1.0,NO,NO
-1521360,1828197,Our Place Called Home,,,7.0,7,99.0,True,Good,,False,"Child Care,Emergency Care,Transitional Living,Respite Child Care","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
-1486499,1802552,Amir's House,,,10.0,22,76.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",1,2,4,0,0,1.14,NO,NO
-94715,40724,New Horizons Ranch Residential Treatment Center,GOLDTHWAITE,MILLS,68.0,98,40.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",13,31,13,0,0,2.33,NO,NO
-142144,516810,Thompson Emergency Shelter,,,32.0,52,60.0,True,Average,,False,"Child Care,Assessment,Emergency Care,Transitional Living",Emotional Disorders,4,10,8,0,2,1.65,NO,NO
-1089418,1496362,The Gladney Center,FORT WORTH,TARRANT,30.0,56,65.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,11,9,0,3,1.5,NO,NO
-1499883,1812028,Youthful Haven,KATY,FORT BEND,14.0,14,2.0,True,Poor,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,7,16,9,0,7.07,NO,NO
-1175822,1562665,Stadium  Shelter,,,16.0,24,48.0,True,Average,,False,"Child Care,Assessment,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,4,6,3,0,2.08,NO,NO
-1510861,1819848,Hope Springs Home for Children,LANCASTER,DALLAS,8.0,15,29.0,True,Average,,False,"Child Care,Assessment","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,5,4,0,1,2.87,NO,NO
-1356520,1708504,Road To Wisdom LLC,HOUSTON,HARRIS,15.0,118,91.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",4,7,3,1,0,0.5,NO,NO
-1519902,1827072,Brightway Love&Care,HOUSTON,HARRIS,8.0,4,,False,,More findings than most,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,4,2,1,2,9.0,NO,NO
-1500669,1812637,Serenity Hope Home LLC,HOUSTON,HARRIS,12.0,36,72.0,True,Good,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,2,9,0,0,1.25,NO,NO
-1496834,1809921,NEW LIFE RESIDENTIAL TREATMENT CENTER,FULSHEAR,FORT BEND,11.0,39,77.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,4,6,2,0,1.1,NO,NO
-1527090,1832575,Adullam Homes LLC,RICHMOND,FORT BEND,10.0,11,87.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Pervasive Development Disorder",1,0,1,0,0,0.73,NO,NO
-1529965,1834670,Endeavor Place,,,16.0,3,,False,,Fewer findings than most,False,"Child Care,Emergency Care",Emotional Disorders,0,0,1,0,0,1.0,NO,NO
-1501347,1813144,"New Hope RTC, LLC.",HEMPSTEAD,WALLER,9.0,4,,False,,More findings than most,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,4,15,2,0,17.5,NO,NO
-1432580,1763000,Angelic House of Hope,,,9.0,56,9.0,True,Poor,,False,"Child Care,Assessment,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",9,25,31,7,6,4.61,NO,NO
-99330,185528,Roy Maas Youth Alternatives Meadows,BOERNE,KENDALL,48.0,126,76.0,True,Good,,False,"Child Care,Assessment,Transitional Living",Emotional Disorders,10,16,8,1,0,1.11,NO,NO
-110531,254110,L'Amor Village Emergency Shelter,,,8.0,22,9.0,True,Poor,,False,"Child Care,Emergency Care",,1,15,9,5,1,4.68,NO,NO
-95784,68824,Miracle Farm Inc,BRENHAM,WASHINGTON,26.0,13,90.0,True,Good,,False,Child Care,,0,1,1,0,0,0.54,NO,NO
-1511531,1820261,Lumen House Residential Treatment Center LLC,HOUSTON,HARRIS,11.0,8,31.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",1,2,3,0,0,2.75,NO,NO
-1533620,1837179,Alas RTC LLC,SPRING,MONTGOMERY,10.0,1,,False,,Fewer findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
-94233,13621,Sacred Heart Childrens Home,LAREDO,WEBB,80.0,20,26.0,True,Average,,False,Child Care,,4,6,5,1,0,3.05,NO,NO
-1382231,1724162,Amor Purus LLC,KATY,HARRIS,7.0,50,25.0,True,Average,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",6,14,20,4,0,3.08,NO,NO
-1432776,1763171,In His Hands Children Home,TRINIDAD,HENDERSON,20.0,15,0.0,True,Poor,,False,"Child Care,Transitional Living",,3,18,26,13,3,12.93,NO,NO
-1522712,1829244,Prosper Shelter RTC,RICHMOND,FORT BEND,7.0,3,,False,,More findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,4,4,1,0,11.67,NO,NO
-1448888,1776121,TRELS Home For Children,MAGNOLIA,MONTGOMERY,10.0,53,61.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",4,10,9,0,0,1.64,NO,NO
-98456,170567,Bridge Emergency Shelter,,,16.0,76,88.0,True,Good,,False,"Child Care,Assessment,Emergency Care,Transitional Living,Respite Child Care","Emotional Disorders,Intellectual Disability",2,8,3,2,0,0.72,NO,NO
-1405337,1741914,The Ambience Residential Treatment Center,SUGAR LAND,FORT BEND,12.0,80,14.0,True,Poor,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",13,36,36,4,0,4.06,NO,NO
-1496948,1810057,Devine Care Home RTC,RICHMOND,FORT BEND,9.0,16,57.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,0,6,0,0,1.75,NO,NO
+1494079,1808031,SOLACE Residential Treatment Center LLC,,,12.0,27,77.0,True,Good,,False,"Child Care,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,3,4,2,0,1.04,NO,NO
+1353683,1706626,Adore Living Child Services Inc.,,,14.0,33,75.0,True,Good,,False,"Child Care,Assessment,Emergency Care","Emotional Disorders,Intellectual Disability",2,4,3,1,1,1.15,NO,NO
+1458782,1784559,Brotherhood Academy,SALADO,BELL,19.0,36,74.0,True,Good,,False,"Child Care,Assessment,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",3,4,4,0,0,1.19,NO,NO
+94104,290,Texas Pythian Home Inc,WEATHERFORD,PARKER,20.0,13,87.0,True,Good,,False,Child Care,,2,0,0,0,0,0.77,NO,NO
 1453320,1779839,ACH Child and Family Services,,,16.0,30,34.0,True,Average,,False,"Child Care,Assessment,Emergency Care,Transitional Living,Respite Child Care","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",6,9,3,1,2,2.63,NO,NO
-1527474,1832836,Nurturing Haven LLC.,ROSHARON,BRAZORIA,11.0,2,,False,,Fewer findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
-1298150,1668161,Nothing Just Happens Inc.,,,7.0,30,97.0,True,Good,,False,"Child Care,Emergency Care,Transitional Living",Emotional Disorders,0,0,0,2,0,0.13,NO,NO
-106940,244459,Independence Farm,CORSICANA,NAVARRO,13.0,19,7.0,True,Poor,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",6,9,8,3,1,5.11,NO,NO
-110840,254729,Child Crisis Center of El Paso,,,39.0,44,37.0,True,Average,,False,"Child Care,Emergency Care",,4,19,3,1,2,2.48,NO,NO
-1520267,1827366,"Rebirth Haven, LLC",HOUSTON,HARRIS,8.0,4,,False,,More findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",4,6,7,3,1,18.0,NO,NO
-247988,838067,Shamar Hope Haven Residential Treatment Center,HOUSTON,HARRIS,13.0,172,67.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",14,23,23,5,1,1.41,NO,NO
-1516985,1824578,Sanaa Horizons LLC,HOUSTON,HARRIS,8.0,2,,False,,Fewer findings than most,False,"Child Care,Transitional Living",Emotional Disorders,0,0,0,0,0,0.0,NO,NO
-1398837,1736601,Latrell's Landing,CYPRESS,HARRIS,12.0,39,20.0,True,Average,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",3,14,18,3,2,3.41,NO,NO
-1410927,1746008,Wholeness Haven Inc.,,,20.0,65,28.0,True,Average,,False,"Child Care,Assessment,Emergency Care,Transitional Living,Respite Child Care,Therapeutic Camp",Emotional Disorders,12,17,17,4,2,2.91,NO,NO
-1131580,1530337,Youth Reach,HOUSTON,HARRIS,18.0,14,3.0,True,Poor,,False,"Child Care,Transitional Living",,1,11,10,3,1,6.14,NO,NO
-1381138,1723466,Tree of Life RTC,HOCKLEY,HARRIS,8.0,88,8.0,True,Poor,,False,Child Care,"Emotional Disorders,Intellectual Disability",18,41,37,23,8,4.76,NO,NO
-1370907,1717490,Bridge the Gap Foundation Safe Place LLC,,,11.0,34,42.0,True,Average,,False,"Child Care,Assessment,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability",5,9,5,0,2,2.29,NO,NO
-1520024,1827159,Taylored 4 Kidz Residential Treatment Center LLC,ARCOLA,FORT BEND,9.0,5,93.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,1,0,0.4,NO,NO
-107290,245627,Heartlight Ministries,HALLSVILLE,HARRISON,68.0,46,7.0,True,Poor,,False,"Child Care,Transitional Living",Emotional Disorders,8,25,29,2,2,5.07,NO,NO
-98878,178491,Boysville Inc,CONVERSE,BEXAR,64.0,171,68.0,True,Good,,False,"Child Care,Transitional Living",,18,27,10,5,2,1.4,NO,NO
-1446124,1773956,DePelchin Children's Center Campus at Today's Harbor,LA PORTE,HARRIS,30.0,33,27.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",6,12,5,2,0,2.94,NO,NO
-1487817,1803478,Forever Home Foundation LLC,HOUSTON,HARRIS,7.0,16,41.0,True,Average,,False,"Child Care,Assessment,Transitional Living","Emotional Disorders,Intellectual Disability",1,2,6,2,2,2.31,NO,NO
-1506602,1817015,Dream Builder 21,CROWLEY,TARRANT,12.0,8,94.0,True,Good,,False,"Child Care,Transitional Living",Emotional Disorders,0,0,1,0,0,0.38,NO,NO
-1523428,1829661,"Adolbi Care, Inc.",,,10.0,3,,False,,Fewer findings than most,False,"Child Care,Emergency Care,Transitional Living,Respite Child Care","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
-1494934,1808575,"Residential Care at the Summit, LLC",FORT WORTH,TARRANT,30.0,36,88.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,3,1,0,0,0.69,NO,NO
-1509804,1819129,Healthcare Solutions Unlimited,,,10.0,8,12.0,True,Poor,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,2,5,3,0,4.25,NO,NO
 103088,224541,Greater San Marcos Youth Council,,,16.0,28,83.0,True,Good,,False,"Child Care,Assessment,Emergency Care,Transitional Living",Emotional Disorders,2,1,3,1,0,0.89,NO,NO
-1361586,1711621,Abundance of Joy Home Shelter,HOUSTON,HARRIS,11.0,68,14.0,True,Poor,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",10,27,33,7,2,4.01,NO,NO
-1336441,1695157,South Texas Adolescent Rehabilitation & Education - STARE,HOUSTON,HARRIS,15.0,29,8.0,True,Poor,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",9,16,10,2,0,4.93,NO,NO
+1435958,1765540,"Eden's Place, Inc.",,,17.0,48,44.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",7,10,9,1,2,2.21,NO,NO
+1510861,1819848,Hope Springs Home for Children,LANCASTER,DALLAS,8.0,15,29.0,True,Average,,False,"Child Care,Assessment","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,5,4,0,1,2.87,NO,NO
 94367,23871,The Settlement Club Home GRO,AUSTIN,TRAVIS,50.0,363,82.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",16,47,20,1,0,0.91,NO,NO
-1375279,1719866,The Residence By Infinity Elite II,,,10.0,99,23.0,True,Poor,,True,"Child Care,Emergency Care",,14,31,34,7,11,3.24,NO,YES
-1522474,1829009,New Beginnings Services,HOUSTON,HARRIS,12.0,16,30.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,7,3,1,1,2.81,NO,NO
-1506546,1816987,iRise LLC,HOUSTON,HARRIS,12.0,6,75.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,1,1,0,0,1.17,NO,NO
-1526157,1831916,Essence RTC LLC,SUGAR LAND,FORT BEND,11.0,2,,False,,Fewer findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
-1478448,1796998,Caring Companions LLC,HUMBLE,HARRIS,11.0,25,16.0,True,Poor,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",4,8,13,1,1,3.76,NO,NO
-1507918,1817896,"HJ Magnolia Homes, LLC",CYPRESS,HARRIS,16.0,5,2.0,True,Poor,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,4,5,1,0,6.6,NO,NO
 1516339,1824056,Abol Cottage Care LLC,ROSENBERG,FORT BEND,10.0,14,47.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,4,1,3,0,2.14,NO,NO
 779929,1244326,Embracing Destiny Foundation GRO,,,13.0,19,27.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,3,12,2,0,3.0,NO,NO
-1376148,1720357,Hope for Tomorrow DBA Bridge to Hope,,,17.0,63,50.0,True,Average,,False,"Child Care,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",10,13,6,3,0,2.0,NO,NO
-1529678,1834437,Kindrel Care LLC,RICHMOND,FORT BEND,9.0,2,,False,,Fewer findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
-1517679,1825197,Bethesda Center Inc.,,,50.0,12,52.0,True,Average,,False,"Child Care,Emergency Care,Transitional Living,Respite Child Care","Emotional Disorders,Intellectual Disability",1,3,1,1,1,1.92,NO,NO
-94575,34018,Sherwood-Myrtie Foster Home FO,STEPHENVILLE,ERATH,96.0,35,21.0,True,Average,,False,"Child Care,Transitional Living",Emotional Disorders,7,11,11,1,3,3.34,NO,NO
+1175822,1562665,Stadium  Shelter,,,16.0,24,48.0,True,Average,,False,"Child Care,Assessment,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,4,6,3,0,2.08,NO,NO
+1509138,1818667,Positive Serenity Life Support,CYPRESS,HARRIS,18.0,6,1.0,True,Poor,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,3,7,4,0,7.67,NO,NO
 1502987,1814507,"DIVINE ARMS OF LOVE GRO, LLC",HOUSTON,HARRIS,9.0,11,43.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,3,3,1,2,2.27,NO,NO
-1527080,1832538,Rich Haven Care LLC,KATY,HARRIS,10.0,2,,False,,Fewer findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
 1505543,1816175,Guiding Light Haven LLC,HOUSTON,HARRIS,15.0,14,56.0,True,Average,,False,Child Care,Emotional Disorders,0,3,4,0,1,1.79,NO,NO
-1489154,1804296,Clairefontaine Care Center LLC,FRESNO,FORT BEND,10.0,51,43.0,True,Average,,False,Child Care,Emotional Disorders,3,15,11,2,3,2.25,NO,NO
-1532005,1836104,Good Samaritan Foster Care LLC,CELINA,COLLIN,7.0,2,,False,,Fewer findings than most,False,Child Care,,0,0,0,0,0,0.0,NO,NO
-1512582,1821041,Lafaye Boys Home,HOUSTON,HARRIS,10.0,13,34.0,True,Average,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,3,5,1,0,2.62,NO,NO
-1493549,1807650,Gentle Mental Treatment Center LLC,PRINCETON,COLLIN,14.0,14,37.0,True,Average,,False,"Child Care,Transitional Living",Emotional Disorders,4,3,1,0,0,2.5,NO,NO
-1424634,1756205,"Graceful New Beginnings, LLC",HOUSTON,HARRIS,7.0,42,13.0,True,Poor,,False,"Child Care,Assessment,Transitional Living,Respite Child Care","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",7,10,28,9,1,4.24,NO,NO
-1510550,1819604,Our Houze Residential Treatment Center,BROOKSHIRE,FORT BEND,9.0,7,32.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,1,3,0,1,2.71,NO,NO
-1435958,1765540,"Eden's Place, Inc.",,,17.0,48,44.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",7,10,9,1,2,2.21,NO,NO
-94134,2043,Lee and Beulah Moor Children's Home,EL PASO,EL PASO,70.0,18,48.0,True,Average,,False,"Child Care,Assessment,Transitional Living",,2,4,3,1,0,2.06,NO,NO
-1333314,1692813,Safe Haven Youth Ranch,HEMPSTEAD,WALLER,32.0,117,29.0,True,Average,,False,Child Care,Emotional Disorders,20,40,18,9,6,2.89,NO,NO
-1377816,1721433,Redicare,RICHMOND,FORT BEND,12.0,102,15.0,True,Poor,,True,Child Care,"Emotional Disorders,Intellectual Disability",12,36,50,13,5,3.77,NO,YES
-1530254,1834855,Aspire Haven LLC,ROSHARON,FORT BEND,12.0,2,,False,,About average,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,0,0,0,0,2.5,NO,NO
-1526015,1831796,Elijah's Safe Care Residential Treatment Center Inc,,,8.0,1,,False,,Fewer findings than most,False,"Child Care,Assessment,Emergency Care","Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
-1420705,1753012,Kismet Residential Treatment Center,TOMBALL,HARRIS,16.0,69,68.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,10,13,3,0,1.38,NO,NO
-1533614,1837175,Indelible Mission LLC,MANSFIELD,TARRANT,7.0,2,,False,,Fewer findings than most,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
-1490219,1805111,HAID LLC,RICHMOND,FORT BEND,30.0,39,78.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,6,5,0,0,1.0,NO,NO
-1530667,1835144,Our Angel's House of Faith,,,15.0,1,,False,,Fewer findings than most,False,"Child Care,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
-1487446,1803261,Belle Place Limited Liability Company,KENDLETON,FORT BEND,20.0,32,51.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,7,8,3,0,1.97,NO,NO
-94099,184,Hendrick Home for Children,ABILENE,TAYLOR,52.0,16,55.0,True,Average,,False,"Child Care,Transitional Living",,2,1,5,0,0,1.81,NO,NO
-1316871,1681475,Sanctuary of Hope,BULVERDE,COMAL,48.0,17,36.0,True,Average,,False,"Child Care,Transitional Living",,3,3,3,3,1,2.53,NO,NO
-521988,1033546,"Annunciation Maternity Home, Inc.",GEORGETOWN,WILLIAMSON,22.0,10,32.0,True,Average,,False,"Child Care,Transitional Living",,4,1,1,0,0,2.7,NO,NO
-1517333,1824921,Adexx Care Services Inc.,SUGAR LAND,FORT BEND,11.0,8,9.0,True,Poor,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,3,4,1,1,4.62,NO,NO
-1508351,1818188,The Children's Shelter,,,32.0,53,94.0,True,Good,,False,"Child Care,Emergency Care,Respite Child Care",Emotional Disorders,1,3,1,0,0,0.38,NO,NO
-1522265,1828789,"Bay Harmony Home, LLC",BAYTOWN,CHAMBERS,8.0,4,,False,,More findings than most,False,Child Care,Emotional Disorders,2,1,3,0,0,5.75,NO,NO
-1511085,1819950,Kid Net Foundation dba Jonathan's Place,DALLAS,DALLAS,14.0,7,92.0,True,Good,,False,"Child Care,Transitional Living",,0,0,1,0,0,0.43,NO,NO
-94251,15267,Central Texas Children's Home,BUDA,TRAVIS,20.0,19,50.0,True,Average,,False,Child Care,,2,5,2,1,0,2.0,NO,NO
-1505536,1816156,The Averie Foundation,HOUSTON,HARRIS,8.0,11,5.0,True,Poor,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,3,9,5,0,5.36,NO,NO
-1517279,1824836,Manda Kidz LLC,HOUSTON,HARRIS,11.0,12,55.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",1,2,3,0,0,1.83,NO,NO
-196519,812341,EVERYDAY LIFE INC,BRYAN,BRAZOS,44.0,74,96.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,3,2,0,0,0.31,NO,NO
-1458319,1784246,Nexus Neurorecovery Center - San Antonio,SAN ANTONIO,BEXAR,24.0,83,55.0,True,Average,,False,Child Care,"Emotional Disorders,Primary Medical Needs,Pervasive Development Disorder",4,18,15,5,4,1.82,NO,NO
-1523017,1829436,The Tree    House Residential Treatment Home LLC,HOUSTON,HARRIS,13.0,3,,False,,Fewer findings than most,False,Child Care,Emotional Disorders,0,0,0,0,0,0.0,NO,NO
-1499778,1811997,Our Home House LLC,,,15.0,48,93.0,True,Good,,False,"Child Care,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,2,4,0,0,0.42,NO,NO
-1532017,1836118,Chalan's House of Hope,RICHMOND,FORT BEND,7.0,2,,False,,About average,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,1,0,0,1.5,NO,NO
-1401538,1738882,Ayanti Residential Treatment Center Inc,,,11.0,36,54.0,True,Average,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",4,6,5,2,4,1.86,NO,NO
-94104,290,Texas Pythian Home Inc,WEATHERFORD,PARKER,20.0,13,87.0,True,Good,,False,Child Care,,2,0,0,0,0,0.77,NO,NO
-1494156,1808079,Grace Alpha Focused Care LLC,SPRING,MONTGOMERY,8.0,31,53.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,6,8,0,1,1.9,NO,NO
-245312,836843,"Harmony Family Services, Inc.",ABILENE,TAYLOR,13.0,23,81.0,True,Good,,False,"Child Care,Transitional Living",,1,2,2,1,0,0.91,NO,NO
-94636,36943,Texas Girls and Boys Ranch,,,45.0,23,50.0,True,Average,,False,"Child Care,Assessment,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,5,4,2,0,2.0,NO,NO
-1519175,1826500,Beloved Ones,PRINCETON,COLLIN,8.0,7,24.0,True,Average,,False,Child Care,,1,3,1,1,0,3.14,NO,NO
-1390366,1729764,"Kinship Konnection, LLC",FRESNO,FORT BEND,14.0,94,15.0,True,Poor,,True,Child Care,Emotional Disorders,19,37,38,5,0,3.9,YES,NO
-1101615,1506800,Fred and Mabel Parks Youth Ranch,,,30.0,132,80.0,True,Good,,False,"Child Care,Emergency Care,Transitional Living",,7,18,5,0,0,0.92,NO,NO
-271039,848614,The Jim H. Green Kidz Harbor dba Kidz Harbor,,,63.0,23,60.0,True,Average,,False,"Child Care,Emergency Care",,1,6,3,0,0,1.65,NO,NO
-1526971,1832505,Laurel Ridge Treatment Center,SAN ANTONIO,BEXAR,40.0,3,,False,,Fewer findings than most,False,Child Care,Emotional Disorders,0,0,0,0,0,0.0,NO,NO
-1432591,1763004,Royal Oaks Residential Treatment Center LLC,HOUSTON,HARRIS,8.0,25,45.0,True,Average,,False,"Child Care,Assessment,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,3,7,5,1,2.16,NO,NO
-1344047,1700373,Amazing Grace Child and Family Services,,,16.0,15,97.0,True,Good,,False,"Child Care,Emergency Care,Transitional Living",Emotional Disorders,0,0,1,0,0,0.2,NO,NO
-1480414,1798274,"DeFlourish Home, LLC",ODESSA,ECTOR,12.0,17,45.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",4,2,3,0,0,2.18,NO,NO
-1407943,1744038,Hands of Faith GRO,,,7.0,19,63.0,True,Average,,False,"Child Care,Assessment,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,3,6,0,0,1.58,NO,NO
-1352732,1705965,TRELS Home for Children,,,11.0,104,81.0,True,Good,,False,"Child Care,Assessment,Emergency Care,Transitional Living,Respite Child Care","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",8,10,4,1,1,0.91,NO,NO
-1529964,1834669,Amor Purus II,,,7.0,1,,False,,Fewer findings than most,False,"Child Care,Assessment,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
-1506708,1817069,"Williams Haven, LLC",HOUSTON,HARRIS,7.0,4,,False,,Fewer findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
-1531998,1836098,"Tranquility Haven Residential Group, LLC",RICHMOND,FORT BEND,8.0,1,,False,,Fewer findings than most,False,"Child Care,Transitional Living",Emotional Disorders,0,0,0,0,0,0.0,NO,NO
-1329193,1689854,Legacy Youth,RICHMOND,FORT BEND,30.0,56,75.0,True,Good,,False,"Child Care,Transitional Living",Emotional Disorders,2,8,6,2,2,1.18,NO,NO
-285236,855318,Harris County Youth Shelter,,,24.0,21,33.0,True,Average,,False,"Child Care,Emergency Care,Transitional Living",,2,6,6,2,0,2.67,NO,NO
-1474216,1794219,Amazing Touch Care Home,ROSENBERG,FORT BEND,17.0,37,40.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",4,10,8,1,0,2.32,NO,NO
-1332255,1692091,ACH Child and Family Services,,,16.0,109,59.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",8,21,18,2,1,1.68,NO,NO
-1462263,1786879,Home of Joseph Foundation,VICTORIA,VICTORIA,7.0,16,41.0,True,Average,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,4,3,1,0,2.31,NO,NO
-1476995,1796056,"Blessed Kidz Residential Treatment Center, LLC",,,12.0,55,47.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",5,11,13,3,1,2.09,NO,NO
-94124,1535,Cherokee Home For Children,CHEROKEE,SAN SABA,60.0,11,21.0,True,Average,,False,"Child Care,Transitional Living",,1,5,3,1,1,3.36,NO,NO
-1505134,1815891,J's House,KINGWOOD,HARRIS,8.0,15,79.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,2,2,0,0,0.93,NO,NO
-1473501,1793844,Emerging Grace Ministries,,,8.0,32,26.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Pervasive Development Disorder",8,5,11,2,0,3.03,NO,NO
-1529719,1834500,Amor Purus LLC,,,7.0,2,,False,,More findings than most,False,"Child Care,Assessment,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,1,1,0,0,3.5,NO,NO
-1420265,1752756,Paradigm Treatment Texas,AUSTIN,TRAVIS,40.0,63,38.0,True,Average,,False,Child Care,Emotional Disorders,10,12,14,6,4,2.48,NO,NO
-1465403,1788833,Southall Heritage Youth Home,PEARLAND,BRAZORIA,16.0,36,59.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability",2,5,8,3,0,1.67,NO,NO
-1498043,1810727,Sunshine Youth Haven LLC,,,20.0,32,94.0,True,Good,,False,"Child Care,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",0,3,0,0,0,0.38,NO,NO
-94163,5913,The Childrens Home Emergency Shelter,,,39.0,30,79.0,True,Good,,False,"Child Care,Assessment,Emergency Care,Transitional Living",,2,4,1,0,0,0.97,NO,NO
-1434736,1764644,Hidden Cove Residential Treatment Center,FORT WORTH,TARRANT,10.0,21,99.0,True,Good,,False,"Child Care,Transitional Living",Emotional Disorders,0,0,0,0,0,0.0,NO,NO
-1465373,1788783,Unique Teen,,,12.0,20,74.0,True,Good,,False,"Child Care,Assessment,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,3,4,0,0,1.2,NO,NO
-1412361,1746886,TLW Transformation Center,,,88.0,98,48.0,True,Average,,False,"Child Care,Assessment,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability",4,17,27,14,3,2.04,NO,NO
-1404534,1741334,Divine Children's Care Home,WALLER,HARRIS,8.0,17,6.0,True,Poor,,False,"Child Care,Transitional Living",Emotional Disorders,1,5,16,7,3,5.29,NO,NO
-269667,847985,High Sky Children's Ranch,,,40.0,31,54.0,True,Average,,False,"Child Care,Assessment,Emergency Care,Transitional Living",Emotional Disorders,4,8,1,0,2,1.84,NO,NO
-266025,846369,"HMIH CEDAR CREST, LLC",BELTON,BELL,90.0,244,41.0,True,Average,,False,Child Care,Emotional Disorders,41,70,23,3,2,2.3,NO,NO
-1506995,1817241,Making Strides GRO,HOUSTON,HARRIS,8.0,23,79.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,2,3,0,0,0.96,NO,NO
-1344209,1700503,"Texas Tranquility Estates, Inc.",TOMBALL,HARRIS,13.0,13,22.0,True,Average,,False,"Child Care,Transitional Living",Emotional Disorders,2,5,3,1,2,3.31,NO,NO
-1397838,1735762,Harmony Therapy and Treatment Center LLC,SPRING,MONTGOMERY,16.0,69,11.0,True,Poor,,False,Child Care,Emotional Disorders,11,24,42,15,1,4.46,NO,NO
-1234328,1617305,Kirby's Place,HOUSTON,HARRIS,8.0,9,35.0,True,Average,,False,"Child Care,Assessment,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,2,3,3,0,2.56,NO,NO
-1334412,1693629,Rising Star GRO,HOUSTON,HARRIS,14.0,17,69.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,0,2,3,1,1.35,NO,NO
-1366694,1714813,Unique Avenue,HOUSTON,HARRIS,10.0,30,86.0,True,Good,,False,Child Care,Emotional Disorders,1,4,0,2,0,0.83,NO,NO
-1515902,1823716,Divine Dwelling Children's Care Home,,,8.0,6,70.0,True,Good,,False,"Child Care,Assessment,Emergency Care,Transitional Living,Respite Child Care","Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",0,2,0,0,0,1.33,NO,NO
-1472934,1793529,Alafia Haven,ODESSA,ECTOR,13.0,20,54.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",0,3,7,1,2,1.85,NO,NO
-1526478,1832105,The Serenity House - Houston,,,10.0,2,,False,,Fewer findings than most,False,Child Care,Emotional Disorders,0,0,0,0,0,0.0,NO,NO
-94170,6040,Texas NeuroRehab Center,AUSTIN,TRAVIS,36.0,77,22.0,True,Average,,False,Child Care,"Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",19,30,9,4,0,3.25,NO,NO
-1510765,1819746,Waymaker LLC,ALVIN,BRAZORIA,7.0,5,5.0,True,Poor,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,1,3,1,2,5.4,NO,NO
-1524666,1830657,Sugarland RTC,,,8.0,3,,False,,Fewer findings than most,False,"Child Care,Emergency Care,Transitional Living,Respite Child Care","Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",0,0,1,0,0,1.0,NO,NO
-1430168,1760975,Trinity Guidance Residential Treatment Center,ROSENBERG,FORT BEND,11.0,64,36.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",8,15,19,1,4,2.55,NO,NO
-1501932,1813636,"Great Day, INC",SPRING,HARRIS,15.0,6,86.0,True,Good,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,1,0,0,1,0.83,NO,NO
-1536044,1838958,"Keystone Youth Center, LLC",HOUSTON,HARRIS,9.0,1,,False,,Fewer findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
-460099,980590,My Friend's House,,,24.0,17,44.0,True,Average,,False,"Child Care,Emergency Care,Transitional Living",,3,2,4,0,3,2.24,NO,NO
-1446565,1774248,Victorious Residential Care LLC,HOUSTON,HARRIS,9.0,32,53.0,True,Average,,False,"Child Care,Assessment,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",4,4,5,5,0,1.91,NO,NO
-100777,204641,Kaufman County Children's Emergency Shelter,,,20.0,20,6.0,True,Poor,,False,"Child Care,Emergency Care,Transitional Living",,6,11,9,2,1,5.3,NO,NO
-1530872,1835326,"Compassion Cove Serenity House, LLC",HOUSTON,HARRIS,9.0,2,,False,,More findings than most,False,"Child Care,Transitional Living",Emotional Disorders,2,3,4,0,1,17.5,NO,NO
-295515,860617,ACH Child and Family Services Emergency Shelter,,,20.0,68,58.0,True,Average,,False,"Child Care,Assessment,Emergency Care,Transitional Living,Respite Child Care",Emotional Disorders,9,10,7,6,0,1.74,NO,NO
-1286408,1659892,"City of Hope Missions, DBA, Hearts-Way Youth Shelter",,,12.0,88,37.0,True,Average,,False,"Child Care,Emergency Care","Emotional Disorders,Pervasive Development Disorder",12,22,20,4,2,2.48,NO,NO
-94151,5570,Ben Richey Boys Ranch,ABILENE,TAYLOR,34.0,12,25.0,True,Average,,False,"Child Care,Transitional Living",,0,3,7,2,0,3.08,NO,NO
-1524445,1830501,SBJ El-Morijah LLC,RICHMOND,FORT BEND,10.0,3,,False,,Fewer findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,1,0,0,1.0,NO,NO
-1370089,1716984,Pinecrest Emergency Care Services,,,16.0,54,52.0,True,Average,,False,"Child Care,Assessment,Emergency Care,Transitional Living,Respite Child Care","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",7,13,4,2,1,1.93,NO,NO
-1522716,1829248,Grounded By Faith LLC,ATLANTA,CASS,20.0,2,,False,,Fewer findings than most,False,"Child Care,Transitional Living",Emotional Disorders,0,0,0,0,0,0.0,NO,NO
-1530995,1835386,"Promise RTC, Inc",,,9.0,1,,False,,Fewer findings than most,False,"Child Care,Assessment,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
-95695,66232,Helping Hand Home for Children,AUSTIN,TRAVIS,41.0,140,64.0,True,Average,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",13,21,19,3,3,1.54,NO,NO
-1531058,1835437,Omega Group IV LLC,RICHMOND,FORT BEND,10.0,1,,False,,Fewer findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
-206448,817512,"Autistic Treatment Center, Inc.",DALLAS,DALLAS,31.0,107,20.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",18,43,28,6,7,3.41,NO,NO
-1350460,1704643,Aspire 2 Dream,BEAUMONT,JEFFERSON,8.0,26,19.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",3,7,11,6,3,3.5,NO,NO
-1439293,1768076,Ray's of Life,,,8.0,29,3.0,True,Poor,,False,"Child Care,Assessment,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",4,17,25,5,6,6.17,NO,NO
-1408212,1744228,Rejo Helping Hands Inc.,WILLIS,MONTGOMERY,48.0,74,12.0,True,Poor,,False,"Child Care,Transitional Living","Emotional Disorders,Pervasive Development Disorder",18,29,33,8,5,4.41,NO,NO
-1501487,1813219,Canyon Creek Behavioral Heath,TEMPLE,BELL,22.0,7,99.0,True,Good,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
-110799,254646,K Star Emergency Shelter,,,20.0,41,17.0,True,Poor,,False,"Child Care,Assessment,Emergency Care,Transitional Living,Respite Child Care",Emotional Disorders,5,17,15,5,1,3.63,NO,NO
-261771,844396,"Pegasus Schools, Inc.",LOCKHART,CALDWELL,200.0,172,66.0,True,Good,,False,"Child Care,Transitional Living",Emotional Disorders,20,33,7,1,0,1.48,NO,NO
-1500038,1812174,"Peaceful Pathways Residential Treatment Center, LLC",,,8.0,15,92.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,1,1,0,0,0.47,NO,NO
 1535275,1838405,Crossroads to Change Residential Treatment Center,TOMBALL,HARRIS,7.0,1,,False,,Fewer findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
-1353683,1706626,Adore Living Child Services Inc.,,,14.0,33,75.0,True,Good,,False,"Child Care,Assessment,Emergency Care","Emotional Disorders,Intellectual Disability",2,4,3,1,1,1.15,NO,NO
-1522040,1828671,Legacy Foundations Residential Campus,TYLER,SMITH,10.0,6,10.0,True,Poor,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,2,6,0,1,4.5,NO,NO
-1535602,1838660,TAV Center LLC,HOUSTON,HARRIS,9.0,1,,False,,Fewer findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
-110750,254538,The Childrens Home of Lubbock ES and AC,,,18.0,25,63.0,True,Average,,False,"Child Care,Assessment,Emergency Care,Transitional Living",Emotional Disorders,2,4,3,2,0,1.56,NO,NO
-1521041,1827918,Devereux Texas,LEAGUE CITY,GALVESTON,66.0,7,99.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
-1290944,1663041,El Paso Center for Children Emergency Shelter,,,5.0,36,51.0,True,Average,,False,"Child Care,Emergency Care",,5,9,3,0,0,1.94,NO,NO
-1530462,1835017,"VisionQuest National, Ltd.",,,16.0,1,,False,,Fewer findings than most,False,"Child Care,Transitional Living,Respite Child Care","Emotional Disorders,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
-1515801,1823572,Perfect Care GRO,RICHMOND,FORT BEND,9.0,5,24.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,2,2,1,0,3.2,NO,NO
-1349913,1704326,"La Maison, LLC",ANNA,COLLIN,14.0,43,17.0,True,Poor,,False,Child Care,Emotional Disorders,12,15,11,1,2,3.65,NO,NO
-1519375,1826665,"Wayne Capital Mgt, DBA, Pleasant Falls GRO",RICHMOND,FORT BEND,13.0,4,,False,,More findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,2,2,0,0,6.0,NO,NO
-558469,1064466,Azleway Valley View,TYLER,SMITH,68.0,104,35.0,True,Average,,False,"Child Care,Assessment,Transitional Living","Emotional Disorders,Pervasive Development Disorder",8,28,33,7,5,2.6,NO,NO
-1520809,1827725,New Hope GRO,SPRING,HARRIS,15.0,5,99.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
-1520028,1827160,Divine Youth Services LLC,SAN ANTONIO,BEXAR,8.0,15,62.0,True,Average,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",4,1,0,0,0,1.6,NO,NO
-1524842,1830804,Comfort Cove Youth Services LLC,,,10.0,4,,False,,Fewer findings than most,False,"Child Care,Emergency Care,Respite Child Care","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
-111415,255675,Autistic Treatment Center,SAN ANTONIO,BEXAR,7.0,64,27.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",9,28,9,2,2,2.97,NO,NO
-1104342,1508898,"Family Link Treatment Services, Inc.",,,105.0,123,67.0,True,Good,,False,"Child Care,Emergency Care,Transitional Living","Emotional Disorders,Pervasive Development Disorder",10,22,11,1,1,1.41,NO,NO
-1466273,1789393,Finally at Home LLC,,,12.0,33,90.0,True,Good,,False,"Child Care,Assessment,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",0,3,2,0,0,0.55,NO,NO
-1481871,1799271,House of Hope Residential Treatment Center LLC,MISSOURI CITY,FORT BEND,9.0,29,96.0,True,Good,,False,"Child Care,Transitional Living",Emotional Disorders,0,2,0,0,0,0.28,NO,NO
-1519079,1826416,Ridge Hollow LLC,,,7.0,4,,False,,Fewer findings than most,False,"Child Care,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
-97680,154645,"Children's Village and Family Service Agency, Inc.",TYLER,SMITH,32.0,19,6.0,True,Poor,,False,"Child Care,Transitional Living",,3,8,14,5,2,5.32,NO,NO
-1527188,1832623,Bridge Of Abilities Foundation,,,7.0,1,,False,,Fewer findings than most,False,"Child Care,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
-1291334,1663308,Hope Haven of East Texas,LINDALE,SMITH,16.0,127,47.0,True,Average,,False,"Child Care,Assessment,Transitional Living",Emotional Disorders,9,28,31,7,1,2.09,NO,NO
-557709,1063806,Turning Point Children's Social Service,SPRING,HARRIS,16.0,73,43.0,True,Average,,True,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",11,15,13,4,4,2.27,YES,NO
-344357,888971,LifeWorks Emergency Shelter,,,20.0,139,72.0,True,Good,,False,"Child Care,Emergency Care,Transitional Living",,8,15,23,2,1,1.25,NO,NO
+1377816,1721433,Redicare,RICHMOND,FORT BEND,12.0,102,15.0,True,Poor,,True,Child Care,"Emotional Disorders,Intellectual Disability",12,36,50,13,5,3.77,NO,YES
+1487446,1803261,Belle Place Limited Liability Company,KENDLETON,FORT BEND,20.0,32,51.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,7,8,3,0,1.97,NO,NO
 1529838,1834597,KingsBridge RTC LLC,HOUSTON,HARRIS,8.0,1,,False,,Fewer findings than most,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
-1514143,1822238,TRUECARE HOME RTC,RICHMOND,FORT BEND,9.0,7,85.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,2,0,0,0.86,NO,NO
-142844,517689,Shiloh Treatment Center,MANVEL,BRAZORIA,60.0,47,10.0,True,Poor,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder,PRYTF Certified",15,16,18,9,0,4.49,NO,NO
-1530469,1835020,"VisionQuest National, Ltd.",,,32.0,1,,False,,Fewer findings than most,False,"Child Care,Transitional Living,Respite Child Care","Emotional Disorders,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
-94764,42721,Methodist Childrens Home Boys Ranch,WACO,MCLENNAN,21.0,35,92.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,3,0,0,0,0.49,NO,NO
-1505797,1816336,HopeBridge LLC,RICHMOND,FORT BEND,12.0,11,15.0,True,Poor,,False,"Child Care,Transitional Living",Emotional Disorders,2,4,4,2,0,3.82,NO,NO
-132987,503875,New Life Childrens Treatment Center,CANYON LAKE,COMAL,60.0,308,84.0,True,Good,,False,"Child Care,Transitional Living",Emotional Disorders,19,35,11,1,0,0.88,NO,NO
-1497556,1810414,Radiant Springs Residential Treatment Center LLC,,,14.0,41,58.0,True,Average,,False,"Child Care,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability",2,9,7,1,0,1.68,NO,NO
-783491,1247466,Texas Hill Country School,MAXWELL,HAYS,26.0,68,64.0,True,Average,,False,Child Care,"Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",15,6,2,0,0,1.54,NO,NO
-1382726,1724502,Make A Way Residential Treatment Center,ALVIN,BRAZORIA,16.0,41,60.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",7,6,3,0,0,1.66,NO,NO
-1499485,1811815,Tomorrow's Promise Youth Home LLC,,,9.0,24,70.0,True,Good,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,0,8,1,1,1.33,NO,NO
-1485304,1801598,TRELS Home For Children,HONDO,MEDINA,10.0,41,90.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,2,2,1,0,0.51,NO,NO
-1505747,1816309,Exceptional Abilities LLC,KATY,FORT BEND,22.0,11,17.0,True,Poor,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",3,1,7,0,0,3.64,NO,NO
-1325459,1687429,Unity Childrens Home,,,7.0,7,50.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,2,0,0,1,2.0,NO,NO
-1315855,1680842,"Bluebonnet Haven, LLC",,,64.0,153,72.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",14,24,8,0,1,1.25,NO,NO
-1532034,1836110,Her Tomorrow House,AUBREY,DENTON,9.0,2,,False,,Fewer findings than most,False,Child Care,Emotional Disorders,0,0,0,0,0,0.0,NO,NO
-1461406,1786371,Dawn Rise RTC,FRESNO,FORT BEND,10.0,13,1.0,True,Poor,,False,"Child Care,Transitional Living",Emotional Disorders,5,9,6,7,1,7.23,NO,NO
-1517214,1824753,Grace Devine LLC,,,7.0,15,1.0,True,Poor,,False,"Child Care,Assessment,Emergency Care,Transitional Living",Emotional Disorders,4,12,11,3,2,7.27,NO,NO
-1345224,1701291,"Open Arms Open Hearts Foundation, LLC",DAYTON,LIBERTY,14.0,22,18.0,True,Poor,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",2,10,8,2,0,3.55,NO,NO
-1416720,1750110,Inspirational Hope House,CONROE,MONTGOMERY,27.0,64,24.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",11,19,20,4,3,3.16,NO,NO
-1527094,1832555,Nelz Care LLC,,,7.0,2,,False,,Fewer findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
-1528596,1833604,Chime Children & Community Services LLC,,,10.0,2,,False,,Fewer findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
-1487427,1803258,A Journey of Hope,,,12.0,50,53.0,True,Average,,False,"Child Care,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",1,11,13,2,3,1.9,NO,NO
-1345642,1701592,The Hemple Shelter LLC,ROSENBERG,FORT BEND,13.0,40,46.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,11,11,2,0,2.15,NO,NO
-1510038,1819323,Harmony Residential GRO,CYPRESS,HARRIS,7.0,7,12.0,True,Poor,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,3,4,3,1,4.43,NO,NO
-1529972,1834674,Alijah House Children's Services Inc,,,14.0,5,78.0,True,Good,,False,"Child Care,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,0,0,0,0,1.0,NO,NO
-277917,851881,Bridgeway Home-Montgomery County Youth Services,,,30.0,116,85.0,True,Good,,False,"Child Care,Assessment,Emergency Care,Transitional Living",Emotional Disorders,4,18,1,2,1,0.86,NO,NO
-151863,531665,Davidson Respite House,,,42.0,72,33.0,True,Average,,False,"Child Care,Assessment,Emergency Care,Transitional Living,Respite Child Care","Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",21,14,7,4,0,2.64,NO,NO
-1508276,1818120,Lonnie Care RTC,FORNEY,KAUFMAN,8.0,6,70.0,True,Good,,False,Child Care,Emotional Disorders,0,2,0,0,0,1.33,NO,NO
-1428705,1759648,Phoenix Residential Investment Group LLC,,,15.0,18,94.0,True,Good,,False,"Child Care,Assessment,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,1,1,0,0,0.39,NO,NO
-1520670,1827612,FutureCare Home LLC,,,10.0,10,50.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,3,2,1,0,2.0,NO,NO
-1171982,1559917,Central Texas Table of Grace,,,13.0,46,89.0,True,Good,,False,"Child Care,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,2,3,2,0,0.57,NO,NO
+94251,15267,Central Texas Children's Home,BUDA,TRAVIS,20.0,19,50.0,True,Average,,False,Child Care,,2,5,2,1,0,2.0,NO,NO
+1532017,1836118,Chalan's House of Hope,RICHMOND,FORT BEND,7.0,2,,False,,About average,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,1,0,0,1.5,NO,NO
+142144,516810,Thompson Emergency Shelter,,,32.0,52,60.0,True,Average,,False,"Child Care,Assessment,Emergency Care,Transitional Living",Emotional Disorders,4,10,8,0,2,1.65,NO,NO
 100759,204485,Seton Home,,,69.0,67,87.0,True,Good,,False,"Child Care,Emergency Care,Transitional Living",,1,4,10,0,0,0.76,NO,NO
-273088,849589,"The Jim H. Green Kidz Harbor, Inc. dba Kidz Harbor Home",LIVERPOOL,BRAZORIA,28.0,23,62.0,True,Average,,False,"Child Care,Transitional Living",,1,2,6,2,2,1.61,NO,NO
-1367614,1715401,The One Discovery RTC,HOUSTON,HARRIS,8.0,78,35.0,True,Average,,False,Child Care,"Emotional Disorders,Intellectual Disability",16,11,23,3,1,2.56,NO,NO
-1501618,1813303,Hearthstone Support LLC,SUGAR LAND,FORT BEND,20.0,28,39.0,True,Average,,False,"Child Care,Transitional Living",Emotional Disorders,3,5,8,4,1,2.43,NO,NO
-101870,215752,Hill Country Youth Ranch Residential Treatment Center,,,50.0,113,47.0,True,Average,,False,"Child Care,Assessment,Emergency Care,Transitional Living",Emotional Disorders,15,29,14,2,0,2.1,NO,NO
-453833,975248,"Connections Individual and Family Services, Inc.",,,36.0,80,90.0,True,Good,,False,"Child Care,Assessment,Emergency Care,Transitional Living",Emotional Disorders,1,5,4,2,0,0.51,NO,NO
-1420250,1752752,A Better Choice ABC LLC,CARROLLTON,DALLAS,9.0,53,5.0,True,Poor,,True,Child Care,"Emotional Disorders,Intellectual Disability",19,19,30,10,7,5.43,YES,NO
-94186,6787,Brownson Home,VICTORIA,VICTORIA,17.0,13,28.0,True,Average,,False,Child Care,,0,8,2,0,0,2.92,NO,NO
-349689,892238,A New Day Foundation,SPRING,HARRIS,13.0,83,58.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",3,18,17,3,0,1.73,NO,NO
-1441258,1769797,Special Parent Advocacy Group A NJ Nonprofit Corporation,SANGER,DENTON,13.0,42,14.0,True,Poor,,True,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",11,17,14,3,1,4.1,YES,NO
-1434730,1764642,Horizon Project,SPRING,HARRIS,24.0,155,88.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",3,17,7,0,1,0.68,NO,NO
-1537856,1840172,Youth Health Associates Glenn Heights Academy,GLENN HEIGHTS,DALLAS,28.0,1,,False,,Fewer findings than most,False,"Child Care,Transitional Living",Emotional Disorders,0,0,0,0,0,0.0,NO,NO
-1393584,1732146,Divine Integrity Group Home,,,16.0,32,38.0,True,Average,,False,"Child Care,Assessment,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",3,11,3,3,5,2.47,NO,NO
-1515231,1823148,A NEW BEGINNING RESIDENTIAL TREATMENT CENTER LLC,ROSHARON,BRAZORIA,10.0,2,,False,,Fewer findings than most,False,"Child Care,Transitional Living",Emotional Disorders,0,0,0,0,0,0.0,NO,NO
-1501481,1813235,"Gold Society, INC",,,34.0,15,70.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,0,4,1,1,1.33,NO,NO
-1516400,1824117,Reviving Passage LLC,ANGLETON,BRAZORIA,23.0,9,53.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,3,0,0,0,1.89,NO,NO
-291464,858505,"Pathways Youth & Family Services,Inc. dba Habilitative Homes",SAN ANTONIO,BEXAR,32.0,131,78.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",7,20,4,0,0,0.97,NO,NO
-1504116,1815280,"Optimum Leap, LLC",HOUSTON,HARRIS,8.0,13,13.0,True,Poor,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,3,12,3,0,4.15,NO,NO
-1509134,1818641,Iphie Residential Treatment Center,RICHMOND,FORT BEND,11.0,9,66.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,1,3,0,0,1.44,NO,NO
-1475705,1795211,Beacon Of Light Residential Treatment Center LLC,HOUSTON,HARRIS,11.0,14,44.0,True,Average,,False,Child Care,Emotional Disorders,2,3,3,0,0,2.21,NO,NO
-322127,877478,The Burke Foundation-Pathfinders RTC,DRIFTWOOD,HAYS,34.0,235,67.0,True,Good,,False,"Child Care,Transitional Living",Emotional Disorders,22,48,8,3,0,1.41,NO,NO
+1295312,1666134,"Valley Haven, Inc.",,,36.0,35,84.0,True,Good,,False,"Child Care,Emergency Care,Transitional Living,Respite Child Care","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,3,4,1,0,0.89,NO,NO
+344357,888971,LifeWorks Emergency Shelter,,,20.0,139,72.0,True,Good,,False,"Child Care,Emergency Care,Transitional Living",,8,15,23,2,1,1.25,NO,NO
+1185862,1572157,Discovery Practice Management,PLANO,COLLIN,8.0,19,4.0,True,Poor,,False,"Child Care,Transitional Living",Emotional Disorders,8,8,8,4,1,5.53,NO,NO
+1533620,1837179,Alas RTC LLC,SPRING,MONTGOMERY,10.0,1,,False,,Fewer findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
+1520028,1827160,Divine Youth Services LLC,SAN ANTONIO,BEXAR,8.0,15,62.0,True,Average,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",4,1,0,0,0,1.6,NO,NO
+1487817,1803478,Forever Home Foundation LLC,HOUSTON,HARRIS,7.0,16,41.0,True,Average,,False,"Child Care,Assessment,Transitional Living","Emotional Disorders,Intellectual Disability",1,2,6,2,2,2.31,NO,NO
+1412361,1746886,TLW Transformation Center,,,88.0,98,48.0,True,Average,,False,"Child Care,Assessment,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability",4,17,27,14,3,2.04,NO,NO
+1524842,1830804,Comfort Cove Youth Services LLC,,,10.0,4,,False,,Fewer findings than most,False,"Child Care,Emergency Care,Respite Child Care","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
+94276,18027,High Plains Children's Home,,,56.0,86,73.0,True,Good,,False,"Child Care,Assessment,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability",5,11,10,4,0,1.24,NO,NO
+1465373,1788783,Unique Teen,,,12.0,20,74.0,True,Good,,False,"Child Care,Assessment,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,3,4,0,0,1.2,NO,NO
+94127,1639,Cal Farley's Boys Ranch,BOYS RANCH,OLDHAM,437.0,101,42.0,True,Average,,False,"Child Care,Transitional Living",,16,32,7,0,1,2.28,NO,NO
+94167,6005,STCH Ministries,PETTUS,BEE,130.0,22,34.0,True,Average,,False,"Child Care,Transitional Living",,2,5,8,2,0,2.64,NO,NO
+1530995,1835386,"Promise RTC, Inc",,,9.0,1,,False,,Fewer findings than most,False,"Child Care,Assessment,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
 94152,5599,The Children's Home,AMARILLO,RANDALL,72.0,77,59.0,True,Average,,False,"Child Care,Transitional Living",,4,14,15,3,2,1.68,NO,NO
-1422826,1754771,A Promising Journey Inc.,HOUSTON,HARRIS,18.0,54,74.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,7,6,4,1,1.2,NO,NO
+1498043,1810727,Sunshine Youth Haven LLC,,,20.0,32,94.0,True,Good,,False,"Child Care,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",0,3,0,0,0,0.38,NO,NO
+111415,255675,Autistic Treatment Center,SAN ANTONIO,BEXAR,7.0,64,27.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",9,28,9,2,2,2.97,NO,NO
+94151,5570,Ben Richey Boys Ranch,ABILENE,TAYLOR,34.0,12,25.0,True,Average,,False,"Child Care,Transitional Living",,0,3,7,2,0,3.08,NO,NO
+1404534,1741334,Divine Children's Care Home,WALLER,HARRIS,8.0,17,6.0,True,Poor,,False,"Child Care,Transitional Living",Emotional Disorders,1,5,16,7,3,5.29,NO,NO
+1529965,1834670,Endeavor Place,,,16.0,3,,False,,Fewer findings than most,False,"Child Care,Emergency Care",Emotional Disorders,0,0,1,0,0,1.0,NO,NO
+1500332,1812365,Transformation Residential LLC,HOUSTON,HARRIS,7.0,7,6.0,True,Poor,,False,Child Care,"Emotional Disorders,Intellectual Disability",3,2,4,1,0,5.29,NO,NO
+94125,1545,ACH Child and Family Services,,,45.0,55,80.0,True,Good,,False,"Child Care,Emergency Care,Transitional Living,Respite Child Care","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",4,5,3,0,2,0.93,NO,NO
+1527474,1832836,Nurturing Haven LLC.,ROSHARON,BRAZORIA,11.0,2,,False,,Fewer findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
+1136134,1533621,Texas Girls and  Boys Ranch Children's Shelter,,,16.0,15,99.0,True,Good,,False,"Child Care,Assessment,Emergency Care,Transitional Living,Respite Child Care",Emotional Disorders,0,0,0,0,0,0.0,NO,NO
+1481871,1799271,House of Hope Residential Treatment Center LLC,MISSOURI CITY,FORT BEND,9.0,29,96.0,True,Good,,False,"Child Care,Transitional Living",Emotional Disorders,0,2,0,0,0,0.28,NO,NO
+95784,68824,Miracle Farm Inc,BRENHAM,WASHINGTON,26.0,13,90.0,True,Good,,False,Child Care,,0,1,1,0,0,0.54,NO,NO
+1370907,1717490,Bridge the Gap Foundation Safe Place LLC,,,11.0,34,42.0,True,Average,,False,"Child Care,Assessment,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability",5,9,5,0,2,2.29,NO,NO
+1479514,1797733,Make A Way RTC LLC 2.0,ALVIN,BRAZORIA,12.0,13,46.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,1,4,1,0,2.15,NO,NO
+1529839,1834598,Alora's Refuge LLC,MAGNOLIA,MONTGOMERY,7.0,2,,False,,Fewer findings than most,False,Child Care,Emotional Disorders,0,0,0,0,0,0.0,NO,NO
+95730,66554,Letot Center,,,40.0,21,70.0,True,Good,,False,"Child Care,Emergency Care",,2,3,2,0,0,1.33,NO,NO
+1424634,1756205,"Graceful New Beginnings, LLC",HOUSTON,HARRIS,7.0,42,13.0,True,Poor,,False,"Child Care,Assessment,Transitional Living,Respite Child Care","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",7,10,28,9,1,4.24,NO,NO
+1506708,1817069,"Williams Haven, LLC",HOUSTON,HARRIS,7.0,4,,False,,Fewer findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
+1530462,1835017,"VisionQuest National, Ltd.",,,16.0,1,,False,,Fewer findings than most,False,"Child Care,Transitional Living,Respite Child Care","Emotional Disorders,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
+1234328,1617305,Kirby's Place,HOUSTON,HARRIS,8.0,9,35.0,True,Average,,False,"Child Care,Assessment,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,2,3,3,0,2.56,NO,NO
+107290,245627,Heartlight Ministries,HALLSVILLE,HARRISON,68.0,46,7.0,True,Poor,,False,"Child Care,Transitional Living",Emotional Disorders,8,25,29,2,2,5.07,NO,NO
+1531998,1836098,"Tranquility Haven Residential Group, LLC",RICHMOND,FORT BEND,8.0,1,,False,,Fewer findings than most,False,"Child Care,Transitional Living",Emotional Disorders,0,0,0,0,0,0.0,NO,NO
+1390366,1729764,"Kinship Konnection, LLC",FRESNO,FORT BEND,14.0,94,15.0,True,Poor,,True,Child Care,Emotional Disorders,19,37,38,5,0,3.9,YES,NO
+245312,836843,"Harmony Family Services, Inc.",ABILENE,TAYLOR,13.0,23,81.0,True,Good,,False,"Child Care,Transitional Living",,1,2,2,1,0,0.91,NO,NO
+94134,2043,Lee and Beulah Moor Children's Home,EL PASO,EL PASO,70.0,18,48.0,True,Average,,False,"Child Care,Assessment,Transitional Living",,2,4,3,1,0,2.06,NO,NO
+1505134,1815891,J's House,KINGWOOD,HARRIS,8.0,15,79.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,2,2,0,0,0.93,NO,NO
+1104342,1508898,"Family Link Treatment Services, Inc.",,,105.0,123,67.0,True,Good,,False,"Child Care,Emergency Care,Transitional Living","Emotional Disorders,Pervasive Development Disorder",10,22,11,1,1,1.41,NO,NO
+1146657,1540737,Miracal's Place,HOUSTON,HARRIS,14.0,74,56.0,True,Average,,False,Child Care,Emotional Disorders,4,11,19,5,1,1.78,NO,NO
+1430168,1760975,Trinity Guidance Residential Treatment Center,ROSENBERG,FORT BEND,11.0,64,36.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",8,15,19,1,4,2.55,NO,NO
+1493549,1807650,Gentle Mental Treatment Center LLC,PRINCETON,COLLIN,14.0,14,37.0,True,Average,,False,"Child Care,Transitional Living",Emotional Disorders,4,3,1,0,0,2.5,NO,NO
+94174,6085,Christs Haven For Children,FORT WORTH,TARRANT,77.0,18,17.0,True,Poor,,False,"Child Care,Transitional Living",,4,5,7,2,0,3.61,NO,NO
+100777,204641,Kaufman County Children's Emergency Shelter,,,20.0,20,6.0,True,Poor,,False,"Child Care,Emergency Care,Transitional Living",,6,11,9,2,1,5.3,NO,NO
+1286408,1659892,"City of Hope Missions, DBA, Hearts-Way Youth Shelter",,,12.0,88,37.0,True,Average,,False,"Child Care,Emergency Care","Emotional Disorders,Pervasive Development Disorder",12,22,20,4,2,2.48,NO,NO
+94170,6040,Texas NeuroRehab Center,AUSTIN,TRAVIS,36.0,77,22.0,True,Average,,False,Child Care,"Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",19,30,9,4,0,3.25,NO,NO
+1345642,1701592,The Hemple Shelter LLC,ROSENBERG,FORT BEND,13.0,40,46.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,11,11,2,0,2.15,NO,NO
+1524666,1830657,Sugarland RTC,,,8.0,3,,False,,Fewer findings than most,False,"Child Care,Emergency Care,Transitional Living,Respite Child Care","Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",0,0,1,0,0,1.0,NO,NO
+1522716,1829248,Grounded By Faith LLC,ATLANTA,CASS,20.0,2,,False,,Fewer findings than most,False,"Child Care,Transitional Living",Emotional Disorders,0,0,0,0,0,0.0,NO,NO
+207132,817874,St Peter - St Joseph Childrens Home Emergency Shelter,,,52.0,149,81.0,True,Good,,False,"Child Care,Emergency Care",,6,21,5,2,4,0.92,NO,NO
+1500038,1812174,"Peaceful Pathways Residential Treatment Center, LLC",,,8.0,15,92.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,1,1,0,0,0.47,NO,NO
+97680,154645,"Children's Village and Family Service Agency, Inc.",TYLER,SMITH,32.0,19,6.0,True,Poor,,False,"Child Care,Transitional Living",,3,8,14,5,2,5.32,NO,NO
+109532,251707,Roy Maas Youth Alternative - Girlsville/Junction,BOERNE,KENDALL,16.0,127,81.0,True,Good,,False,"Child Care,Assessment,Transitional Living",Emotional Disorders,9,16,2,1,0,0.92,NO,NO
+1530752,1835236,Eagle Light Inc.,HOUSTON,HARRIS,11.0,2,,False,,Fewer findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
+557709,1063806,Turning Point Children's Social Service,SPRING,HARRIS,16.0,73,43.0,True,Average,,True,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",11,15,13,4,4,2.27,YES,NO
+1522040,1828671,Legacy Foundations Residential Campus,TYLER,SMITH,10.0,6,10.0,True,Poor,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,2,6,0,1,4.5,NO,NO
+1514143,1822238,TRUECARE HOME RTC,RICHMOND,FORT BEND,9.0,7,85.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,2,0,0,0.86,NO,NO
+1446565,1774248,Victorious Residential Care LLC,HOUSTON,HARRIS,9.0,32,53.0,True,Average,,False,"Child Care,Assessment,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",4,4,5,5,0,1.91,NO,NO
+1505797,1816336,HopeBridge LLC,RICHMOND,FORT BEND,12.0,11,15.0,True,Poor,,False,"Child Care,Transitional Living",Emotional Disorders,2,4,4,2,0,3.82,NO,NO
+1515902,1823716,Divine Dwelling Children's Care Home,,,8.0,6,70.0,True,Good,,False,"Child Care,Assessment,Emergency Care,Transitional Living,Respite Child Care","Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",0,2,0,0,0,1.33,NO,NO
+1526702,1832281,Victorious House LLC,HOUSTON,HARRIS,7.0,1,,False,,Fewer findings than most,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
+1428705,1759648,Phoenix Residential Investment Group LLC,,,15.0,18,94.0,True,Good,,False,"Child Care,Assessment,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,1,1,0,0,0.39,NO,NO
+132987,503875,New Life Childrens Treatment Center,CANYON LAKE,COMAL,60.0,308,84.0,True,Good,,False,"Child Care,Transitional Living",Emotional Disorders,19,35,11,1,0,0.88,NO,NO
+1501487,1813219,Canyon Creek Behavioral Heath,TEMPLE,BELL,22.0,7,99.0,True,Good,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
+94107,360,Sunny Glen Childrens Home,,,20.0,48,86.0,True,Good,,False,"Child Care,Transitional Living",Emotional Disorders,2,6,1,1,1,0.83,NO,NO
+1536044,1838958,"Keystone Youth Center, LLC",HOUSTON,HARRIS,9.0,1,,False,,Fewer findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
+1458319,1784246,Nexus Neurorecovery Center - San Antonio,SAN ANTONIO,BEXAR,24.0,83,55.0,True,Average,,False,Child Care,"Emotional Disorders,Primary Medical Needs,Pervasive Development Disorder",4,18,15,5,4,1.82,NO,NO
+1516434,1824144,Monez RTC,ROSENBERG,FORT BEND,8.0,7,4.0,True,Poor,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,8,1,0,0,5.71,NO,NO
+783491,1247466,Texas Hill Country School,MAXWELL,HAYS,26.0,68,64.0,True,Average,,False,Child Care,"Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",15,6,2,0,0,1.54,NO,NO
+156789,538034,Jonathan's Place GRO,,,45.0,55,44.0,True,Average,,False,"Child Care,Emergency Care,Transitional Living",Emotional Disorders,6,6,20,2,4,2.22,NO,NO
+1524444,1830500,Splendid Care Placement LLC,HOUSTON,HARRIS,8.0,1,,False,,Fewer findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
+1101615,1506800,Fred and Mabel Parks Youth Ranch,,,30.0,132,80.0,True,Good,,False,"Child Care,Emergency Care,Transitional Living",,7,18,5,0,0,0.92,NO,NO
+1508351,1818188,The Children's Shelter,,,32.0,53,94.0,True,Good,,False,"Child Care,Emergency Care,Respite Child Care",Emotional Disorders,1,3,1,0,0,0.38,NO,NO
+1419602,1752267,Aim to Achieve Ranch,,,21.0,29,12.0,True,Poor,,False,"Child Care,Assessment,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",5,10,17,3,1,4.24,NO,NO
+1325459,1687429,Unity Childrens Home,,,7.0,7,50.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,2,0,0,1,2.0,NO,NO
+224905,827335,San Marcos Treatment Center,SAN MARCOS,HAYS,265.0,112,75.0,True,Good,,False,Child Care,"Emotional Disorders,Intellectual Disability",12,13,6,1,0,1.18,NO,NO
+1489780,1804766,"Royal Heritage RTC, LLC",RICHMOND,FORT BEND,9.0,33,22.0,True,Average,,False,Child Care,Emotional Disorders,9,8,8,3,1,3.27,NO,NO
+1519664,1826938,Guided Path DFW,ARLINGTON,TARRANT,8.0,10,58.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,3,1,1,0,1.7,NO,NO
+1520809,1827725,New Hope GRO,SPRING,HARRIS,15.0,5,99.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
+1515801,1823572,Perfect Care GRO,RICHMOND,FORT BEND,9.0,5,24.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,2,2,1,0,3.2,NO,NO
+1506995,1817241,Making Strides GRO,HOUSTON,HARRIS,8.0,23,79.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,2,3,0,0,0.96,NO,NO
+1505747,1816309,Exceptional Abilities LLC,KATY,FORT BEND,22.0,11,17.0,True,Poor,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",3,1,7,0,0,3.64,NO,NO
+1512143,1820682,Peaceful Meadows DBA,CONROE,MONTGOMERY,10.0,19,3.0,True,Poor,,False,"Child Care,Assessment,Transitional Living","Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",4,7,16,10,3,6.26,NO,NO
+1370089,1716984,Pinecrest Emergency Care Services,,,16.0,54,52.0,True,Average,,False,"Child Care,Assessment,Emergency Care,Transitional Living,Respite Child Care","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",7,13,4,2,1,1.93,NO,NO
+460099,980590,My Friend's House,,,24.0,17,44.0,True,Average,,False,"Child Care,Emergency Care,Transitional Living",,3,2,4,0,3,2.24,NO,NO
+1519079,1826416,Ridge Hollow LLC,,,7.0,4,,False,,Fewer findings than most,False,"Child Care,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
+1506546,1816987,iRise LLC,HOUSTON,HARRIS,12.0,6,75.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,1,1,0,0,1.17,NO,NO
+1400769,1738202,STARR Resiliency Agency,,,12.0,59,30.0,True,Poor,,True,"Child Care,Assessment,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",9,9,28,1,2,2.86,YES,NO
+1533628,1837184,Golden Touch Children's Center,RICHMOND,FORT BEND,8.0,1,,False,,Fewer findings than most,False,Child Care,"Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
+95818,69531,Option House Es,,,15.0,24,42.0,True,Average,,False,"Child Care,Assessment,Emergency Care",,3,8,2,1,0,2.29,NO,NO
+1420705,1753012,Kismet Residential Treatment Center,TOMBALL,HARRIS,16.0,69,68.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,10,13,3,0,1.38,NO,NO
+1416720,1750110,Inspirational Hope House,CONROE,MONTGOMERY,27.0,64,24.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",11,19,20,4,3,3.16,NO,NO
+198385,813238,Hill Country Youth Ranch,,,80.0,117,52.0,True,Average,,False,"Child Care,Emergency Care,Transitional Living",Emotional Disorders,13,27,16,2,0,1.92,NO,NO
+1528606,1833612,Alpha Family Care LLC,,,8.0,1,,False,,Fewer findings than most,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
+1531058,1835437,Omega Group IV LLC,RICHMOND,FORT BEND,10.0,1,,False,,Fewer findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
+1352732,1705965,TRELS Home for Children,,,11.0,104,81.0,True,Good,,False,"Child Care,Assessment,Emergency Care,Transitional Living,Respite Child Care","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",8,10,4,1,1,0.91,NO,NO
+94195,7184,Boles Childrens Home Inc,QUINLAN,HUNT,24.0,9,83.0,True,Good,,False,Child Care,,0,2,0,0,0,0.89,NO,NO
+1510038,1819323,Harmony Residential GRO,CYPRESS,HARRIS,7.0,7,12.0,True,Poor,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,3,4,3,1,4.43,NO,NO
+1316505,1681260,Have Haven Inc.,,,16.0,47,57.0,True,Average,,False,"Child Care,Transitional Living,Respite Child Care","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",6,9,5,1,0,1.77,NO,NO
+111968,256371,Bayes Achievement Center,HUNTSVILLE,WALKER,62.0,63,21.0,True,Average,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",19,22,7,3,1,3.35,NO,NO
+1290944,1663041,El Paso Center for Children Emergency Shelter,,,5.0,36,51.0,True,Average,,False,"Child Care,Emergency Care",,5,9,3,0,0,1.94,NO,NO
+1434736,1764644,Hidden Cove Residential Treatment Center,FORT WORTH,TARRANT,10.0,21,99.0,True,Good,,False,"Child Care,Transitional Living",Emotional Disorders,0,0,0,0,0,0.0,NO,NO
+1520024,1827159,Taylored 4 Kidz Residential Treatment Center LLC,ARCOLA,FORT BEND,9.0,5,93.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,1,0,0.4,NO,NO
+1501347,1813144,"New Hope RTC, LLC.",HEMPSTEAD,WALLER,9.0,4,,False,,More findings than most,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,4,15,2,0,17.5,NO,NO
+1528596,1833604,Chime Children & Community Services LLC,,,10.0,2,,False,,Fewer findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
+1501618,1813303,Hearthstone Support LLC,SUGAR LAND,FORT BEND,20.0,28,39.0,True,Average,,False,"Child Care,Transitional Living",Emotional Disorders,3,5,8,4,1,2.43,NO,NO
+322127,877478,The Burke Foundation-Pathfinders RTC,DRIFTWOOD,HAYS,34.0,235,67.0,True,Good,,False,"Child Care,Transitional Living",Emotional Disorders,22,48,8,3,0,1.41,NO,NO
+94433,27177,Boys & Girls Country Of Houston,HOCKLEY,HARRIS,88.0,29,28.0,True,Average,,False,"Child Care,Transitional Living",,3,13,4,3,0,2.93,NO,NO
+453833,975248,"Connections Individual and Family Services, Inc.",,,36.0,80,90.0,True,Good,,False,"Child Care,Assessment,Emergency Care,Transitional Living",Emotional Disorders,1,5,4,2,0,0.51,NO,NO
+1474216,1794219,Amazing Touch Care Home,ROSENBERG,FORT BEND,17.0,37,40.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",4,10,8,1,0,2.32,NO,NO
+1519175,1826500,Beloved Ones,PRINCETON,COLLIN,8.0,7,24.0,True,Average,,False,Child Care,,1,3,1,1,0,3.14,NO,NO
+206448,817512,"Autistic Treatment Center, Inc.",DALLAS,DALLAS,31.0,107,20.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",18,43,28,6,7,3.41,NO,NO
+261771,844396,"Pegasus Schools, Inc.",LOCKHART,CALDWELL,200.0,172,66.0,True,Good,,False,"Child Care,Transitional Living",Emotional Disorders,20,33,7,1,0,1.48,NO,NO
+1521041,1827918,Devereux Texas,LEAGUE CITY,GALVESTON,66.0,7,99.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
+133848,505173,Unity Children's Home - Boys,,,16.0,15,76.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,2,3,0,0,1.13,NO,NO
+277917,851881,Bridgeway Home-Montgomery County Youth Services,,,30.0,116,85.0,True,Good,,False,"Child Care,Assessment,Emergency Care,Transitional Living",Emotional Disorders,4,18,1,2,1,0.86,NO,NO
+292740,859225,Renewed Strength Inc,HOUSTON,HARRIS,13.0,42,88.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,2,5,1,1,0.62,NO,NO
+1530469,1835020,"VisionQuest National, Ltd.",,,32.0,1,,False,,Fewer findings than most,False,"Child Care,Transitional Living,Respite Child Care","Emotional Disorders,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
+151863,531665,Davidson Respite House,,,42.0,72,33.0,True,Average,,False,"Child Care,Assessment,Emergency Care,Transitional Living,Respite Child Care","Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",21,14,7,4,0,2.64,NO,NO
+1520670,1827612,FutureCare Home LLC,,,10.0,10,50.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,3,2,1,0,2.0,NO,NO
+291464,858505,"Pathways Youth & Family Services,Inc. dba Habilitative Homes",SAN ANTONIO,BEXAR,32.0,131,78.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",7,20,4,0,0,0.97,NO,NO
+95069,53712,Casa Esperanza Inc DBA Hope House,,,16.0,25,23.0,True,Average,,False,"Child Care,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",6,6,9,0,0,3.24,NO,NO
+1432580,1763000,Angelic House of Hope,,,9.0,56,9.0,True,Poor,,False,"Child Care,Assessment,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",9,25,31,7,6,4.61,NO,NO
+1501481,1813235,"Gold Society, INC",,,34.0,15,70.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,0,4,1,1,1.33,NO,NO
+110840,254729,Child Crisis Center of El Paso,,,39.0,44,37.0,True,Average,,False,"Child Care,Emergency Care",,4,19,3,1,2,2.48,NO,NO
+521988,1033546,"Annunciation Maternity Home, Inc.",GEORGETOWN,WILLIAMSON,22.0,10,32.0,True,Average,,False,"Child Care,Transitional Living",,4,1,1,0,0,2.7,NO,NO
+1494156,1808079,Grace Alpha Focused Care LLC,SPRING,MONTGOMERY,8.0,31,53.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,6,8,0,1,1.9,NO,NO
+1490489,1805359,Prestige Homecare,,,11.0,30,65.0,True,Good,,False,"Child Care,Emergency Care,Transitional Living",Emotional Disorders,2,5,4,1,1,1.5,NO,NO
+1312395,1678450,"Renewed Strength, Inc. East",HOUSTON,HARRIS,14.0,111,62.0,True,Average,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",11,18,15,2,0,1.59,NO,NO
+94163,5913,The Childrens Home Emergency Shelter,,,39.0,30,79.0,True,Good,,False,"Child Care,Assessment,Emergency Care,Transitional Living",,2,4,1,0,0,0.97,NO,NO
+1519882,1827044,"A Safe Haven Residential Treatment Center, LLC",HOUSTON,HARRIS,8.0,6,91.0,True,Good,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,1,0,0,0.5,NO,NO
+1284397,1658373,"Promise Rose Residential Care Home, Inc.",HOUSTON,HARRIS,16.0,48,45.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",6,11,9,0,4,2.19,NO,NO
 1321294,1684373,Castillo Childrens Center,WOODVILLE,TYLER,18.0,125,18.0,True,Poor,,False,"Child Care,Transitional Living",Emotional Disorders,13,49,51,17,2,3.6,NO,NO
-1517077,1824665,Platform Pathways LLC,SPRING,HARRIS,8.0,6,10.0,True,Poor,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,4,3,1,0,4.5,NO,NO
-1519953,1827105,"Daylight Behavioral Health, Inc.",HOUSTON,HARRIS,8.0,3,,False,,Fewer findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
+1479560,1797720,Sarah's Landing LLC,,,8.0,43,89.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,2,4,0,0,0.58,NO,NO
 1523554,1829735,Victoria David's Place LLC,RICHMOND,FORT BEND,9.0,3,,False,,Fewer findings than most,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
 1515916,1823758,Anchor of Hope Residential Treatment Center LLC,ROSENBERG,FORT BEND,10.0,11,28.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,4,3,1,0,2.91,NO,NO
 94164,5914,The Childrens Home of Lubbock,LUBBOCK,LUBBOCK,90.0,63,46.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability",7,15,11,4,0,2.16,NO,NO
-94167,6005,STCH Ministries,PETTUS,BEE,130.0,22,34.0,True,Average,,False,"Child Care,Transitional Living",,2,5,8,2,0,2.64,NO,NO
+1526971,1832505,Laurel Ridge Treatment Center,SAN ANTONIO,BEXAR,40.0,3,,False,,Fewer findings than most,False,Child Care,Emotional Disorders,0,0,0,0,0,0.0,NO,NO
+1527094,1832555,Nelz Care LLC,,,7.0,2,,False,,Fewer findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
+98878,178491,Boysville Inc,CONVERSE,BEXAR,64.0,171,68.0,True,Good,,False,"Child Care,Transitional Living",,18,27,10,5,2,1.4,NO,NO
+1370039,1716949,"Fostering Life Youth Ranch, LLC",LEVELLAND,HOCKLEY,15.0,163,71.0,True,Good,,False,"Child Care,Assessment,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",12,33,8,0,1,1.33,NO,NO
+1513523,1821737,The RO Center for Child Development,WALLER,HARRIS,7.0,4,,False,,About average,False,"Child Care,Assessment,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,1,1,0,0,1.75,NO,NO
+1321091,1684228,Caring Heart Residential Care Services LLC,RICHMOND,FORT BEND,15.0,81,25.0,True,Average,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",24,19,17,1,2,3.1,NO,NO
+1501218,1813025,Helping Each Other LLC,HOUSTON,HARRIS,8.0,17,11.0,True,Poor,,False,Child Care,Emotional Disorders,4,8,8,0,0,4.47,NO,NO
+1527424,1832819,"Loving Hands Residential Treatment Center For Youth, LLC",HOUSTON,HARRIS,18.0,2,,False,,Fewer findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
 1523813,1829914,"Cal Harbor Residential Services, LLC",,,16.0,5,99.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
 158507,540238,The Ark Assessment Ctr & Emergency Shelter,,,61.0,33,68.0,True,Good,,False,"Child Care,Assessment,Emergency Care",,0,6,5,2,3,1.39,NO,NO
+94378,24719,Concho Valley Home For Girls,,,23.0,16,20.0,True,Average,,False,"Child Care,Emergency Care",,0,8,4,3,4,3.38,NO,NO
+1171982,1559917,Central Texas Table of Grace,,,13.0,46,89.0,True,Good,,False,"Child Care,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,2,3,2,0,0.57,NO,NO
+1433314,1763576,The Pride Lands Center of Hope,HOUSTON,HARRIS,10.0,48,19.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",4,18,24,2,0,3.5,NO,NO
 1522737,1829265,"Care Option Residential Treatment Center, LLC",HOUSTON,HARRIS,8.0,4,,False,,Fewer findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
-94125,1545,ACH Child and Family Services,,,45.0,55,80.0,True,Good,,False,"Child Care,Emergency Care,Transitional Living,Respite Child Care","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",4,5,3,0,2,0.93,NO,NO
-1526702,1832281,Victorious House LLC,HOUSTON,HARRIS,7.0,1,,False,,Fewer findings than most,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
-1492196,1806675,Horizon Heights Children's Home LLC,,,8.0,19,29.0,True,Average,,False,"Child Care,Emergency Care,Transitional Living,Respite Child Care","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,6,9,2,0,2.89,NO,NO
-1345074,1701205,Hidden Cove Residential Treatment Center,ARLINGTON,TARRANT,14.0,18,97.0,True,Good,,False,"Child Care,Transitional Living",Emotional Disorders,0,0,1,0,0,0.17,NO,NO
-1210694,1594840,Unity Children's Home - Girls,,,32.0,198,72.0,True,Good,,False,"Child Care,Assessment,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",16,19,26,5,3,1.25,NO,NO
-1524034,1830175,Straight Path RTC LLC,HOUSTON,FORT BEND,8.0,6,30.0,True,Average,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,1,4,0,1,2.83,NO,NO
-95069,53712,Casa Esperanza Inc DBA Hope House,,,16.0,25,23.0,True,Average,,False,"Child Care,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",6,6,9,0,0,3.24,NO,NO
-1321091,1684228,Caring Heart Residential Care Services LLC,RICHMOND,FORT BEND,15.0,81,25.0,True,Average,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",24,19,17,1,2,3.1,NO,NO
-1284397,1658373,"Promise Rose Residential Care Home, Inc.",HOUSTON,HARRIS,16.0,48,45.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",6,11,9,0,4,2.19,NO,NO
-1512150,1820690,"The Umbrella of Family Services, Incorporated",,,8.0,6,22.0,True,Average,,False,"Child Care,Emergency Care","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,3,2,1,0,3.33,NO,NO
-1503867,1815135,Zaso Home,,,15.0,6,86.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,2,1,0.83,NO,NO
-1461828,1786589,"Tshepang Center Residential Treatment Center, LLC",FRESNO,FORT BEND,10.0,50,36.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",7,10,12,6,3,2.52,NO,NO
-1334612,1693740,Sophies House for Children,,,8.0,28,32.0,True,Average,,False,"Child Care,Emergency Care,Transitional Living",Emotional Disorders,0,9,10,4,2,2.71,NO,NO
+1462263,1786879,Home of Joseph Foundation,VICTORIA,VICTORIA,7.0,16,41.0,True,Average,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,4,3,1,0,2.31,NO,NO
+1501932,1813636,"Great Day, INC",SPRING,HARRIS,15.0,6,86.0,True,Good,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,1,0,0,1,0.83,NO,NO
+101870,215752,Hill Country Youth Ranch Residential Treatment Center,,,50.0,113,47.0,True,Average,,False,"Child Care,Assessment,Emergency Care,Transitional Living",Emotional Disorders,15,29,14,2,0,2.1,NO,NO
+141349,515678,L'Amor Village RTC,HOUSTON,HARRIS,42.0,63,39.0,True,Average,,False,"Child Care,Transitional Living",Emotional Disorders,2,18,21,1,2,2.37,NO,NO
+1329193,1689854,Legacy Youth,RICHMOND,FORT BEND,30.0,56,75.0,True,Good,,False,"Child Care,Transitional Living",Emotional Disorders,2,8,6,2,2,1.18,NO,NO
 1528638,1833635,Circle of Compassion,TOMBALL,HARRIS,9.0,1,,False,,Fewer findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
-1419602,1752267,Aim to Achieve Ranch,,,21.0,29,12.0,True,Poor,,False,"Child Care,Assessment,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",5,10,17,3,1,4.24,NO,NO
-1510029,1819320,"Discovery Practice Management, Inc.",IRVING,DALLAS,52.0,14,40.0,True,Average,,False,"Child Care,Transitional Living",Emotional Disorders,2,2,4,1,1,2.36,NO,NO
+1377821,1721455,Creighton Oaks Residential Treatment Center,CONROE,MONTGOMERY,71.0,146,60.0,True,Average,,False,"Child Care,Transitional Living",Emotional Disorders,11,26,24,4,2,1.65,NO,NO
+280910,853346,Embracing Destiny Foundation RTC,SPRING,HARRIS,13.0,55,37.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",14,12,6,1,0,2.51,NO,NO
 1498537,1811084,Jayce's Place Inc.,GRAND PRAIRIE,TARRANT,13.0,11,95.0,True,Good,,False,"Child Care,Transitional Living",Emotional Disorders,0,1,0,0,0,0.36,NO,NO
-1513523,1821737,The RO Center for Child Development,WALLER,HARRIS,7.0,4,,False,,About average,False,"Child Care,Assessment,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,1,1,0,0,1.75,NO,NO
-1524444,1830500,Splendid Care Placement LLC,HOUSTON,HARRIS,8.0,1,,False,,Fewer findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
-292740,859225,Renewed Strength Inc,HOUSTON,HARRIS,13.0,42,88.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,2,5,1,1,0.62,NO,NO
-1501222,1813062,Alijah House Children's Services #2,HOUSTON,HARRIS,17.0,10,91.0,True,Good,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,0,0,0,0,0.5,NO,NO
-1530752,1835236,Eagle Light Inc.,HOUSTON,HARRIS,11.0,2,,False,,Fewer findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
-1519664,1826938,Guided Path DFW,ARLINGTON,TARRANT,8.0,10,58.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,3,1,1,0,1.7,NO,NO
-1487815,1803477,Hidden Cove Residential Treatment Center Inc,KENNEDALE,TARRANT,7.0,13,99.0,True,Good,,False,"Child Care,Transitional Living",Emotional Disorders,0,0,0,0,0,0.0,NO,NO
-1503079,1814618,Perfect Start Homes INC,MISSOURI CITY,FORT BEND,7.0,13,0.0,True,Poor,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,19,16,3,3,10.23,NO,NO
-156789,538034,Jonathan's Place GRO,,,45.0,55,44.0,True,Average,,False,"Child Care,Emergency Care,Transitional Living",Emotional Disorders,6,6,20,2,4,2.22,NO,NO
+169498,554314,Girls Haven,BEAUMONT,JEFFERSON,16.0,169,71.0,True,Good,,False,"Child Care,Transitional Living",Emotional Disorders,6,31,16,3,4,1.25,NO,NO
+483290,1000050,New Horizons Audrey Grace House RTC,,,40.0,114,65.0,True,Good,,False,"Child Care,Assessment,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",11,23,7,1,1,1.5,NO,NO
+1492196,1806675,Horizon Heights Children's Home LLC,,,8.0,19,29.0,True,Average,,False,"Child Care,Emergency Care,Transitional Living,Respite Child Care","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,6,9,2,0,2.89,NO,NO
+295996,860873,Guardian Angels I Residential Treatment Center,HOUSTON,HARRIS,24.0,189,61.0,True,Average,,False,"Child Care,Transitional Living",Emotional Disorders,22,34,19,1,3,1.63,NO,NO
+1440736,1769316,Boys to Men RTC,HOUSTON,HARRIS,14.0,45,11.0,True,Poor,,False,Child Care,Emotional Disorders,8,18,25,7,0,4.47,NO,NO
+1334612,1693740,Sophies House for Children,,,8.0,28,32.0,True,Average,,False,"Child Care,Emergency Care,Transitional Living",Emotional Disorders,0,9,10,4,2,2.71,NO,NO
+1522541,1829098,Grace Harbor Homes LLC,FARMERSVILLE,COLLIN,24.0,10,2.0,True,Poor,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,7,8,3,1,6.9,NO,NO
+1366694,1714813,Unique Avenue,HOUSTON,HARRIS,10.0,30,86.0,True,Good,,False,Child Care,Emotional Disorders,1,4,0,2,0,0.83,NO,NO
+1382231,1724162,Amor Purus LLC,KATY,HARRIS,7.0,50,25.0,True,Average,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",6,14,20,4,0,3.08,NO,NO
+1510778,1819798,Blooming Bridge,MESQUITE,DALLAS,11.0,15,13.0,True,Poor,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",5,2,9,1,0,4.13,NO,NO
+1502862,1814454,Hold my Hand General Residential Operation,,,12.0,10,96.0,True,Good,,False,"Child Care,Assessment,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,1,0,0,0.3,NO,NO
+1517299,1824856,The Sunshine Place LLC,HOUSTON,HARRIS,7.0,6,91.0,True,Good,,False,"Child Care,Transitional Living",Emotional Disorders,0,0,1,0,0,0.5,NO,NO
+349689,892238,A New Day Foundation,SPRING,HARRIS,13.0,83,58.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",3,18,17,3,0,1.73,NO,NO
+1511085,1819950,Kid Net Foundation dba Jonathan's Place,DALLAS,DALLAS,14.0,7,92.0,True,Good,,False,"Child Care,Transitional Living",,0,0,1,0,0,0.43,NO,NO
+1492661,1807081,Keagan?s Residential Care Homes LLC.,HOUSTON,HARRIS,9.0,40,82.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,4,5,0,0,0.9,NO,NO
+1401538,1738882,Ayanti Residential Treatment Center Inc,,,11.0,36,54.0,True,Average,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",4,6,5,2,4,1.86,NO,NO
+1508276,1818120,Lonnie Care RTC,FORNEY,KAUFMAN,8.0,6,70.0,True,Good,,False,Child Care,Emotional Disorders,0,2,0,0,0,1.33,NO,NO
+1520267,1827366,"Rebirth Haven, LLC",HOUSTON,HARRIS,8.0,4,,False,,More findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",4,6,7,3,1,18.0,NO,NO
+1470972,1792300,"JM Home Care Services, LLC",KATY,HARRIS,7.0,21,8.0,True,Poor,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",4,12,11,0,0,4.81,NO,NO
+1434730,1764642,Horizon Project,SPRING,HARRIS,24.0,155,88.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",3,17,7,0,1,0.68,NO,NO
+1512300,1820782,Dunamis Place Inc.,ROSHARON,FORT BEND,19.0,4,,False,,More findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",1,2,6,0,0,7.75,NO,NO
+1315855,1680842,"Bluebonnet Haven, LLC",,,64.0,153,72.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",14,24,8,0,1,1.25,NO,NO
 1441264,1769798,Armanis House Inc. Residential Care,HOUSTON,HARRIS,7.0,40,7.0,True,Poor,,False,"Child Care,Assessment,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",12,12,28,5,4,5.15,NO,NO
-111968,256371,Bayes Achievement Center,HUNTSVILLE,WALKER,62.0,63,21.0,True,Average,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",19,22,7,3,1,3.35,NO,NO
+1485304,1801598,TRELS Home For Children,HONDO,MEDINA,10.0,41,90.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,2,2,1,0,0.51,NO,NO
+1465403,1788833,Southall Heritage Youth Home,PEARLAND,BRAZORIA,16.0,36,59.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability",2,5,8,3,0,1.67,NO,NO
+1432355,1762810,"Fostering Life Youth Ranch, LLC Meraki",LEVELLAND,HOCKLEY,25.0,130,95.0,True,Good,,False,"Child Care,Assessment,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,5,4,0,0,0.32,NO,NO
+1494934,1808575,"Residential Care at the Summit, LLC",FORT WORTH,TARRANT,30.0,36,88.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,3,1,0,0,0.69,NO,NO
+1487815,1803477,Hidden Cove Residential Treatment Center Inc,KENNEDALE,TARRANT,7.0,13,99.0,True,Good,,False,"Child Care,Transitional Living",Emotional Disorders,0,0,0,0,0,0.0,NO,NO
+269667,847985,High Sky Children's Ranch,,,40.0,31,54.0,True,Average,,False,"Child Care,Assessment,Emergency Care,Transitional Living",Emotional Disorders,4,8,1,0,2,1.84,NO,NO
+1492235,1806667,"Hunting For More Love, RTC",KATY,HARRIS,7.0,38,73.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",3,6,2,0,1,1.21,NO,NO
+1516400,1824117,Reviving Passage LLC,ANGLETON,BRAZORIA,23.0,9,53.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,3,0,0,0,1.89,NO,NO
+1344209,1700503,"Texas Tranquility Estates, Inc.",TOMBALL,HARRIS,13.0,13,22.0,True,Average,,False,"Child Care,Transitional Living",Emotional Disorders,2,5,3,1,2,3.31,NO,NO
+1334412,1693629,Rising Star GRO,HOUSTON,HARRIS,14.0,17,69.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,0,2,3,1,1.35,NO,NO
+1469729,1791476,TRELS Home LLC,CONROE,MONTGOMERY,15.0,69,93.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,2,3,3,0,0.41,NO,NO
+1397838,1735762,Harmony Therapy and Treatment Center LLC,SPRING,MONTGOMERY,16.0,69,11.0,True,Poor,,False,Child Care,Emotional Disorders,11,24,42,15,1,4.46,NO,NO
+1490693,1805546,HIS Love Foster Care Solutions,HOUSTON,HARRIS,8.0,20,82.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,0,4,0,1,0.9,NO,NO
+1503079,1814618,Perfect Start Homes INC,MISSOURI CITY,FORT BEND,7.0,13,0.0,True,Poor,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,19,16,3,3,10.23,NO,NO
+94132,1773,Medina Childrens Home,MEDINA,BANDERA,132.0,10,89.0,True,Good,,False,Child Care,Emotional Disorders,0,0,2,0,0,0.6,NO,NO
+94940,50218,Meridell Achievement Center,LIBERTY HILL,WILLIAMSON,134.0,155,24.0,True,Average,,False,Child Care,Emotional Disorders,24,64,32,7,2,3.15,NO,NO
+94120,1165,West Texas Boys Ranch,SAN ANGELO,TOM GREEN,78.0,36,31.0,True,Average,,False,Child Care,,5,10,7,6,0,2.72,NO,NO
+1469249,1791182,BRIGHTER TRANSITIONS LLC,,,9.0,28,65.0,True,Good,,False,"Child Care,Emergency Care,Transitional Living,Respite Child Care","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",3,2,5,2,0,1.5,NO,NO
+1366227,1714518,Haven of Rest Care Home,FORT WORTH,TARRANT,10.0,33,33.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",4,9,8,4,0,2.67,NO,NO
+1528624,1833622,"Sky Society Youth Services, Inc.",,,7.0,2,,False,,Fewer findings than most,False,"Child Care,Assessment,Emergency Care,Respite Child Care","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
+1432776,1763171,In His Hands Children Home,TRINIDAD,HENDERSON,20.0,15,0.0,True,Poor,,False,"Child Care,Transitional Living",,3,18,26,13,3,12.93,NO,NO
+94172,6065,Methodist Children's Home BCC,WACO,MCLENNAN,88.0,89,83.0,True,Good,,False,"Child Care,Transitional Living",,3,16,0,0,0,0.89,NO,NO
+1524445,1830501,SBJ El-Morijah LLC,RICHMOND,FORT BEND,10.0,3,,False,,Fewer findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,1,0,0,1.0,NO,NO
+1530872,1835326,"Compassion Cove Serenity House, LLC",HOUSTON,HARRIS,9.0,2,,False,,More findings than most,False,"Child Care,Transitional Living",Emotional Disorders,2,3,4,0,1,17.5,NO,NO
+1379903,1722710,Prime Residential Care,RICHMOND,FORT BEND,12.0,124,40.0,True,Average,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",15,34,24,3,4,2.36,NO,NO
+295515,860617,ACH Child and Family Services Emergency Shelter,,,20.0,68,58.0,True,Average,,False,"Child Care,Assessment,Emergency Care,Transitional Living,Respite Child Care",Emotional Disorders,9,10,7,6,0,1.74,NO,NO
+1459014,1784695,Moving Forward Treatment Center,DALLAS,DALLAS,8.0,23,4.0,True,Poor,,False,"Child Care,Transitional Living",Emotional Disorders,9,9,13,2,1,5.43,NO,NO
+1420250,1752752,A Better Choice ABC LLC,CARROLLTON,DALLAS,9.0,53,5.0,True,Poor,,True,Child Care,"Emotional Disorders,Intellectual Disability",19,19,30,10,7,5.43,YES,NO
+1493879,1807875,Youth Health Associates Glenn Heights Academy,GLENN HEIGHTS,DALLAS,28.0,60,16.0,True,Poor,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",8,16,34,7,0,3.67,NO,NO
+1396262,1734404,Kensley Care LLC dba Kensley Care South,HOUSTON,HARRIS,16.0,126,73.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Pervasive Development Disorder",9,15,13,6,1,1.25,NO,NO
+1517982,1825425,Saving Grace Children Place GRO,HOUSTON,HARRIS,16.0,4,,False,,About average,False,Child Care,Emotional Disorders,0,1,1,0,0,1.75,NO,NO
+1522662,1829135,Blessed Haven Homes LLC,ARLINGTON,TARRANT,12.0,9,38.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,4,2,0,0,2.44,NO,NO
+95695,66232,Helping Hand Home for Children,AUSTIN,TRAVIS,41.0,140,64.0,True,Average,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",13,21,19,3,3,1.54,NO,NO
+1426376,1757679,"Clear Vision Youth Center, LLC",ALVIN,BRAZORIA,14.0,43,35.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",8,9,8,5,2,2.6,NO,NO
+1350460,1704643,Aspire 2 Dream,BEAUMONT,JEFFERSON,8.0,26,19.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",3,7,11,6,3,3.5,NO,NO
+94186,6787,Brownson Home,VICTORIA,VICTORIA,17.0,13,28.0,True,Average,,False,Child Care,,0,8,2,0,0,2.92,NO,NO
+1408212,1744228,Rejo Helping Hands Inc.,WILLIS,MONTGOMERY,48.0,74,12.0,True,Poor,,False,"Child Care,Transitional Living","Emotional Disorders,Pervasive Development Disorder",18,29,33,8,5,4.41,NO,NO
+1448888,1776121,TRELS Home For Children,MAGNOLIA,MONTGOMERY,10.0,53,61.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",4,10,9,0,0,1.64,NO,NO
+279284,852537,Sweeten Home for Children Inc.,BROWNWOOD,BROWN,21.0,76,83.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",4,7,6,1,0,0.89,NO,NO
+1529972,1834674,Alijah House Children's Services Inc,,,14.0,5,78.0,True,Good,,False,"Child Care,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,0,0,0,0,1.0,NO,NO
+110750,254538,The Childrens Home of Lubbock ES and AC,,,18.0,25,63.0,True,Average,,False,"Child Care,Assessment,Emergency Care,Transitional Living",Emotional Disorders,2,4,3,2,0,1.56,NO,NO
+1531431,1835684,Pinnacle Residential Treatment Center LLC,,,11.0,1,,False,,Fewer findings than most,False,"Child Care,Emergency Care,Transitional Living,Respite Child Care","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
+1499883,1812028,Youthful Haven,KATY,FORT BEND,14.0,14,2.0,True,Poor,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,7,16,9,0,7.07,NO,NO
+1496834,1809921,NEW LIFE RESIDENTIAL TREATMENT CENTER,FULSHEAR,FORT BEND,11.0,39,77.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,4,6,2,0,1.1,NO,NO
+1504116,1815280,"Optimum Leap, LLC",HOUSTON,HARRIS,8.0,13,13.0,True,Poor,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,3,12,3,0,4.15,NO,NO
+1509134,1818641,Iphie Residential Treatment Center,RICHMOND,FORT BEND,11.0,9,66.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,1,3,0,0,1.44,NO,NO
+1535602,1838660,TAV Center LLC,HOUSTON,HARRIS,9.0,1,,False,,Fewer findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
+271039,848614,The Jim H. Green Kidz Harbor dba Kidz Harbor,,,63.0,23,60.0,True,Average,,False,"Child Care,Emergency Care",,1,6,3,0,0,1.65,NO,NO
+285236,855318,Harris County Youth Shelter,,,24.0,21,33.0,True,Average,,False,"Child Care,Emergency Care,Transitional Living",,2,6,6,2,0,2.67,NO,NO
+558469,1064466,Azleway Valley View,TYLER,SMITH,68.0,104,35.0,True,Average,,False,"Child Care,Assessment,Transitional Living","Emotional Disorders,Pervasive Development Disorder",8,28,33,7,5,2.6,NO,NO
+1405337,1741914,The Ambience Residential Treatment Center,SUGAR LAND,FORT BEND,12.0,80,14.0,True,Poor,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",13,36,36,4,0,4.06,NO,NO
+196519,812341,EVERYDAY LIFE INC,BRYAN,BRAZOS,44.0,74,96.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,3,2,0,0,0.31,NO,NO
+1472934,1793529,Alafia Haven,ODESSA,ECTOR,13.0,20,54.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",0,3,7,1,2,1.85,NO,NO
+1521360,1828197,Our Place Called Home,,,7.0,7,99.0,True,Good,,False,"Child Care,Emergency Care,Transitional Living,Respite Child Care","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
+1398837,1736601,Latrell's Landing,CYPRESS,HARRIS,12.0,39,20.0,True,Average,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",3,14,18,3,2,3.41,NO,NO
+1361586,1711621,Abundance of Joy Home Shelter,HOUSTON,HARRIS,11.0,68,14.0,True,Poor,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",10,27,33,7,2,4.01,NO,NO
+1376148,1720357,Hope for Tomorrow DBA Bridge to Hope,,,17.0,63,50.0,True,Average,,False,"Child Care,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",10,13,6,3,0,2.0,NO,NO
+94575,34018,Sherwood-Myrtie Foster Home FO,STEPHENVILLE,ERATH,96.0,35,21.0,True,Average,,False,"Child Care,Transitional Living",Emotional Disorders,7,11,11,1,3,3.34,NO,NO
+1294867,1665832,Journey to Dream - Kyle's Place,LEWISVILLE,DENTON,19.0,35,50.0,True,Average,,False,"Child Care,Transitional Living",Emotional Disorders,2,6,9,4,1,2.0,NO,NO
+110799,254646,K Star Emergency Shelter,,,20.0,41,17.0,True,Poor,,False,"Child Care,Assessment,Emergency Care,Transitional Living,Respite Child Care",Emotional Disorders,5,17,15,5,1,3.63,NO,NO
+1333314,1692813,Safe Haven Youth Ranch,HEMPSTEAD,WALLER,32.0,117,29.0,True,Average,,False,Child Care,Emotional Disorders,20,40,18,9,6,2.89,NO,NO
+1298150,1668161,Nothing Just Happens Inc.,,,7.0,30,97.0,True,Good,,False,"Child Care,Emergency Care,Transitional Living",Emotional Disorders,0,0,0,2,0,0.13,NO,NO
+1533614,1837175,Indelible Mission LLC,MANSFIELD,TARRANT,7.0,2,,False,,Fewer findings than most,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
+1490219,1805111,HAID LLC,RICHMOND,FORT BEND,30.0,39,78.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,6,5,0,0,1.0,NO,NO
+1505536,1816156,The Averie Foundation,HOUSTON,HARRIS,8.0,11,5.0,True,Poor,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,3,9,5,0,5.36,NO,NO
+1349913,1704326,"La Maison, LLC",ANNA,COLLIN,14.0,43,17.0,True,Poor,,False,Child Care,Emotional Disorders,12,15,11,1,2,3.65,NO,NO
+1499778,1811997,Our Home House LLC,,,15.0,48,93.0,True,Good,,False,"Child Care,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,2,4,0,0,0.42,NO,NO
+266025,846369,"HMIH CEDAR CREST, LLC",BELTON,BELL,90.0,244,41.0,True,Average,,False,Child Care,Emotional Disorders,41,70,23,3,2,2.3,NO,NO
+1478448,1796998,Caring Companions LLC,HUMBLE,HARRIS,11.0,25,16.0,True,Poor,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",4,8,13,1,1,3.76,NO,NO
+1410927,1746008,Wholeness Haven Inc.,,,20.0,65,28.0,True,Average,,False,"Child Care,Assessment,Emergency Care,Transitional Living,Respite Child Care,Therapeutic Camp",Emotional Disorders,12,17,17,4,2,2.91,NO,NO
+1539118,1841137,Open Arms Children's Home,NAPLES,CASS,32.0,1,,False,,Fewer findings than most,False,"Child Care,Transitional Living",,0,0,0,0,0,0.0,NO,NO
+1089418,1496362,The Gladney Center,FORT WORTH,TARRANT,30.0,56,65.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,11,9,0,3,1.5,NO,NO
+1527188,1832623,Bridge Of Abilities Foundation,,,7.0,1,,False,,Fewer findings than most,False,"Child Care,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
+94764,42721,Methodist Childrens Home Boys Ranch,WACO,MCLENNAN,21.0,35,92.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,3,0,0,0,0.49,NO,NO
+608709,1105326,Hearts with Hope Foundation-GRO,SPRING,HARRIS,29.0,135,78.0,True,Good,,False,"Child Care,Transitional Living",Emotional Disorders,3,14,19,3,1,1.0,NO,NO
+1131580,1530337,Youth Reach,HOUSTON,HARRIS,18.0,14,3.0,True,Poor,,False,"Child Care,Transitional Living",,1,11,10,3,1,6.14,NO,NO
+1291334,1663308,Hope Haven of East Texas,LINDALE,SMITH,16.0,127,47.0,True,Average,,False,"Child Care,Assessment,Transitional Living",Emotional Disorders,9,28,31,7,1,2.09,NO,NO
+1500669,1812637,Serenity Hope Home LLC,HOUSTON,HARRIS,12.0,36,72.0,True,Good,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,2,9,0,0,1.25,NO,NO
+1497556,1810414,Radiant Springs Residential Treatment Center LLC,,,14.0,41,58.0,True,Average,,False,"Child Care,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability",2,9,7,1,0,1.68,NO,NO
+1527460,1832831,Restored Light Children's Home RTC,HOUSTON,HARRIS,8.0,6,27.0,True,Average,,False,"Child Care,Transitional Living",Emotional Disorders,2,1,1,0,1,3.0,NO,NO
+1532034,1836110,Her Tomorrow House,AUBREY,DENTON,9.0,2,,False,,Fewer findings than most,False,Child Care,Emotional Disorders,0,0,0,0,0,0.0,NO,NO
+1517214,1824753,Grace Devine LLC,,,7.0,15,1.0,True,Poor,,False,"Child Care,Assessment,Emergency Care,Transitional Living",Emotional Disorders,4,12,11,3,2,7.27,NO,NO
+1345224,1701291,"Open Arms Open Hearts Foundation, LLC",DAYTON,LIBERTY,14.0,22,18.0,True,Poor,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",2,10,8,2,0,3.55,NO,NO
+1487427,1803258,A Journey of Hope,,,12.0,50,53.0,True,Average,,False,"Child Care,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",1,11,13,2,3,1.9,NO,NO
+1519375,1826665,"Wayne Capital Mgt, DBA, Pleasant Falls GRO",RICHMOND,FORT BEND,13.0,4,,False,,More findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,2,2,0,0,6.0,NO,NO
+142844,517689,Shiloh Treatment Center,MANVEL,BRAZORIA,60.0,47,10.0,True,Poor,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder,PRYTF Certified",15,16,18,9,0,4.49,NO,NO
+1496948,1810057,Devine Care Home RTC,RICHMOND,FORT BEND,9.0,16,57.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,0,6,0,0,1.75,NO,NO
+1466273,1789393,Finally at Home LLC,,,12.0,33,90.0,True,Good,,False,"Child Care,Assessment,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",0,3,2,0,0,0.55,NO,NO
+1332255,1692091,ACH Child and Family Services,,,16.0,109,59.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",8,21,18,2,1,1.68,NO,NO
+1476995,1796056,"Blessed Kidz Residential Treatment Center, LLC",,,12.0,55,47.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",5,11,13,3,1,2.09,NO,NO
+1526157,1831916,Essence RTC LLC,SUGAR LAND,FORT BEND,11.0,2,,False,,Fewer findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
+1420265,1752756,Paradigm Treatment Texas,AUSTIN,TRAVIS,40.0,63,38.0,True,Average,,False,Child Care,Emotional Disorders,10,12,14,6,4,2.48,NO,NO
+1479575,1797723,A Positive Change RTC LLC,ROSENBERG,FORT BEND,7.0,14,71.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,1,3,0,0,1.29,NO,NO
+1382726,1724502,Make A Way Residential Treatment Center,ALVIN,BRAZORIA,16.0,41,60.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",7,6,3,0,0,1.66,NO,NO
+1486499,1802552,Amir's House,,,10.0,22,76.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",1,2,4,0,0,1.14,NO,NO
+98456,170567,Bridge Emergency Shelter,,,16.0,76,88.0,True,Good,,False,"Child Care,Assessment,Emergency Care,Transitional Living,Respite Child Care","Emotional Disorders,Intellectual Disability",2,8,3,2,0,0.72,NO,NO
+94099,184,Hendrick Home for Children,ABILENE,TAYLOR,52.0,16,55.0,True,Average,,False,"Child Care,Transitional Living",,2,1,5,0,0,1.81,NO,NO
+1499485,1811815,Tomorrow's Promise Youth Home LLC,,,9.0,24,70.0,True,Good,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,0,8,1,1,1.33,NO,NO
+1422826,1754771,A Promising Journey Inc.,HOUSTON,HARRIS,18.0,54,74.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,7,6,4,1,1.2,NO,NO
+1517077,1824665,Platform Pathways LLC,SPRING,HARRIS,8.0,6,10.0,True,Poor,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,4,3,1,0,4.5,NO,NO
+1519953,1827105,"Daylight Behavioral Health, Inc.",HOUSTON,HARRIS,8.0,3,,False,,Fewer findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
+1512150,1820690,"The Umbrella of Family Services, Incorporated",,,8.0,6,22.0,True,Average,,False,"Child Care,Emergency Care","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,3,2,1,0,3.33,NO,NO
+1345074,1701205,Hidden Cove Residential Treatment Center,ARLINGTON,TARRANT,14.0,18,97.0,True,Good,,False,"Child Care,Transitional Living",Emotional Disorders,0,0,1,0,0,0.17,NO,NO
+1530254,1834855,Aspire Haven LLC,ROSHARON,FORT BEND,12.0,2,,False,,About average,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,0,0,0,0,2.5,NO,NO
+1511040,1819940,"Gercy, LLC",SPRING,HARRIS,7.0,4,,False,,About average,False,Child Care,Emotional Disorders,0,0,2,1,1,2.25,NO,NO
+1527080,1832538,Rich Haven Care LLC,KATY,HARRIS,10.0,2,,False,,Fewer findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
+1532005,1836104,Good Samaritan Foster Care LLC,CELINA,COLLIN,7.0,2,,False,,Fewer findings than most,False,Child Care,,0,0,0,0,0,0.0,NO,NO
+1210694,1594840,Unity Children's Home - Girls,,,32.0,198,72.0,True,Good,,False,"Child Care,Assessment,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",16,19,26,5,3,1.25,NO,NO
+146266,522278,Serving Children and Adults,,,16.0,25,23.0,True,Average,,False,"Child Care,Assessment,Emergency Care,Transitional Living",Emotional Disorders,6,6,8,0,3,3.24,NO,NO
+1524034,1830175,Straight Path RTC LLC,HOUSTON,FORT BEND,8.0,6,30.0,True,Average,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,1,4,0,1,2.83,NO,NO
+1461406,1786371,Dawn Rise RTC,FRESNO,FORT BEND,10.0,13,1.0,True,Poor,,False,"Child Care,Transitional Living",Emotional Disorders,5,9,6,7,1,7.23,NO,NO
+1446124,1773956,DePelchin Children's Center Campus at Today's Harbor,LA PORTE,HARRIS,30.0,33,27.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",6,12,5,2,0,2.94,NO,NO
+1503867,1815135,Zaso Home,,,15.0,6,86.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,2,1,0.83,NO,NO
+1353062,1706226,"Dream Residential Treatment Center, Inc.",HOUSTON,HARRIS,18.0,103,65.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",10,12,16,2,3,1.49,NO,NO
+1515231,1823148,A NEW BEGINNING RESIDENTIAL TREATMENT CENTER LLC,ROSHARON,BRAZORIA,10.0,2,,False,,Fewer findings than most,False,"Child Care,Transitional Living",Emotional Disorders,0,0,0,0,0,0.0,NO,NO
+99728,191133,"SJRC Texas, Inc.",,,45.0,148,76.0,True,Good,,False,"Child Care,Assessment,Emergency Care,Transitional Living,Respite Child Care",Emotional Disorders,9,21,11,2,2,1.14,NO,NO
+1461828,1786589,"Tshepang Center Residential Treatment Center, LLC",FRESNO,FORT BEND,10.0,50,36.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",7,10,12,6,3,2.52,NO,NO
+1507004,1817244,"Helping Hands Houston, TX LLC",HOUSTON,HARRIS,10.0,10,50.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,0,5,0,0,2.0,NO,NO
+1530484,1834994,"VisionQuest National, Ltd.",,,32.0,1,,False,,Fewer findings than most,False,"Child Care,Transitional Living,Respite Child Care","Emotional Disorders,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
+103605,228620,East Texas Open Door Inc,MARSHALL,HARRISON,44.0,124,56.0,True,Average,,False,"Child Care,Transitional Living",Emotional Disorders,11,26,20,2,0,1.8,NO,NO
+1522712,1829244,Prosper Shelter RTC,RICHMOND,FORT BEND,7.0,3,,False,,More findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,4,4,1,0,11.67,NO,NO
+273088,849589,"The Jim H. Green Kidz Harbor, Inc. dba Kidz Harbor Home",LIVERPOOL,BRAZORIA,28.0,23,62.0,True,Average,,False,"Child Care,Transitional Living",,1,2,6,2,2,1.61,NO,NO
+1492211,1806666,"The Ark Residential Treatment Center, LLC",KATY,FORT BEND,9.0,16,84.0,True,Good,,False,Child Care,Emotional Disorders,0,0,4,1,0,0.88,NO,NO
+1441258,1769797,Special Parent Advocacy Group A NJ Nonprofit Corporation,SANGER,DENTON,13.0,42,14.0,True,Poor,,True,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",11,17,14,3,1,4.1,YES,NO
+1367614,1715401,The One Discovery RTC,HOUSTON,HARRIS,8.0,78,35.0,True,Average,,False,Child Care,"Emotional Disorders,Intellectual Disability",16,11,23,3,1,2.56,NO,NO
+1537856,1840172,Youth Health Associates Glenn Heights Academy,GLENN HEIGHTS,DALLAS,28.0,1,,False,,Fewer findings than most,False,"Child Care,Transitional Living",Emotional Disorders,0,0,0,0,0,0.0,NO,NO
+1475705,1795211,Beacon Of Light Residential Treatment Center LLC,HOUSTON,HARRIS,11.0,14,44.0,True,Average,,False,Child Care,Emotional Disorders,2,3,3,0,0,2.21,NO,NO
+1330508,1690684,Moving Forward,GRAND PRAIRIE,DALLAS,9.0,44,49.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Pervasive Development Disorder",4,7,13,0,2,2.02,NO,NO
+1492161,1806655,The Origin Home for Children LLC,HOUSTON,HARRIS,10.0,13,19.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,3,7,1,0,3.46,NO,NO
+1441873,1770328,Houston's House of Hope,BAYTOWN,HARRIS,16.0,20,97.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,1,0,0,0.15,NO,NO
+1510029,1819320,"Discovery Practice Management, Inc.",IRVING,DALLAS,52.0,14,40.0,True,Average,,False,"Child Care,Transitional Living",Emotional Disorders,2,2,4,1,1,2.36,NO,NO
+1480414,1798274,"DeFlourish Home, LLC",ODESSA,ECTOR,12.0,17,45.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",4,2,3,0,0,2.18,NO,NO
+253192,840381,Resolution Ranch,CAMERON,MILAM,50.0,21,33.0,True,Average,,False,Child Care,Emotional Disorders,3,6,5,1,0,2.67,NO,NO
+94715,40724,New Horizons Ranch Residential Treatment Center,GOLDTHWAITE,MILLS,68.0,98,40.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",13,31,13,0,0,2.33,NO,NO
+1356520,1708504,Road To Wisdom LLC,HOUSTON,HARRIS,15.0,118,91.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",4,7,3,1,0,0.5,NO,NO
+1501240,1813027,"Safe Haven, RTC LLC",HOUSTON,HARRIS,14.0,19,50.0,True,Average,,False,"Child Care,Transitional Living",Emotional Disorders,2,2,5,2,1,2.0,NO,NO
+1519902,1827072,Brightway Love&Care,HOUSTON,HARRIS,8.0,4,,False,,More findings than most,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,4,2,1,2,9.0,NO,NO
+1527090,1832575,Adullam Homes LLC,RICHMOND,FORT BEND,10.0,11,87.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Pervasive Development Disorder",1,0,1,0,0,0.73,NO,NO
+99330,185528,Roy Maas Youth Alternatives Meadows,BOERNE,KENDALL,48.0,126,76.0,True,Good,,False,"Child Care,Assessment,Transitional Living",Emotional Disorders,10,16,8,1,0,1.11,NO,NO
+110531,254110,L'Amor Village Emergency Shelter,,,8.0,22,9.0,True,Poor,,False,"Child Care,Emergency Care",,1,15,9,5,1,4.68,NO,NO
+1494094,1808042,Glory Home RTC,MISSOURI CITY,FORT BEND,18.0,26,18.0,True,Poor,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,15,6,2,0,3.54,NO,NO
+94233,13621,Sacred Heart Childrens Home,LAREDO,WEBB,80.0,20,26.0,True,Average,,False,Child Care,,4,6,5,1,0,3.05,NO,NO
+94124,1535,Cherokee Home For Children,CHEROKEE,SAN SABA,60.0,11,21.0,True,Average,,False,"Child Care,Transitional Living",,1,5,3,1,1,3.36,NO,NO
+1461240,1786312,"Blessed Kidz Residential Treatment Center, LLC",,,7.0,63,61.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",9,4,14,0,0,1.63,NO,NO
+1530667,1835144,Our Angel's House of Faith,,,15.0,1,,False,,Fewer findings than most,False,"Child Care,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
 95099,54326,Gulf Coast Trades Center,NEW WAVERLY,WALKER,196.0,67,8.0,True,Poor,,True,"Child Care,Transitional Living",,32,26,17,4,1,4.84,YES,YES
 1533325,1837000,Compass Youth LLC,RICHMOND,FORT BEND,9.0,1,,False,,Fewer findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
-1516434,1824144,Monez RTC,ROSENBERG,FORT BEND,8.0,7,4.0,True,Poor,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,8,1,0,0,5.71,NO,NO
-1185862,1572157,Discovery Practice Management,PLANO,COLLIN,8.0,19,4.0,True,Poor,,False,"Child Care,Transitional Living",Emotional Disorders,8,8,8,4,1,5.53,NO,NO
-94127,1639,Cal Farley's Boys Ranch,BOYS RANCH,OLDHAM,437.0,101,42.0,True,Average,,False,"Child Care,Transitional Living",,16,32,7,0,1,2.28,NO,NO
+1509804,1819129,Healthcare Solutions Unlimited,,,10.0,8,12.0,True,Poor,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,2,5,3,0,4.25,NO,NO
+247988,838067,Shamar Hope Haven Residential Treatment Center,HOUSTON,HARRIS,13.0,172,67.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",14,23,23,5,1,1.41,NO,NO
 1334408,1693628,Fort Behavioral Health,FORT WORTH,TARRANT,128.0,94,3.0,True,Poor,,True,"Child Care,Assessment","Emotional Disorders,Pervasive Development Disorder",44,41,58,18,5,6.37,NO,YES
-224905,827335,San Marcos Treatment Center,SAN MARCOS,HAYS,265.0,112,75.0,True,Good,,False,Child Care,"Emotional Disorders,Intellectual Disability",12,13,6,1,0,1.18,NO,NO
-1489780,1804766,"Royal Heritage RTC, LLC",RICHMOND,FORT BEND,9.0,33,22.0,True,Average,,False,Child Care,Emotional Disorders,9,8,8,3,1,3.27,NO,NO
-94276,18027,High Plains Children's Home,,,56.0,86,73.0,True,Good,,False,"Child Care,Assessment,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability",5,11,10,4,0,1.24,NO,NO
-1316505,1681260,Have Haven Inc.,,,16.0,47,57.0,True,Average,,False,"Child Care,Transitional Living,Respite Child Care","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",6,9,5,1,0,1.77,NO,NO
-94433,27177,Boys & Girls Country Of Houston,HOCKLEY,HARRIS,88.0,29,28.0,True,Average,,False,"Child Care,Transitional Living",,3,13,4,3,0,2.93,NO,NO
-1459014,1784695,Moving Forward Treatment Center,DALLAS,DALLAS,8.0,23,4.0,True,Poor,,False,"Child Care,Transitional Living",Emotional Disorders,9,9,13,2,1,5.43,NO,NO
-1531431,1835684,Pinnacle Residential Treatment Center LLC,,,11.0,1,,False,,Fewer findings than most,False,"Child Care,Emergency Care,Transitional Living,Respite Child Care","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
-109532,251707,Roy Maas Youth Alternative - Girlsville/Junction,BOERNE,KENDALL,16.0,127,81.0,True,Good,,False,"Child Care,Assessment,Transitional Living",Emotional Disorders,9,16,2,1,0,0.92,NO,NO
-1479560,1797720,Sarah's Landing LLC,,,8.0,43,89.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,2,4,0,0,0.58,NO,NO
-1370039,1716949,"Fostering Life Youth Ranch, LLC",LEVELLAND,HOCKLEY,15.0,163,71.0,True,Good,,False,"Child Care,Assessment,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",12,33,8,0,1,1.33,NO,NO
-1512300,1820782,Dunamis Place Inc.,ROSHARON,FORT BEND,19.0,4,,False,,More findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",1,2,6,0,0,7.75,NO,NO
-1501218,1813025,Helping Each Other LLC,HOUSTON,HARRIS,8.0,17,11.0,True,Poor,,False,Child Care,Emotional Disorders,4,8,8,0,0,4.47,NO,NO
-1433314,1763576,The Pride Lands Center of Hope,HOUSTON,HARRIS,10.0,48,19.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",4,18,24,2,0,3.5,NO,NO
-141349,515678,L'Amor Village RTC,HOUSTON,HARRIS,42.0,63,39.0,True,Average,,False,"Child Care,Transitional Living",Emotional Disorders,2,18,21,1,2,2.37,NO,NO
+1411457,1746293,Westlake House LLC,WEST COLUMBIA,BRAZORIA,15.0,34,69.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,5,2,7,1,1.35,NO,NO
+1381138,1723466,Tree of Life RTC,HOCKLEY,HARRIS,8.0,88,8.0,True,Poor,,False,Child Care,"Emotional Disorders,Intellectual Disability",18,41,37,23,8,4.76,NO,NO
+1366177,1714475,2nd Chance Treatment Center,DALLAS,DALLAS,10.0,39,33.0,True,Average,,False,"Child Care,Transitional Living",Emotional Disorders,8,8,10,1,0,2.67,NO,NO
+1473501,1793844,Emerging Grace Ministries,,,8.0,32,26.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Pervasive Development Disorder",8,5,11,2,0,3.03,NO,NO
+1523428,1829661,"Adolbi Care, Inc.",,,10.0,3,,False,,Fewer findings than most,False,"Child Care,Emergency Care,Transitional Living,Respite Child Care","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
+1367747,1715496,Garden of Hope of Central Texas Killeen,,,8.0,33,26.0,True,Average,,False,"Child Care,Emergency Care,Transitional Living","Intellectual Disability,Pervasive Development Disorder",10,4,9,3,2,3.06,NO,NO
+1497839,1810579,Evolution Homes for Children and Youth,BEASLEY,FORT BEND,9.0,4,,False,,About average,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,1,0,1,0,1.5,NO,NO
+1375279,1719866,The Residence By Infinity Elite II,,,10.0,99,23.0,True,Poor,,True,"Child Care,Emergency Care",,14,31,34,7,11,3.24,NO,YES
+1522474,1829009,New Beginnings Services,HOUSTON,HARRIS,12.0,16,30.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,7,3,1,1,2.81,NO,NO
+1505587,1816189,Vida RTC,ROSENBERG,FORT BEND,13.0,9,86.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,1,1,0,0,0.78,NO,NO
+1517679,1825197,Bethesda Center Inc.,,,50.0,12,52.0,True,Average,,False,"Child Care,Emergency Care,Transitional Living,Respite Child Care","Emotional Disorders,Intellectual Disability",1,3,1,1,1,1.92,NO,NO
+1507918,1817896,"HJ Magnolia Homes, LLC",CYPRESS,HARRIS,16.0,5,2.0,True,Poor,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,4,5,1,0,6.6,NO,NO
+1489154,1804296,Clairefontaine Care Center LLC,FRESNO,FORT BEND,10.0,51,43.0,True,Average,,False,Child Care,Emotional Disorders,3,15,11,2,3,2.25,NO,NO
+1503729,1815060,Peniel RTC Inc.,ROSENBERG,FORT BEND,7.0,8,62.0,True,Average,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,1,3,0,0,1.62,NO,NO
+659668,1145426,"New Beginnings Children's Home at Canaan Land Ranch, Inc",SAN ANTONIO,MEDINA,16.0,35,39.0,True,Average,,False,"Child Care,Transitional Living",,3,9,8,3,2,2.37,NO,NO
+1316871,1681475,Sanctuary of Hope,BULVERDE,COMAL,48.0,17,36.0,True,Average,,False,"Child Care,Transitional Living",,3,3,3,3,1,2.53,NO,NO
+1468800,1790926,Greener Pastures RTC,HUMBLE,HARRIS,9.0,51,19.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",9,17,16,6,2,3.43,NO,NO
+1510550,1819604,Our Houze Residential Treatment Center,BROOKSHIRE,FORT BEND,9.0,7,32.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,1,3,0,1,2.71,NO,NO
+1332186,1692025,Clementine The Woodlands,CONROE,MONTGOMERY,12.0,11,31.0,True,Average,,False,Child Care,Emotional Disorders,0,3,4,3,0,2.73,NO,NO
+1479581,1797726,Jamsteld West Community Living - Ellie's House,,,12.0,43,77.0,True,Good,,False,"Child Care,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability",1,5,6,1,2,1.09,NO,NO
+1517333,1824921,Adexx Care Services Inc.,SUGAR LAND,FORT BEND,11.0,8,9.0,True,Poor,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,3,4,1,1,4.62,NO,NO
+1529678,1834437,Kindrel Care LLC,RICHMOND,FORT BEND,9.0,2,,False,,Fewer findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
+1517279,1824836,Manda Kidz LLC,HOUSTON,HARRIS,11.0,12,55.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",1,2,3,0,0,1.83,NO,NO
+106940,244459,Independence Farm,CORSICANA,NAVARRO,13.0,19,7.0,True,Poor,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",6,9,8,3,1,5.11,NO,NO
+1445339,1773300,St. Georgia's,,,16.0,81,57.0,True,Average,,False,"Child Care,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",8,9,20,2,1,1.74,NO,NO
+1483900,1800545,"New Future Residential Treatment Center, LLC",,,7.0,26,15.0,True,Poor,,False,"Child Care,Emergency Care","Emotional Disorders,Pervasive Development Disorder",3,11,12,3,1,3.92,NO,NO
+1523017,1829436,The Tree    House Residential Treatment Home LLC,HOUSTON,HARRIS,13.0,3,,False,,Fewer findings than most,False,Child Care,Emotional Disorders,0,0,0,0,0,0.0,NO,NO
+1509255,1818715,CEDAA HOUSE GRO/RTC,HOUSTON,HARRIS,15.0,7,16.0,True,Poor,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,3,3,0,0,3.71,NO,NO
+1529964,1834669,Amor Purus II,,,7.0,1,,False,,Fewer findings than most,False,"Child Care,Assessment,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
+1511531,1820261,Lumen House Residential Treatment Center LLC,HOUSTON,HARRIS,11.0,8,31.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",1,2,3,0,0,2.75,NO,NO
+1526015,1831796,Elijah's Safe Care Residential Treatment Center Inc,,,8.0,1,,False,,Fewer findings than most,False,"Child Care,Assessment,Emergency Care","Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
+1526478,1832105,The Serenity House - Houston,,,10.0,2,,False,,Fewer findings than most,False,Child Care,Emotional Disorders,0,0,0,0,0,0.0,NO,NO
+1336441,1695157,South Texas Adolescent Rehabilitation & Education - STARE,HOUSTON,HARRIS,15.0,29,8.0,True,Poor,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",9,16,10,2,0,4.93,NO,NO
+1344047,1700373,Amazing Grace Child and Family Services,,,16.0,15,97.0,True,Good,,False,"Child Care,Emergency Care,Transitional Living",Emotional Disorders,0,0,1,0,0,0.2,NO,NO
+94636,36943,Texas Girls and Boys Ranch,,,45.0,23,50.0,True,Average,,False,"Child Care,Assessment,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,5,4,2,0,2.0,NO,NO
+1432591,1763004,Royal Oaks Residential Treatment Center LLC,HOUSTON,HARRIS,8.0,25,45.0,True,Average,,False,"Child Care,Assessment,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,3,7,5,1,2.16,NO,NO
 1510249,1819452,Epiphany Soul,,,24.0,7,42.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,1,4,0,0,2.29,NO,NO
-280910,853346,Embracing Destiny Foundation RTC,SPRING,HARRIS,13.0,55,37.0,True,Average,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",14,12,6,1,0,2.51,NO,NO
-169498,554314,Girls Haven,BEAUMONT,JEFFERSON,16.0,169,71.0,True,Good,,False,"Child Care,Transitional Living",Emotional Disorders,6,31,16,3,4,1.25,NO,NO
-1432355,1762810,"Fostering Life Youth Ranch, LLC Meraki",LEVELLAND,HOCKLEY,25.0,130,95.0,True,Good,,False,"Child Care,Assessment,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,5,4,0,0,0.32,NO,NO
-1492235,1806667,"Hunting For More Love, RTC",KATY,HARRIS,7.0,38,73.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",3,6,2,0,1,1.21,NO,NO
-1379903,1722710,Prime Residential Care,RICHMOND,FORT BEND,12.0,124,40.0,True,Average,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",15,34,24,3,4,2.36,NO,NO
-1493879,1807875,Youth Health Associates Glenn Heights Academy,GLENN HEIGHTS,DALLAS,28.0,60,16.0,True,Poor,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",8,16,34,7,0,3.67,NO,NO
-279284,852537,Sweeten Home for Children Inc.,BROWNWOOD,BROWN,21.0,76,83.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",4,7,6,1,0,0.89,NO,NO
-1532393,1836385,"Blessed Kidz Residential Treatment Center, LLC",,,8.0,1,,False,,Fewer findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
-1461709,1786553,right at home care 2 Inc.,,,11.0,37,67.0,True,Good,,False,"Child Care,Assessment,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",3,5,4,0,5,1.41,NO,NO
+1510765,1819746,Waymaker LLC,ALVIN,BRAZORIA,7.0,5,5.0,True,Poor,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",2,1,3,1,2,5.4,NO,NO
 1502994,1814508,Legacy Home for Boys,HOUSTON,HARRIS,21.0,4,,False,,More findings than most,False,Child Care,Emotional Disorders,1,2,2,0,0,4.75,NO,NO
+1461709,1786553,right at home care 2 Inc.,,,11.0,37,67.0,True,Good,,False,"Child Care,Assessment,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",3,5,4,0,5,1.41,NO,NO
 111207,255369,New Encounters Residential Treatment,CORSICANA,NAVARRO,14.0,23,66.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability",2,5,1,0,0,1.43,NO,NO
 1526910,1832445,"Brighter Days Center, LLC",,,7.0,2,,False,,Fewer findings than most,False,"Child Care,Assessment,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
+1393584,1732146,Divine Integrity Group Home,,,16.0,32,38.0,True,Average,,False,"Child Care,Assessment,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Primary Medical Needs,Pervasive Development Disorder",3,11,3,3,5,2.47,NO,NO
 1385406,1726200,Seeds of Royalty,RICHMOND,FORT BEND,9.0,30,56.0,True,Average,,False,"Child Care,Transitional Living",Emotional Disorders,1,7,7,0,0,1.8,NO,NO
 1438831,1767744,"AT LAST!, Inc.",DALLAS,DALLAS,16.0,13,1.0,True,Poor,,False,"Child Care,Assessment",,4,10,15,8,3,9.54,NO,NO
 1492237,1806668,Renew Group LLC,HOUSTON,HARRIS,8.0,14,63.0,True,Average,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,2,3,0,0,1.57,NO,NO
 1527686,1833001,Tomorrows Future Incorporated LLC,HOUSTON,HARRIS,25.0,4,,False,,Fewer findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
+1532393,1836385,"Blessed Kidz Residential Treatment Center, LLC",,,8.0,1,,False,,Fewer findings than most,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,0,0,0,0.0,NO,NO
+1516985,1824578,Sanaa Horizons LLC,HOUSTON,HARRIS,8.0,2,,False,,Fewer findings than most,False,"Child Care,Transitional Living",Emotional Disorders,0,0,0,0,0,0.0,NO,NO
+1506602,1817015,Dream Builder 21,CROWLEY,TARRANT,12.0,8,94.0,True,Good,,False,"Child Care,Transitional Living",Emotional Disorders,0,0,1,0,0,0.38,NO,NO
+1512582,1821041,Lafaye Boys Home,HOUSTON,HARRIS,10.0,13,34.0,True,Average,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,3,5,1,0,2.62,NO,NO
+1522265,1828789,"Bay Harmony Home, LLC",BAYTOWN,CHAMBERS,8.0,4,,False,,More findings than most,False,Child Care,Emotional Disorders,2,1,3,0,0,5.75,NO,NO
+1407943,1744038,Hands of Faith GRO,,,7.0,19,63.0,True,Average,,False,"Child Care,Assessment,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,3,6,0,0,1.58,NO,NO
+1529719,1834500,Amor Purus LLC,,,7.0,2,,False,,More findings than most,False,"Child Care,Assessment,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,1,1,0,0,3.5,NO,NO
+1439293,1768076,Ray's of Life,,,8.0,29,3.0,True,Poor,,False,"Child Care,Assessment,Emergency Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",4,17,25,5,6,6.17,NO,NO
+1501222,1813062,Alijah House Children's Services #2,HOUSTON,HARRIS,17.0,10,91.0,True,Good,,False,Child Care,"Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",1,0,0,0,0,0.5,NO,NO
 1491323,1806078,APC House LLC,HUMBLE,HARRIS,11.0,14,80.0,True,Good,,False,"Child Care,Transitional Living","Emotional Disorders,Intellectual Disability,Pervasive Development Disorder",0,0,3,2,0,0.93,NO,NO
 94150,5541,Pleasant Hills Children's Home,FAIRFIELD,FREESTONE,48.0,21,95.0,True,Good,,False,"Child Care,Transitional Living",,0,1,1,0,0,0.33,NO,NO
