@@ -1,154 +1,257 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Texas Foster Placements Transparency Dashboard</title>
+<meta name="color-scheme" content="dark light">
+<title>Texas Foster Placements</title>
 <style>
-  body { font-family: Arial, sans-serif; margin: 0; background: #f4f6f8; color: #1f2933; }
-  header { background: #1f4e79; color: white; padding: 20px; }
-  header h1 { margin: 0 0 6px 0; font-size: 1.5em; }
-  main { max-width: 900px; margin: 0 auto; padding: 16px; }
-  .notice { background: #fff8e1; border-left: 4px solid #f2b705; padding: 12px; margin-bottom: 16px; font-size: 0.95em; }
-  .explainer { background: white; border-radius: 8px; padding: 12px 14px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.12); }
-  .explainer summary { cursor: pointer; font-weight: bold; color: #1f4e79; font-size: 1.05em; }
-  .explainer h4 { margin: 14px 0 4px 0; }
-  .explainer p, .explainer li { font-size: 0.95em; line-height: 1.45; }
-  .explainer ul { margin: 4px 0 8px 0; padding-left: 20px; }
+  :root, html[data-theme="dark"] {
+    --bg:#0e1116; --panel:#171c24; --panel2:#1f2733; --line:#2a3342; --text:#eef2f7; --muted:#a3b1c2;
+    --accent:#8db8ff; --accent-ink:#0b1220; --good:#2f8f4f; --avg:#b97d1f; --poor:#c4473f; --gray:#6b7788; --flag:#7a2420;
+  }
+  html[data-theme="light"] {
+    --bg:#f4f6f9; --panel:#ffffff; --panel2:#eef2f7; --line:#d7dfe9; --text:#17202b; --muted:#566578;
+    --accent:#2a62c9; --accent-ink:#ffffff; --good:#2b8049; --avg:#a96d12; --poor:#b8392f; --gray:#7a8798; --flag:#8f2a24;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, system-ui, sans-serif; line-height: 1.45; -webkit-text-size-adjust: 100%; }
+  h1, h2, h3, h4 { letter-spacing: -0.02em; margin: 0; }
+  a { color: var(--accent); }
+  button { font-family: inherit; color: inherit; }
+  [hidden] { display: none !important; }
+
+  header.top { position: sticky; top: 0; z-index: 20; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+  .topbar { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 12px 16px 6px; max-width: 920px; margin: 0 auto; }
+  .brand { font-weight: 800; font-size: 1.05em; letter-spacing: -0.02em; }
+  .pill { display: inline-block; font-size: 0.7em; font-weight: 600; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 2px 8px; margin-left: 6px; vertical-align: middle; }
+  .icon { width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--line); background: var(--panel); font-size: 1.1em; cursor: pointer; }
+  nav#nav { display: flex; gap: 8px; overflow-x: auto; padding: 4px 16px 12px; max-width: 920px; margin: 0 auto; scrollbar-width: none; }
+  nav#nav::-webkit-scrollbar { display: none; }
+  nav#nav button { flex: 0 0 auto; min-height: 44px; padding: 0 16px; border-radius: 999px; border: 1px solid var(--line); background: var(--panel); font-size: 0.95em; font-weight: 600; cursor: pointer; }
+  nav#nav button.on { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+
+  main { max-width: 920px; margin: 0 auto; padding: 16px 16px 40px; }
+  .hero { margin: 0 0 18px 0; }
+  .hero img { display: block; width: 100%; max-height: 340px; object-fit: cover; border-radius: 18px; }
+  .eyebrow { color: var(--accent); font-size: 0.78em; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; margin: 0 0 6px 0; }
+  .big { font-size: 1.9em; line-height: 1.12; font-weight: 800; margin-bottom: 10px; }
+  .lede { color: var(--muted); font-size: 1.02em; margin: 0 0 18px 0; }
+  .muted { color: var(--muted); }
+  .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 16px; margin: 0 0 14px 0; }
+  .panel h3 { font-size: 1.1em; margin-bottom: 6px; }
+  .panel p { margin: 6px 0 10px 0; font-size: 0.95em; }
+  .panel.mini { padding: 12px 14px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 14px; }
+  .stat { text-align: left; background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 14px; cursor: pointer; transition: transform .15s ease, border-color .15s ease; }
+  .stat:active { transform: scale(0.98); }
+  .stat:hover { border-color: var(--accent); }
+  .sl { color: var(--muted); font-size: 0.82em; }
+  .sv { font-size: 2.1em; font-weight: 800; letter-spacing: -0.03em; line-height: 1.1; margin: 2px 0; }
+  .sn { color: var(--muted); font-size: 0.8em; }
+  .sv.good { color: var(--good); } .sv.poor { color: var(--poor); } .sv.flag { color: var(--accent); }
+  .btn { background: var(--accent); color: var(--accent-ink); border: 0; border-radius: 999px; min-height: 46px; padding: 0 22px; font-weight: 800; font-size: 1em; cursor: pointer; }
+  .btn.ghost { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
+  .link { background: none; border: 0; color: var(--accent); text-decoration: underline; font-size: 1em; cursor: pointer; padding: 0; }
+
+  .pills { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0; }
+  .area { min-height: 40px; padding: 0 12px; border-radius: 999px; border: 1px dashed var(--gray); background: transparent; color: var(--muted); font-size: 0.85em; cursor: pointer; }
+  .area.on { border: 1px solid var(--accent); background: color-mix(in srgb, var(--accent) 22%, transparent); color: var(--text); font-weight: 700; }
+  .area.sel { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .areainfo { background: var(--panel2); border-radius: 12px; padding: 10px 12px; font-size: 0.9em; color: var(--muted); }
+
+  .hotline { border-color: color-mix(in srgb, var(--accent) 50%, var(--line)); }
+  .hotline h3 { display: flex; align-items: center; gap: 8px; }
+
   .controls { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
-  .controls input, .controls select { padding: 10px; font-size: 1em; border: 1px solid #b0b8c1; border-radius: 6px; font-family: inherit; }
-  .controls input { flex: 1 1 200px; min-width: 0; }
+  .controls input, .controls select { min-height: 46px; padding: 0 12px; font-size: 1em; border: 1px solid var(--line); border-radius: 12px; background: var(--panel); color: var(--text); font-family: inherit; }
+  .controls input { flex: 1 1 100%; }
+  .controls select { flex: 1 1 140px; }
   .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
-  .chip { font-family: inherit; font-size: 0.9em; border: 1px solid #b0b8c1; background: white; color: #1f2933; border-radius: 20px; padding: 6px 12px; cursor: pointer; }
-  .chip .n { font-weight: bold; margin-right: 6px; }
-  .chip.on { background: #1f4e79; border-color: #1f4e79; color: white; }
-  #count { color: #52606d; font-size: 0.9em; margin: 4px 0 10px 0; }
-  .card { background: white; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.12); }
-  .card > summary { list-style: none; cursor: pointer; padding: 12px 14px; position: relative; }
+  .chip { min-height: 40px; padding: 0 14px; border-radius: 999px; border: 1px solid var(--line); background: var(--panel); font-size: 0.9em; cursor: pointer; }
+  .chip .n { font-weight: 800; margin-right: 6px; }
+  .chip.on { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+
+  .bar { display: flex; align-items: center; gap: 8px; margin: 6px 0; font-size: 0.85em; }
+  .bl { width: 74px; color: var(--muted); }
+  .bt { flex: 1; height: 12px; background: var(--panel2); border-radius: 999px; overflow: hidden; }
+  .bf { display: block; height: 100%; border-radius: 999px; animation: grow .7s ease; }
+  .bn { width: 36px; text-align: right; font-weight: 700; }
+  @keyframes grow { from { width: 0; } }
+
+  #count { color: var(--muted); font-size: 0.88em; margin: 4px 0 10px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; margin-bottom: 10px; overflow: hidden; }
+  .card[open] { border-color: color-mix(in srgb, var(--accent) 55%, var(--line)); }
+  .card > summary { list-style: none; cursor: pointer; padding: 14px 44px 14px 14px; position: relative; }
   .card > summary::-webkit-details-marker { display: none; }
-  .chev { position: absolute; right: 14px; top: 14px; color: #52606d; font-size: 0.9em; }
+  .chev { position: absolute; right: 16px; top: 16px; color: var(--muted); transition: transform .2s ease; }
   .card[open] .chev { transform: rotate(180deg); }
-  .row1 { font-weight: bold; font-size: 1.02em; padding-right: 24px; }
-  .row2 { color: #52606d; font-size: 0.88em; margin: 2px 0 6px 0; }
-  .row3 { font-size: 0.95em; }
-  .body { padding: 0 14px 14px 14px; border-top: 1px solid #e4e7eb; font-size: 0.92em; }
-  .body > * { margin-top: 10px; }
-  .label { font-size: 0.8em; color: #52606d; text-transform: uppercase; letter-spacing: 0.04em; }
-  .score { font-size: 1.25em; font-weight: bold; }
-  .score small { font-size: 0.7em; font-weight: normal; color: #52606d; }
-  .noscore { font-weight: bold; color: #52606d; }
-  .basis { color: #52606d; font-size: 0.9em; margin-left: 6px; }
-  .prelim { color: #8a5a00; font-size: 0.9em; }
-  .rnote { color: #52606d; font-size: 0.9em; }
-  .badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 0.8em; margin-left: 6px; color: white; }
-  .Good { background: #2e7d32; }
-  .Average { background: #ed8b00; }
-  .Poor { background: #c62828; }
-  .flag { background: #6a1b1b; }
-  .tag { display: inline-block; background: #e3edf7; color: #1f4e79; padding: 2px 8px; border-radius: 10px; font-size: 0.85em; margin: 0 4px 4px 0; }
-  details.nr { color: #52606d; }
-  details.nr summary { cursor: pointer; }
-  details.nr ul { margin: 6px 0 0 0; padding-left: 20px; }
-  table.sev { border-collapse: collapse; font-size: 0.95em; }
-  table.sev td, table.sev th { padding: 4px 12px 4px 0; text-align: left; }
-  .findings-list { margin: 8px 0 0 0; padding-left: 18px; }
+  .row1 { font-weight: 800; font-size: 1.02em; }
+  .row2 { color: var(--muted); font-size: 0.86em; margin: 2px 0 8px; }
+  .row3 { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+  .score { font-size: 1.3em; font-weight: 800; }
+  .score small { font-size: 0.65em; font-weight: 600; color: var(--muted); }
+  .noscore { font-weight: 700; color: var(--muted); font-size: 0.95em; }
+  .badge { display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 0.78em; font-weight: 700; color: #fff; }
+  .Good { background: var(--good); } .Average { background: var(--avg); } .Poor { background: var(--poor); }
+  .flagb { background: var(--flag); }
+  .heart { color: var(--accent); margin-left: 6px; }
+  .body { padding: 0 14px 14px; border-top: 1px solid var(--line); font-size: 0.92em; }
+  .body > * { margin-top: 12px; }
+  .label { font-size: 0.74em; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 700; }
+  .note { color: var(--muted); }
+  .cov .covbar { height: 10px; background: var(--panel2); border-radius: 999px; overflow: hidden; margin: 6px 0 4px; }
+  .cov .covbar span { display: block; height: 100%; background: var(--accent); border-radius: 999px; animation: grow .7s ease; }
+  table.sev, table.cmp { border-collapse: collapse; width: 100%; font-size: 0.92em; }
+  table.sev td, table.sev th, table.cmp td, table.cmp th { padding: 6px 8px 6px 0; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; }
+  table.cmp th.h { font-size: 0.95em; }
+  table.cmp td.k { color: var(--muted); width: 34%; }
+  .tag { display: inline-block; background: var(--panel2); color: var(--text); padding: 3px 10px; border-radius: 999px; font-size: 0.82em; margin: 0 4px 4px 0; }
+  details.nr summary { cursor: pointer; color: var(--muted); }
+  details.nr ul { margin: 6px 0 0; padding-left: 20px; color: var(--muted); }
+  .findings-list { margin: 8px 0 0; padding-left: 18px; }
   .findings-list li { margin-bottom: 10px; }
-  .findings-note { font-size: 0.85em; color: #52606d; margin-top: 6px; }
-  .photo-wrap img { max-width: 100%; max-height: 220px; border-radius: 6px; object-fit: cover; width: 100%; }
-  .photo-credit { font-size: 0.75em; color: #52606d; margin-top: 3px; }
-  .more { display: block; width: 100%; font-family: inherit; font-size: 1em; padding: 12px; margin: 8px 0 16px 0; border: 1px solid #1f4e79; background: white; color: #1f4e79; border-radius: 8px; cursor: pointer; }
-  footer { font-size: 0.85em; color: #52606d; padding: 16px; text-align: center; }
+  .actions { display: flex; flex-wrap: wrap; gap: 8px; }
+  .act { min-height: 44px; padding: 0 16px; border-radius: 999px; border: 1px solid var(--line); background: var(--panel2); font-size: 0.92em; font-weight: 600; cursor: pointer; }
+  .act.on { border-color: var(--accent); color: var(--accent); }
+  .more { display: block; width: 100%; min-height: 48px; margin: 8px 0 16px; border: 1px solid var(--accent); background: transparent; color: var(--accent); border-radius: 14px; font-size: 1em; font-weight: 700; cursor: pointer; }
+  #toast { position: fixed; left: 50%; bottom: 24px; transform: translate(-50%, 20px); background: var(--text); color: var(--bg); padding: 10px 16px; border-radius: 999px; font-weight: 700; font-size: 0.9em; opacity: 0; pointer-events: none; transition: opacity .2s ease, transform .2s ease; z-index: 50; max-width: 90%; text-align: center; }
+  #toast.show { opacity: 1; transform: translate(-50%, 0); }
+  footer { max-width: 920px; margin: 0 auto; padding: 0 16px 40px; color: var(--muted); font-size: 0.82em; }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } html { scroll-behavior: auto; } }
+  @media (min-width: 700px) { .grid { grid-template-columns: repeat(4, 1fr); } .controls input { flex: 2 1 260px; } .big { font-size: 2.4em; } }
 </style>
 </head>
 <body>
-<header>
-  <h1>Texas Foster Placements Transparency Dashboard</h1>
-  <div>An independent analysis of publicly available data. Not a state rating.</div>
+<header class="top">
+  <div class="topbar">
+    <div class="brand">Texas Foster Placements <span class="pill">Not a state rating</span></div>
+    <button id="theme" class="icon" aria-label="Switch between light and dark mode">&#9680;</button>
+  </div>
+  <nav id="nav" aria-label="Sections">
+    <button data-tab="home">Home</button>
+    <button data-tab="browse">Browse</button>
+    <button data-tab="compare">Compare <span id="cmpn"></span></button>
+    <button data-tab="how">How it works</button>
+  </nav>
 </header>
+
 <main>
-  <div class="notice">
-    <strong>How to read this:</strong> Each placement is described by its <strong>state inspection record only</strong>. It is <strong>not a rating of the quality of care or of daily life for children</strong>, because things like staffing, discipline, food, education, and activities are not published anywhere yet. Each facility lists them as Not reported instead of guessing. Facilities with fewer than 5 inspections do not get a rating yet. External findings from public reports are shown separately and are not part of any score or rating. No information about individual children is collected or shown. <strong>Tap a facility to open its details.</strong>
-  </div>
+  <section id="tab-home" class="tab">
+    <figure class="hero"><img src="hero.jpg" alt="Engraving of a child holding a lantern on a dark forest path" onerror="this.parentNode.remove()"></figure>
+    <p class="eyebrow">Independent record</p>
+    <h2 class="big">What the state inspection record shows about Texas foster placements.</h2>
+    <p class="lede">Every open general residential operation in the state licensing file, described only by its inspection record. It is not a rating of the quality of care or of daily life for children, because most of that is not published anywhere.</p>
+    <div class="grid" id="stats"></div>
 
-  <details class="explainer">
-    <summary>How to read these scores (tap to open)</summary>
+    <div class="panel">
+      <h3>What we measure, and what we do not</h3>
+      <p>Only one thing about each home is public: its state inspection record. Tap any area to see what it means.</p>
+      <div class="pills" id="areas"></div>
+      <div class="areainfo" id="areainfo">Tap an area above.</div>
+    </div>
 
-    <h4>The safety score</h4>
-    <p>The safety score runs from 0 to 100. It compares each open general residential operation in Texas with the others, using state inspection findings. Each finding is weighted by how serious the state rated it, the weighted total is divided by the number of inspections, and facilities are ranked. A higher score means fewer weighted findings per inspection compared with other Texas facilities. The score is <strong>relative</strong>: it shows how a facility compares with others, not whether it is safe in an absolute sense.</p>
+    <div class="panel">
+      <h3>Ready to look?</h3>
+      <p>Search by name, city, or county. Tap a home for the details behind its score, and use Compare to put two side by side.</p>
+      <button class="btn" data-go="browse">Browse placements</button>
+    </div>
 
-    <h4>The Inspection record rating</h4>
-    <p>Facilities with a score also get a plain rating of Good, Average, or Poor based on fixed standards. A facility with a state corrective or adverse action on record can never be rated Good. <strong>The rating is based on state inspection findings only.</strong> It does not describe quality of care, staffing, or daily life for children, because that information is not published.</p>
+    <div class="panel hotline">
+      <h3>Report a concern</h3>
+      <p>Suspected abuse or neglect in Texas can be reported any time at <a href="tel:18002525400">1-800-252-5400</a> or <a href="https://www.txabusehotline.org" target="_blank" rel="noopener">txabusehotline.org</a>. If a child is in immediate danger, call 911. This site does not take reports and does not show information about individual children.</p>
+    </div>
+  </section>
 
-    <h4>The filter buttons</h4>
-    <p>The buttons at the top show how many facilities fall in each group and filter the list when tapped. The numbers change as you search or choose a county.</p>
+  <section id="tab-browse" class="tab" hidden>
+    <div class="controls">
+      <input id="search" type="search" placeholder="Search name, city, or county" autocomplete="off">
+      <select id="county" aria-label="County"><option value="">All counties</option></select>
+      <select id="sort" aria-label="Sort">
+        <option value="name">Name A to Z</option>
+        <option value="city">City</option>
+        <option value="inspections">Most inspections</option>
+      </select>
+    </div>
+    <div class="chips" id="chips"></div>
+    <div class="panel mini" id="dist"></div>
+    <div id="focusnote"></div>
+    <div id="count"></div>
+    <div id="list">Loading...</div>
+    <div id="morewrap"></div>
+  </section>
 
-    <h4>Who gets a rating</h4>
-    <p>Only facilities with <strong>5 or more inspections</strong> get a score and a rating. Facilities with fewer show a preliminary <strong>Early signs</strong> note instead. It is based on very little information, new facilities often receive several findings at their first inspections, and it can change quickly. It is not a score and should not be treated as one.</p>
+  <section id="tab-compare" class="tab" hidden>
+    <div id="cmp"></div>
+  </section>
 
-    <h4>What affected this score</h4>
-    <p>Opening a facility shows how many findings the state recorded at each severity level, the point weight each level carries, the number of inspections, and any state corrective or adverse action. These are counts only. The state's own inspection records can be searched by operation number on Search Texas Child Care.</p>
-
-    <h4>External findings</h4>
-    <p>Some facilities list findings from public sources such as court monitor reports, state actions, and news reporting. Each one shows its category, a summary, its source, and its date. These are <strong>separate from the inspection score and rating</strong>. They are matched to facilities by name or operation number, so a match could be wrong, and a finding may be out of date. Please check the linked source, and tell us about any error so it can be corrected.</p>
-
-    <h4>What is not in the score or rating</h4>
-    <p>Many things that matter to children are not published anywhere, so they are listed as <strong>Not reported</strong>: staff-to-child ratio, staff turnover, discipline and restraint practices, dietary information, education program quality, therapy actually provided, extracurricular activities, community involvement, and building and environment safety. The "Licensed services" and "Licensed to treat" tags show what a facility is approved to offer, not how well it does it.</p>
-
-    <h4>Limits to keep in mind</h4>
-    <ul>
-      <li>The state's inspection counts cover an unknown time period, so facilities that have been open longer may have more findings on record.</li>
-      <li>The state's online compliance history leaves out violations until a facility has had due process, so recent problems may be missing.</li>
-      <li>The state says its violation weights are not intended to be used as a ranking or score. This dashboard is an independent analysis and is not endorsed by the State of Texas.</li>
-      <li>Scores and ratings are refreshed weekly from the state's open data and may shift slightly.</li>
-      <li>No information about individual children is collected or shown.</li>
-    </ul>
-
-    <h4>Corrections</h4>
-    <p>Facilities and families who believe any information here is wrong, out of date, or matched to the wrong facility can contact the dashboard to request a correction.</p>
-  </details>
-
-  <div class="controls">
-    <input id="search" type="text" placeholder="Search by name, city, or county">
-    <select id="county"><option value="">All counties</option></select>
-    <select id="sort">
-      <option value="name">Sort: Name A to Z</option>
-      <option value="city">Sort: City</option>
-      <option value="inspections">Sort: Most inspections</option>
-    </select>
-  </div>
-  <div class="chips" id="tiles"></div>
-
-  <div id="count"></div>
-  <div id="list">Loading...</div>
-  <div id="morewrap"></div>
+  <section id="tab-how" class="tab" hidden>
+    <div class="panel">
+      <h3>The safety score</h3>
+      <p>The safety score runs from 0 to 100. It compares each open general residential operation in Texas with the others, using state inspection findings. Each finding is weighted by how serious the state rated it (5 points for the most serious down to 1 point for the least), the weighted total is divided by the number of inspections, and homes are ranked. A higher score means fewer weighted findings per inspection than other Texas homes. The score is <strong>relative</strong>: it shows how a home compares with others, not whether it is safe in an absolute sense.</p>
+    </div>
+    <div class="panel">
+      <h3>The inspection record rating</h3>
+      <p>Homes with a score also get a plain rating of Good, Average, or Poor based on fixed standards. A home with a state corrective or adverse action on record can never be rated Good. <strong>The rating is based on state inspection findings only.</strong> It does not describe quality of care, staffing, or daily life for children, because that information is not published.</p>
+    </div>
+    <div class="panel">
+      <h3>Who gets a rating</h3>
+      <p>Only homes with <strong>5 or more inspections</strong> get a score and a rating. Homes with fewer show a preliminary <strong>Early signs</strong> note instead. It is based on very little information, new homes often receive several findings at their first inspections, and it can change quickly. It is not a score and should not be treated as one.</p>
+    </div>
+    <div class="panel">
+      <h3>External findings</h3>
+      <p>Some homes list findings from public sources such as court monitor reports, state actions, and news reporting. Each one shows its category, a summary, its source, and its date. These are <strong>separate from the score and rating</strong>. They are matched to homes by name or operation number, so a match could be wrong, and a finding may be out of date. Please check the linked source, and tell us about any error so it can be corrected.</p>
+    </div>
+    <div class="panel">
+      <h3>What is not in the score</h3>
+      <p>Staff-to-child ratio, staff turnover, discipline and restraint practices, dietary information, education program quality, therapy actually provided, extracurricular activities, community involvement, and building and environment safety are all <strong>Not reported</strong>. The state does not publish them, so we do not guess. The &quot;Licensed services&quot; and &quot;Licensed to treat&quot; tags show what a home is approved to offer, not how well it does it.</p>
+    </div>
+    <div class="panel">
+      <h3>Limits to keep in mind</h3>
+      <ul>
+        <li>The state's inspection counts cover an unknown time period, so homes that have been open longer may have more findings on record.</li>
+        <li>The state's online compliance history leaves out violations until a home has had due process, so recent problems may be missing.</li>
+        <li>The state says its violation weights are not intended to be used as a ranking or score. This site is an independent analysis and is not endorsed by the State of Texas.</li>
+        <li>Scores and ratings refresh weekly from the state's open data and may shift slightly.</li>
+        <li>No information about individual children is collected or shown.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <h3>Corrections</h3>
+      <p>Homes and families who believe any information here is wrong, out of date, or matched to the wrong home can contact the site to request a correction.</p>
+    </div>
+  </section>
 </main>
+
 <footer>
-  Source: Texas HHSC Child Care Licensing open data and public reports. Independent analysis, not endorsed by the State of Texas.
+  Source: Texas HHSC Child Care Regulation open data and public reports. Independent analysis, not endorsed by the State of Texas. To report abuse or neglect, call 1-800-252-5400.
 </footer>
+<div id="toast" role="status" aria-live="polite"></div>
 
 <script>
-// ========== CONFIG ==========
-// Street View is OFF. It shows photos of places where children live, so keep it off
-// until a social work or legal reviewer has weighed in. To turn it on later, set
-// SHOW_STREET_VIEW to true and paste a NEW key that is restricted to this site.
-const SHOW_STREET_VIEW = false;
-const GOOGLE_API_KEY = "";
-const PAGE = 25;
-// ===========================
+(function () {
+"use strict";
 
-let rows = [];
-let findings = [];
-let addresses = {};
-let activeFilter = "";
-let limit = PAGE;
+var PAGE = 25;
+var TABS = ["home", "browse", "compare", "how"];
+var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-const NOT_REPORTED = [
-  "Staff-to-child ratio", "Staff turnover", "Discipline and restraint practices",
-  "Dietary information", "Education program quality", "Therapy actually provided",
-  "Extracurricular activities", "Community involvement", "Building and environment safety"
+var AREAS = [
+  { name: "Inspection record", on: true, info: "Measured. This comes from state inspection findings, weighted by how serious each one was, per inspection." },
+  { name: "Staff-to-child ratio", info: "Not reported. This is not in the state's public data, so we do not guess." },
+  { name: "Staff turnover", info: "Not reported. This is not in the state's public data, so we do not guess." },
+  { name: "Discipline and restraint practices", info: "Not reported. This is not in the state's public data, so we do not guess." },
+  { name: "Dietary information", info: "Not reported. This is not in the state's public data, so we do not guess." },
+  { name: "Education program quality", info: "Not reported. The licensed services tags show what a home is approved to offer, not how good it is." },
+  { name: "Therapy actually provided", info: "Not reported. The licensed to treat tags show what a home is approved to treat, not what it delivers." },
+  { name: "Extracurricular activities", info: "Not reported. This is not in the state's public data, so we do not guess." },
+  { name: "Community involvement", info: "Not reported. This is not in the state's public data, so we do not guess." },
+  { name: "Building and environment safety", info: "Not reported. This is not in the state's public data, so we do not guess." }
 ];
+var NOT_REPORTED = AREAS.filter(function (a) { return !a.on; }).map(function (a) { return a.name; });
 
-const SEVERITY = [
+var SEVERITY = [
   ["High", "DEFICIENCY_HIGH", 5],
   ["Medium-high", "DEFICIENCY_MEDIUM_HIGH", 4],
   ["Medium", "DEFICIENCY_MEDIUM", 3],
@@ -156,256 +259,424 @@ const SEVERITY = [
   ["Low", "DEFICIENCY_LOW", 1]
 ];
 
-const CHIPS = [
-  ["", "All"], ["Good", "Good"], ["Average", "Average"], ["Poor", "Poor"],
-  ["early", "Early signs"], ["flag", "State action"]
-];
+var rows = [];
+var findings = [];
+var activeFilter = "";
+var limit = PAGE;
+var focusId = "";
+var saved = loadSaved();
+var cmp = [];
+var toastTimer = null;
 
+// ---------- helpers ----------
 function parseCSV(text) {
-  const out = [];
-  let row = [], field = "", inQuotes = false;
-  for (let i = 0; i < text.length; i++) {
-    const ch = text[i];
+  var out = [], row = [], field = "", inQuotes = false;
+  for (var i = 0; i < text.length; i++) {
+    var ch = text[i];
     if (inQuotes) {
       if (ch === '"' && text[i + 1] === '"') { field += '"'; i++; }
       else if (ch === '"') { inQuotes = false; }
       else { field += ch; }
     } else {
       if (ch === '"') { inQuotes = true; }
-      else if (ch === ',') { row.push(field); field = ""; }
-      else if (ch === '\n') { row.push(field); out.push(row); row = []; field = ""; }
-      else if (ch !== '\r') { field += ch; }
+      else if (ch === ",") { row.push(field); field = ""; }
+      else if (ch === "\n") { row.push(field); out.push(row); row = []; field = ""; }
+      else if (ch !== "\r") { field += ch; }
     }
   }
   if (field !== "" || row.length) { row.push(field); out.push(row); }
   return out;
 }
+function esc(s) {
+  return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+    return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+  });
+}
+function tagsFor(v) { return (v || "").split(",").map(function (s) { return s.trim(); }).filter(Boolean); }
+function yesNo(v) { return v === "YES" ? "Yes" : (v === "NO" ? "No" : "Not available"); }
+function safeURL(u) { return /^https?:\/\//i.test(u || "") ? u : ""; }
+function normalizeName(n) { return (n || "").toLowerCase().replace(/[^a-z0-9\s]/g, " ").replace(/\s+/g, " ").trim(); }
+function byId(id) { for (var i = 0; i < rows.length; i++) { if (rows[i].OPERATION_ID === id) return rows[i]; } return null; }
+function isRated(r) { return r.has_score === "True"; }
 
-function escapeHTML(s) {
-  return String(s == null ? "" : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function loadSaved() {
+  try {
+    var v = JSON.parse(localStorage.getItem("tfp_saved") || "[]");
+    return new Set(Array.isArray(v) ? v : []);
+  } catch (e) { return new Set(); }
+}
+function persistSaved() {
+  try { localStorage.setItem("tfp_saved", JSON.stringify(Array.from(saved))); } catch (e) {}
+}
+function toast(msg) {
+  var t = document.getElementById("toast");
+  t.textContent = msg;
+  t.classList.add("show");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(function () { t.classList.remove("show"); }, 2200);
 }
 
-function tagsFor(value) {
-  return (value || "").split(",").map(s => s.trim()).filter(Boolean);
-}
-
-function yesNo(v) {
-  return v === "YES" ? "Yes" : (v === "NO" ? "No" : "Not available");
-}
-
-function safeURL(u) {
-  return /^https?:\/\//i.test(u || "") ? u : "";
-}
-
-function normalizeName(name) {
-  return (name || "").toLowerCase().replace(/[^a-z0-9\s]/g, " ").replace(/\s+/g, " ").trim();
-}
-
-// Exact matching only. A finding attaches to a facility when the operation ID matches,
+// Exact matching only. A finding attaches to a home when the operation ID matches,
 // or when the normalized names are identical. Blank names never match.
 function findingsFor(r) {
-  const norm = normalizeName(r.OPERATION_NAME);
+  var norm = normalizeName(r.OPERATION_NAME);
   if (!norm) return [];
-  return findings.filter(f => {
+  return findings.filter(function (f) {
     if (f.OPERATION_ID && r.OPERATION_ID && f.OPERATION_ID === r.OPERATION_ID) return true;
-    const fNorm = normalizeName(f.facility_name);
-    return fNorm !== "" && fNorm === norm;
+    var fn = normalizeName(f.facility_name);
+    return fn !== "" && fn === norm;
   });
 }
 
-function streetViewURL(addr) {
-  if (!addr || !addr.ADDRESS_LINE || !GOOGLE_API_KEY) return null;
-  const location = encodeURIComponent(
-    (addr.ADDRESS_LINE + ", " + addr.CITY + ", " + (addr.STATE || "TX") + " " + (addr.ZIPCODE || "")).trim()
-  );
-  return "https://maps.googleapis.com/maps/api/streetview?size=600x300&location=" + location + "&key=" + GOOGLE_API_KEY;
-}
+// ---------- theme ----------
+(function initTheme() {
+  var t = null;
+  try { t = localStorage.getItem("tfp_theme"); } catch (e) {}
+  if (!t) t = (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches) ? "light" : "dark";
+  document.documentElement.setAttribute("data-theme", t);
+})();
+document.getElementById("theme").addEventListener("click", function () {
+  var cur = document.documentElement.getAttribute("data-theme");
+  var next = cur === "light" ? "dark" : "light";
+  document.documentElement.setAttribute("data-theme", next);
+  try { localStorage.setItem("tfp_theme", next); } catch (e) {}
+});
 
-function sevHTML(r) {
-  const sevRows = SEVERITY.map(s =>
-    '<tr><td>' + s[0] + '</td><td>' + escapeHTML(r[s[1]]) + ' findings</td><td>' + s[2] + ' points each</td></tr>'
-  ).join("");
-  return '<div><span class="label">What affected this score</span>' +
-    '<table class="sev"><tr><th>Severity</th><th>Count</th><th>Weight</th></tr>' + sevRows + '</table>' +
-    '<div>Inspections: ' + escapeHTML(r.TOTAL_INSPECTIONS) + '</div>' +
-    '<div>Weighted findings per inspection: ' + escapeHTML(r.rate) + '</div>' +
-    '<div>State corrective action on record: ' + yesNo(r.CORRECTIVE_ACTION) + '</div>' +
-    '<div>State adverse action on record: ' + yesNo(r.ADVERSE_ACTION) + '</div>' +
-    '<div style="margin-top:6px">These are counts only. For the full inspection records, search operation number ' + escapeHTML(r.OPERATION_NUMBER) + ' on <a href="https://childcare.hhs.texas.gov" target="_blank" rel="noopener">Search Texas Child Care</a>.</div></div>';
+// ---------- tabs and links ----------
+function parseHash() {
+  var h = (location.hash || "").replace(/^#/, "");
+  if (h.indexOf("id=") === 0) return { tab: "browse", id: decodeURIComponent(h.slice(3)) };
+  return { tab: TABS.indexOf(h) >= 0 ? h : "home", id: "" };
 }
+function showTab() {
+  var p = parseHash();
+  focusId = p.id;
+  TABS.forEach(function (n) { document.getElementById("tab-" + n).hidden = (n !== p.tab); });
+  var btns = document.querySelectorAll("#nav button");
+  for (var i = 0; i < btns.length; i++) { btns[i].classList.toggle("on", btns[i].getAttribute("data-tab") === p.tab); }
+  if (p.tab === "browse") renderBrowse();
+  if (p.tab === "compare") renderCompare();
+  window.scrollTo(0, 0);
+}
+function go(tab) {
+  if (location.hash === "#" + tab) showTab(); else location.hash = tab;
+}
+window.addEventListener("hashchange", showTab);
+document.getElementById("nav").addEventListener("click", function (e) {
+  var b = e.target.closest("button");
+  if (b) go(b.getAttribute("data-tab"));
+});
+document.addEventListener("click", function (e) {
+  var g = e.target.closest("[data-go]");
+  if (!g) return;
+  if (g.hasAttribute("data-filter")) { activeFilter = g.getAttribute("data-filter"); limit = PAGE; }
+  go(g.getAttribute("data-go"));
+});
 
-function findingsHTML(r) {
-  const matches = findingsFor(r);
-  if (!matches.length) return "";
-  const items = matches.map(f => {
-    const url = safeURL(f.source_url);
-    const src = url
-      ? '<a href="' + escapeHTML(url) + '" target="_blank" rel="noopener">Source (' + escapeHTML(f.source_type) + ')</a>'
-      : 'Source: ' + escapeHTML(f.source_type) + ' (no link)';
-    return '<li><strong>' + escapeHTML(f.category) + '</strong><br>' +
-      escapeHTML(f.finding_summary) + '<br>' + src +
-      (f.date ? ' &middot; ' + escapeHTML(f.date) : '') + '</li>';
+// ---------- home ----------
+function countUp(el, target) {
+  if (reduceMotion || target < 2) { el.textContent = target; return; }
+  var start = performance.now(), dur = 900;
+  function step(now) {
+    var p = Math.min(1, (now - start) / dur);
+    el.textContent = Math.round(target * (1 - Math.pow(1 - p, 3)));
+    if (p < 1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+function renderHome() {
+  var total = rows.length;
+  var good = rows.filter(function (r) { return r.rating === "Good"; }).length;
+  var poor = rows.filter(function (r) { return r.rating === "Poor"; }).length;
+  var flagged = rows.filter(function (r) { return r.flag === "True"; }).length;
+  var cards = [
+    ["Open residential homes", total, "", "", "See all"],
+    ["Rated Good", good, "good", "Good", "Tap to see them"],
+    ["Rated Poor", poor, "poor", "Poor", "Tap to see them"],
+    ["State action on record", flagged, "flag", "flag", "Tap to see them"]
+  ];
+  var el = document.getElementById("stats");
+  el.innerHTML = cards.map(function (c) {
+    return '<button class="stat" data-go="browse" data-filter="' + c[3] + '"><div class="sl">' + esc(c[0]) +
+      '</div><div class="sv ' + c[2] + '" data-target="' + c[1] + '">0</div><div class="sn">' + esc(c[4]) + '</div></button>';
   }).join("");
-  return '<details class="nr" open><summary><strong>External findings from public reports (' + matches.length + ')</strong></summary>' +
-    '<ul class="findings-list">' + items + '</ul>' +
-    '<div class="findings-note">From public court monitor reports, state actions, and news. Separate from the inspection score and rating. Matched by facility name or operation number, so please check the source, since a match could be wrong or out of date.</div></details>';
+  var nums = el.querySelectorAll(".sv");
+  for (var i = 0; i < nums.length; i++) { countUp(nums[i], parseInt(nums[i].getAttribute("data-target"), 10) || 0); }
 }
-
-function bodyHTML(r) {
-  const hasScore = r.has_score === "True";
-  let top;
-  if (hasScore) {
-    top = '<div class="rnote"><strong>Safety score ' + escapeHTML(r.safety_score) + ' / 100</strong>, based on ' + escapeHTML(r.TOTAL_INSPECTIONS) + ' inspections. Inspection record: <strong>' + escapeHTML(r.rating) + '</strong>. Based on state inspection findings only. Quality of care, staffing, and daily life are not reported.</div>';
-  } else {
-    top = '<div class="rnote"><strong>Not enough inspections yet for a score</strong> (' + escapeHTML(r.TOTAL_INSPECTIONS) + ' so far).<br>Early signs: ' + escapeHTML(r.early_signs) + '<br><span class="prelim">Preliminary, based on very few inspections. Not a score or a rating.</span></div>';
-  }
-  const programs = tagsFor(r.PROGRAMMATIC_SERVICES);
-  const treatment = tagsFor(r.TREATMENT_SERVICES);
-  let tagHTML = "";
-  if (programs.length) tagHTML += '<div><span class="label">Licensed services</span><br>' + programs.map(t => '<span class="tag">' + escapeHTML(t) + '</span>').join("") + '</div>';
-  if (treatment.length) tagHTML += '<div><span class="label">Licensed to treat</span><br>' + treatment.map(t => '<span class="tag">' + escapeHTML(t) + '</span>').join("") + '</div>';
-  else tagHTML += '<div><span class="label">Licensed to treat</span><br>Not reported</div>';
-
-  let photoHTML = "";
-  if (SHOW_STREET_VIEW) {
-    const svUrl = streetViewURL(addresses[r.OPERATION_ID]);
-    if (svUrl) {
-      photoHTML = '<div class="photo-wrap"><img src="' + escapeHTML(svUrl) + '" alt="Street View" loading="lazy" onerror="this.parentNode.style.display=\'none\'"><div class="photo-credit">Google Street View</div></div>';
-    }
-  }
-
-  return top +
-    '<div>Capacity: ' + escapeHTML(r.TOTAL_CAPACITY) + '</div>' +
-    photoHTML +
-    sevHTML(r) +
-    '<div>' + tagHTML + '</div>' +
-    findingsHTML(r) +
-    '<details class="nr"><summary>Not reported (' + NOT_REPORTED.length + ' items)</summary><ul>' +
-    NOT_REPORTED.map(n => '<li>' + escapeHTML(n) + ': Not reported</li>').join("") +
-    '</ul></details>';
+function renderAreas() {
+  var el = document.getElementById("areas");
+  el.innerHTML = AREAS.map(function (a, i) {
+    return '<button class="area' + (a.on ? " on" : "") + '" data-area="' + i + '">' + esc(a.name) + (a.on ? "" : " &middot; not reported") + "</button>";
+  }).join("");
 }
+document.getElementById("areas").addEventListener("click", function (e) {
+  var b = e.target.closest("button");
+  if (!b) return;
+  var a = AREAS[parseInt(b.getAttribute("data-area"), 10)];
+  var all = document.querySelectorAll("#areas .area");
+  for (var i = 0; i < all.length; i++) all[i].classList.remove("sel");
+  b.classList.add("sel");
+  document.getElementById("areainfo").textContent = a.name + ": " + a.info;
+});
 
-function cardHTML(r) {
-  const hasScore = r.has_score === "True";
-  const loc = [r.CITY, r.COUNTY ? r.COUNTY + " County" : ""].filter(Boolean).join(", ") || "Location not listed";
-  let line;
-  if (hasScore) {
-    line = '<span class="score">' + escapeHTML(r.safety_score) + '<small> / 100</small></span>' +
-      '<span class="badge ' + escapeHTML(r.rating) + '">' + escapeHTML(r.rating) + '</span>';
-  } else {
-    line = '<span class="noscore">No score yet</span><span class="basis">Early signs: ' + escapeHTML(r.early_signs) + '</span>';
-  }
-  return '<details class="card"><summary>' +
-    '<span class="chev">&#9662;</span>' +
-    '<div class="row1">' + escapeHTML(r.OPERATION_NAME) +
-    (r.flag === "True" ? '<span class="badge flag">State action</span>' : '') + '</div>' +
-    '<div class="row2">' + escapeHTML(loc) + ' &middot; ' + escapeHTML(r.TOTAL_INSPECTIONS) + ' inspections</div>' +
-    '<div class="row3">' + line + '</div></summary>' +
-    '<div class="body">' + bodyHTML(r) + '</div></details>';
-}
-
+// ---------- browse ----------
 function matches(r) {
-  const q = document.getElementById("search").value.toLowerCase();
-  const county = document.getElementById("county").value;
-  if (q && !(r.OPERATION_NAME + " " + r.CITY + " " + r.COUNTY).toLowerCase().includes(q)) return false;
+  if (focusId) return r.OPERATION_ID === focusId;
+  var q = document.getElementById("search").value.toLowerCase();
+  var county = document.getElementById("county").value;
+  if (q && (r.OPERATION_NAME + " " + r.CITY + " " + r.COUNTY).toLowerCase().indexOf(q) < 0) return false;
   if (county && r.COUNTY !== county) return false;
   return true;
 }
-
 function inFilter(r, f) {
   if (f === "") return true;
-  if (f === "early") return r.has_score !== "True";
+  if (f === "early") return !isRated(r);
   if (f === "flag") return r.flag === "True";
+  if (f === "saved") return saved.has(r.OPERATION_ID);
   return r.rating === f;
 }
-
 function sortRows(list) {
-  const s = document.getElementById("sort").value;
-  const byName = (a, b) => a.OPERATION_NAME.localeCompare(b.OPERATION_NAME);
-  const copy = list.slice();
+  var s = document.getElementById("sort").value;
+  var byName = function (a, b) { return a.OPERATION_NAME.localeCompare(b.OPERATION_NAME); };
+  var copy = list.slice();
   if (s === "inspections") {
-    copy.sort((a, b) => (parseInt(b.TOTAL_INSPECTIONS) || 0) - (parseInt(a.TOTAL_INSPECTIONS) || 0) || byName(a, b));
+    copy.sort(function (a, b) { return (parseInt(b.TOTAL_INSPECTIONS, 10) || 0) - (parseInt(a.TOTAL_INSPECTIONS, 10) || 0) || byName(a, b); });
   } else if (s === "city") {
-    copy.sort((a, b) => {
-      const x = a.CITY || "~", y = b.CITY || "~";
-      return x.localeCompare(y) || byName(a, b);
-    });
-  } else {
-    copy.sort(byName);
-  }
+    copy.sort(function (a, b) { return (a.CITY || "~").localeCompare(b.CITY || "~") || byName(a, b); });
+  } else { copy.sort(byName); }
   return copy;
 }
-
-function render() {
-  const base = rows.filter(matches);
-  document.getElementById("tiles").innerHTML = CHIPS.map(c => {
-    const n = base.filter(r => inFilter(r, c[0])).length;
-    return '<button class="chip' + (activeFilter === c[0] ? ' on' : '') + '" data-f="' + c[0] + '"><span class="n">' + n + '</span>' + c[1] + '</button>';
+function sevHTML(r) {
+  var body = SEVERITY.map(function (s) {
+    return "<tr><td>" + s[0] + "</td><td>" + esc(r[s[1]]) + " findings</td><td>" + s[2] + " points each</td></tr>";
   }).join("");
-
-  const filtered = sortRows(base.filter(r => inFilter(r, activeFilter)));
-  const shown = filtered.slice(0, limit);
-  document.getElementById("count").textContent = "Showing " + shown.length + " of " + filtered.length + " facilities";
-  document.getElementById("list").innerHTML = shown.length ? shown.map(cardHTML).join("") : "No facilities match.";
-  const remaining = filtered.length - shown.length;
-  document.getElementById("morewrap").innerHTML = remaining > 0
-    ? '<button class="more" id="more">Show ' + Math.min(PAGE, remaining) + ' more (' + remaining + ' left)</button>'
-    : "";
+  return '<div><div class="label">What affected this score</div><table class="sev"><tr><th>Severity</th><th>Count</th><th>Weight</th></tr>' + body + "</table>" +
+    "<div>Inspections: " + esc(r.TOTAL_INSPECTIONS) + "</div>" +
+    "<div>Weighted findings per inspection: " + esc(r.rate) + "</div>" +
+    "<div>State corrective action on record: " + yesNo(r.CORRECTIVE_ACTION) + "</div>" +
+    "<div>State adverse action on record: " + yesNo(r.ADVERSE_ACTION) + "</div>" +
+    '<div class="note" style="margin-top:6px">These are counts only. For the full inspection records, search operation number ' + esc(r.OPERATION_NUMBER) +
+    ' on <a href="https://childcare.hhs.texas.gov" target="_blank" rel="noopener">Search Texas Child Care</a>.</div></div>';
 }
-
-function resetAndRender() { limit = PAGE; render(); }
-
-const loads = [
-  fetch("scored_placements.csv").then(r => r.text()),
-  fetch("mapped_findings.csv").then(r => r.text()).catch(() => ""),
-  SHOW_STREET_VIEW ? fetch("facility_addresses.csv").then(r => r.text()).catch(() => "") : Promise.resolve("")
-];
-
-Promise.all(loads).then(([scoresText, findingsText, addrText]) => {
-  const table = parseCSV(scoresText);
-  const head = table[0];
-  rows = table.slice(1).filter(r => r.length === head.length).map(r => {
-    const o = {}; head.forEach((h, i) => o[h] = r[i]); return o;
-  });
-
-  if (findingsText) {
-    const fTable = parseCSV(findingsText);
-    const fHead = fTable[0];
-    findings = fTable.slice(1).filter(r => r.length === fHead.length).map(r => {
-      const o = {}; fHead.forEach((h, i) => o[h] = r[i]); return o;
-    });
+function findingsHTML(r) {
+  var m = findingsFor(r);
+  if (!m.length) return "";
+  var items = m.map(function (f) {
+    var url = safeURL(f.source_url);
+    var src = url ? '<a href="' + esc(url) + '" target="_blank" rel="noopener">Source (' + esc(f.source_type) + ")</a>" : "Source: " + esc(f.source_type) + " (no link)";
+    return "<li><strong>" + esc(f.category) + "</strong><br>" + esc(f.finding_summary) + "<br>" + src + (f.date ? " &middot; " + esc(f.date) : "") + "</li>";
+  }).join("");
+  return '<details class="nr" open><summary><strong>External findings from public reports (' + m.length + ")</strong></summary>" +
+    '<ul class="findings-list">' + items + '</ul><div class="note">From public court monitor reports, state actions, and news. Separate from the score and rating. Matched by name or operation number, so please check the source, since a match could be wrong or out of date.</div></details>';
+}
+function bodyHTML(r) {
+  var top;
+  if (isRated(r)) {
+    top = '<div class="note"><strong>Safety score ' + esc(r.safety_score) + " / 100</strong>, based on " + esc(r.TOTAL_INSPECTIONS) +
+      " inspections. Inspection record: <strong>" + esc(r.rating) + "</strong>. Based on state inspection findings only. Quality of care, staffing, and daily life are not reported.</div>";
+  } else {
+    top = '<div class="note"><strong>Not enough inspections yet for a score</strong> (' + esc(r.TOTAL_INSPECTIONS) + " so far).<br>Early signs: " + esc(r.early_signs) +
+      "<br>Preliminary, based on very few inspections. Not a score or a rating.</div>";
   }
-
-  if (addrText) {
-    const aTable = parseCSV(addrText);
-    const aHead = aTable[0];
-    aTable.slice(1).filter(r => r.length === aHead.length).forEach(r => {
-      const o = {}; aHead.forEach((h, i) => o[h] = r[i]);
-      if (o.OPERATION_ID) addresses[o.OPERATION_ID] = o;
-    });
+  var programs = tagsFor(r.PROGRAMMATIC_SERVICES), treatment = tagsFor(r.TREATMENT_SERVICES);
+  var tags = "";
+  if (programs.length) tags += '<div><div class="label">Licensed services</div>' + programs.map(function (t) { return '<span class="tag">' + esc(t) + "</span>"; }).join("") + "</div>";
+  if (treatment.length) tags += '<div><div class="label">Licensed to treat</div>' + treatment.map(function (t) { return '<span class="tag">' + esc(t) + "</span>"; }).join("") + "</div>";
+  else tags += '<div><div class="label">Licensed to treat</div>Not reported</div>';
+  var total = AREAS.length;
+  var cov = '<div class="cov"><div class="label">What we know about this home</div><div class="covbar"><span style="width:' + Math.round(100 / total) + '%"></span></div>' +
+    '<div class="note">1 of ' + total + " areas reported (the inspection record). The rest are Not reported.</div></div>";
+  var id = esc(r.OPERATION_ID);
+  var actions = '<div class="actions">' +
+    '<button class="act' + (saved.has(r.OPERATION_ID) ? " on" : "") + '" data-act="save" data-id="' + id + '">' + (saved.has(r.OPERATION_ID) ? "&#9829; Saved" : "&#9825; Save") + "</button>" +
+    '<button class="act' + (cmp.indexOf(r.OPERATION_ID) >= 0 ? " on" : "") + '" data-act="compare" data-id="' + id + '">' + (cmp.indexOf(r.OPERATION_ID) >= 0 ? "&#8644; In compare" : "&#8644; Compare") + "</button>" +
+    '<button class="act" data-act="share" data-id="' + id + '">&#8599; Share</button></div>';
+  return top + cov + "<div>Capacity: " + esc(r.TOTAL_CAPACITY) + "</div>" + sevHTML(r) + "<div>" + tags + "</div>" + findingsHTML(r) +
+    '<details class="nr"><summary>Not reported (' + NOT_REPORTED.length + " items)</summary><ul>" +
+    NOT_REPORTED.map(function (n) { return "<li>" + esc(n) + ": Not reported</li>"; }).join("") + "</ul></details>" + actions;
+}
+function cardHTML(r, open) {
+  var loc = [r.CITY, r.COUNTY ? r.COUNTY + " County" : ""].filter(Boolean).join(", ") || "Location not listed";
+  var line;
+  if (isRated(r)) {
+    line = '<span class="score">' + esc(r.safety_score) + '<small> / 100</small></span><span class="badge ' + esc(r.rating) + '">' + esc(r.rating) + "</span>";
+  } else {
+    line = '<span class="noscore">No score yet</span><span class="note">Early signs: ' + esc(r.early_signs) + "</span>";
   }
-
-  const counties = Array.from(new Set(rows.map(r => r.COUNTY).filter(Boolean))).sort();
-  document.getElementById("county").innerHTML = '<option value="">All counties</option>' +
-    counties.map(c => '<option value="' + escapeHTML(c) + '">' + escapeHTML(c) + ' County</option>').join("");
-
-  render();
-}).catch(() => {
-  document.getElementById("list").textContent = "Could not load data files.";
-});
-
-document.getElementById("search").addEventListener("input", resetAndRender);
-document.getElementById("county").addEventListener("change", resetAndRender);
-document.getElementById("sort").addEventListener("change", resetAndRender);
-document.getElementById("tiles").addEventListener("click", e => {
-  const b = e.target.closest("button");
+  return '<details class="card"' + (open ? " open" : "") + ' data-id="' + esc(r.OPERATION_ID) + '"><summary><span class="chev">&#9662;</span>' +
+    '<div class="row1">' + esc(r.OPERATION_NAME) + (saved.has(r.OPERATION_ID) ? '<span class="heart">&#9829;</span>' : "") +
+    (r.flag === "True" ? ' <span class="badge flagb">State action</span>' : "") + "</div>" +
+    '<div class="row2">' + esc(loc) + " &middot; " + esc(r.TOTAL_INSPECTIONS) + " inspections</div>" +
+    '<div class="row3">' + line + "</div></summary><div class=\"body\">" + bodyHTML(r) + "</div></details>";
+}
+function barsHTML(items) {
+  var max = Math.max.apply(null, items.map(function (i) { return i.n; }).concat([1]));
+  return items.map(function (i) {
+    return '<div class="bar"><span class="bl">' + i.label + '</span><span class="bt"><span class="bf" style="width:' + Math.round(100 * i.n / max) + "%;background:" + i.color + '"></span></span><span class="bn">' + i.n + "</span></div>";
+  }).join("");
+}
+function renderBrowse() {
+  var base = rows.filter(matches);
+  var chips = [["", "All"], ["Good", "Good"], ["Average", "Average"], ["Poor", "Poor"], ["early", "Not rated"], ["flag", "State action"], ["saved", "&#9829; Saved"]];
+  document.getElementById("chips").innerHTML = chips.map(function (c) {
+    var n = base.filter(function (r) { return inFilter(r, c[0]); }).length;
+    return '<button class="chip' + (activeFilter === c[0] ? " on" : "") + '" data-f="' + c[0] + '"><span class="n">' + n + "</span>" + c[1] + "</button>";
+  }).join("");
+  var cnt = function (f) { return base.filter(function (r) { return inFilter(r, f); }).length; };
+  document.getElementById("dist").innerHTML = '<div class="label">Inspection records in this list</div>' + barsHTML([
+    { label: "Good", n: cnt("Good"), color: "var(--good)" },
+    { label: "Average", n: cnt("Average"), color: "var(--avg)" },
+    { label: "Poor", n: cnt("Poor"), color: "var(--poor)" },
+    { label: "Not rated", n: cnt("early"), color: "var(--gray)" }
+  ]);
+  document.getElementById("focusnote").innerHTML = focusId
+    ? '<div class="panel mini">Showing one home from a shared link. <button class="link" data-showall="1">Show all homes</button></div>' : "";
+  var filtered = sortRows(base.filter(function (r) { return inFilter(r, focusId ? "" : activeFilter); }));
+  var shown = filtered.slice(0, limit);
+  document.getElementById("count").textContent = "Showing " + shown.length + " of " + filtered.length + " homes";
+  document.getElementById("list").innerHTML = shown.length ? shown.map(function (r) { return cardHTML(r, !!focusId); }).join("") : "No homes match. Try clearing a filter.";
+  var remaining = filtered.length - shown.length;
+  document.getElementById("morewrap").innerHTML = remaining > 0
+    ? '<button class="more" id="more">Show ' + Math.min(PAGE, remaining) + " more (" + remaining + " left)</button>" : "";
+}
+function resetBrowse() {
+  if (focusId) { focusId = ""; if (history.replaceState) history.replaceState(null, "", "#browse"); }
+  limit = PAGE;
+  renderBrowse();
+}
+document.getElementById("search").addEventListener("input", resetBrowse);
+document.getElementById("county").addEventListener("change", resetBrowse);
+document.getElementById("sort").addEventListener("change", resetBrowse);
+document.getElementById("chips").addEventListener("click", function (e) {
+  var b = e.target.closest("button");
   if (!b) return;
   activeFilter = b.getAttribute("data-f");
-  resetAndRender();
+  limit = PAGE;
+  renderBrowse();
 });
-document.getElementById("morewrap").addEventListener("click", e => {
-  if (e.target.id === "more") { limit += PAGE; render(); }
+document.getElementById("focusnote").addEventListener("click", function (e) {
+  if (e.target.closest("[data-showall]")) { focusId = ""; location.hash = "browse"; }
 });
+document.getElementById("morewrap").addEventListener("click", function (e) {
+  if (e.target.id === "more") { limit += PAGE; renderBrowse(); }
+});
+
+// ---------- card actions ----------
+function updateCmpBadge() {
+  document.getElementById("cmpn").textContent = cmp.length ? "(" + cmp.length + ")" : "";
+  var btns = document.querySelectorAll('[data-act="compare"]');
+  for (var i = 0; i < btns.length; i++) {
+    var on = cmp.indexOf(btns[i].getAttribute("data-id")) >= 0;
+    btns[i].classList.toggle("on", on);
+    btns[i].innerHTML = on ? "&#8644; In compare" : "&#8644; Compare";
+  }
+}
+function shareHome(id) {
+  var r = byId(id);
+  if (!r) return;
+  var url = location.origin + location.pathname + "#id=" + encodeURIComponent(id);
+  var text = r.OPERATION_NAME + " on the Texas Foster Placements inspection record";
+  if (navigator.share) {
+    navigator.share({ title: r.OPERATION_NAME, text: text, url: url }).catch(function () {});
+  } else if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(url).then(function () { toast("Link copied"); }, function () { toast(url); });
+  } else { toast(url); }
+}
+document.getElementById("list").addEventListener("click", function (e) {
+  var b = e.target.closest("[data-act]");
+  if (!b) return;
+  var id = b.getAttribute("data-id");
+  var act = b.getAttribute("data-act");
+  if (act === "save") {
+    if (saved.has(id)) { saved.delete(id); toast("Removed from saved"); } else { saved.add(id); toast("Saved on this device"); }
+    persistSaved();
+    var on = saved.has(id);
+    b.classList.toggle("on", on);
+    b.innerHTML = on ? "&#9829; Saved" : "&#9825; Save";
+  } else if (act === "compare") {
+    var i = cmp.indexOf(id);
+    if (i >= 0) { cmp.splice(i, 1); toast("Removed from compare"); }
+    else { if (cmp.length >= 2) cmp.shift(); cmp.push(id); toast(cmp.length === 2 ? "Two picked. Open the Compare tab." : "Pick one more to compare"); }
+    updateCmpBadge();
+  } else if (act === "share") {
+    shareHome(id);
+  }
+});
+
+// ---------- compare ----------
+var CMP_ROWS = [
+  ["Safety score", function (r) { return isRated(r) ? r.safety_score + " / 100" : "Not rated yet"; }],
+  ["Inspection record", function (r) { return isRated(r) ? r.rating : "Not rated yet"; }],
+  ["Inspections", function (r) { return r.TOTAL_INSPECTIONS; }],
+  ["Weighted findings per inspection", function (r) { return r.rate; }],
+  ["High-severity findings", function (r) { return r.DEFICIENCY_HIGH; }],
+  ["Medium-high findings", function (r) { return r.DEFICIENCY_MEDIUM_HIGH; }],
+  ["Medium findings", function (r) { return r.DEFICIENCY_MEDIUM; }],
+  ["Medium-low findings", function (r) { return r.DEFICIENCY_MEDIUM_LOW; }],
+  ["Low findings", function (r) { return r.DEFICIENCY_LOW; }],
+  ["State corrective action", function (r) { return yesNo(r.CORRECTIVE_ACTION); }],
+  ["State adverse action", function (r) { return yesNo(r.ADVERSE_ACTION); }],
+  ["Capacity", function (r) { return r.TOTAL_CAPACITY; }],
+  ["Licensed services", function (r) { return tagsFor(r.PROGRAMMATIC_SERVICES).join(", ") || "Not reported"; }]
+];
+function renderCompare() {
+  var el = document.getElementById("cmp");
+  var picks = cmp.map(byId).filter(Boolean);
+  if (!picks.length) {
+    el.innerHTML = '<div class="panel"><h3>Compare two homes</h3><p>Open a home in Browse and tap Compare. Pick two and they show up here side by side.</p><button class="btn" data-go="browse">Go to Browse</button></div>';
+    return;
+  }
+  var head = '<tr><th></th>' + picks.map(function (r) {
+    return '<th class="h">' + esc(r.OPERATION_NAME) + '<div class="note">' + esc([r.CITY, r.COUNTY].filter(Boolean).join(", ") || "Location not listed") +
+      '</div><button class="link" data-act="uncompare" data-id="' + esc(r.OPERATION_ID) + '">Remove</button></th>';
+  }).join("") + "</tr>";
+  var body = CMP_ROWS.map(function (row) {
+    return '<tr><td class="k">' + row[0] + "</td>" + picks.map(function (r) { return "<td>" + esc(row[1](r)) + "</td>"; }).join("") + "</tr>";
+  }).join("");
+  var more = picks.length < 2 ? '<p class="note">Pick one more home in Browse to compare.</p>' : "";
+  el.innerHTML = '<div class="panel"><h3>Side by side</h3><table class="cmp">' + head + body + "</table>" + more +
+    '<p class="note">Fewer findings per inspection is not the same as better care. Staffing, discipline, food, school, and daily life are not reported for any home.</p></div>';
+}
+document.getElementById("cmp").addEventListener("click", function (e) {
+  var b = e.target.closest('[data-act="uncompare"]');
+  if (!b) return;
+  var i = cmp.indexOf(b.getAttribute("data-id"));
+  if (i >= 0) cmp.splice(i, 1);
+  updateCmpBadge();
+  renderCompare();
+});
+
+// ---------- load data ----------
+Promise.all([
+  fetch("scored_placements.csv").then(function (r) { return r.text(); }),
+  fetch("mapped_findings.csv").then(function (r) { return r.text(); }).catch(function () { return ""; })
+]).then(function (res) {
+  var table = parseCSV(res[0]);
+  var head = table[0];
+  rows = table.slice(1).filter(function (r) { return r.length === head.length; }).map(function (r) {
+    var o = {}; head.forEach(function (h, i) { o[h] = r[i]; }); return o;
+  });
+  if (res[1]) {
+    var ft = parseCSV(res[1]);
+    var fh = ft[0];
+    findings = ft.slice(1).filter(function (r) { return r.length === fh.length; }).map(function (r) {
+      var o = {}; fh.forEach(function (h, i) { o[h] = r[i]; }); return o;
+    });
+  }
+  var counties = Array.from(new Set(rows.map(function (r) { return r.COUNTY; }).filter(Boolean))).sort();
+  document.getElementById("county").innerHTML = '<option value="">All counties</option>' +
+    counties.map(function (c) { return '<option value="' + esc(c) + '">' + esc(c) + " County</option>"; }).join("");
+  renderHome();
+  showTab();
+}).catch(function () {
+  document.getElementById("list").textContent = "Could not load the data files.";
+  document.getElementById("stats").innerHTML = "";
+});
+
+renderAreas();
+updateCmpBadge();
+showTab();
+})();
 </script>
 </body>
 </html>
